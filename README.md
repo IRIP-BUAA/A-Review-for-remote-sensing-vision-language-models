@@ -1366,7 +1366,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
   <tr>
     <td rowspan='11' style='text-align: left; width:30%;'><a href='https://arxiv.org/pdf/2204.02825'>An Empirical Study of Remote Sensing Pretraining</a></td>
     <td style='text-align: left; width:10%;'>Published in</td>
-    <td style='text-align: left; width:20%;'>IEEE Transactions on Geoscience and Remote Sensing 2023</td>
+    <td style='text-align: left; width:20%;'>IEEE Transactions on Geoscience and  Remote Sensing 2023</td>
     <td rowspan='11' style='text-align: left; width:40%'>提出了RS pretraining的概念。测试了CNN和VIT模型和一些增强方式。</td>
   </tr>
   <tr>
@@ -1375,7 +1375,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
   </tr>
   <tr>
     <td style='text-align: left;'>Code/Project</td>
-    <td style='text-align: left;'>https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing</td>
+    <td style='text-align: left;'>https://github.com/</td>
   </tr>
   <tr>
     <td style='text-align: left;'>备注</td>
