@@ -1375,7 +1375,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
   </tr>
   <tr>
     <td style='text-align: left;'>Code/Project</td>
-    <td style='text-align: left;'>https://github.com/</td>
+    <td style='text-align: left;'>https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing</td>
   </tr>
   <tr>
     <td style='text-align: left;'>备注</td>
@@ -4181,7 +4181,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:30%;'><a href='https://www.robots.ox.ac.uk/~vgg/data/text/'>MJSynth</a></td>
+    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.robots.ox.ac.uk/~vgg/data/text/'>MJSynth</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;'> </td>
     <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;'>nan</td>

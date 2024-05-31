@@ -144,7 +144,7 @@ def generate_html_table_dataset(df):
     html += '</tr>\n'
     for _, row in df.iterrows():
         html += '  <tr>\n'
-        html += f"    <td rowspan='9' style='text-align: left; width:30%;'>{row['数据集名称']}</td>\n"
+        html += f"    <td rowspan='9' style='text-align: left; width:10%;'>{row['数据集名称']}</td>\n"
         html += f"    <td style='text-align: left; width:10%;'>任务</td>\n"
         html += f"    <td style='text-align: left; width:20%;'>{row['任务']}</td>\n"
         html += f"    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;'>{row['备注']}</td>\n"
