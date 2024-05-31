@@ -135,64 +135,63 @@ def generate_html_table_2(df):
     html += '</table>'
     return html
 def generate_html_table_dataset(df):
-    html = '<table style="width:100%;">\n'
-    html += '<tr>\n'
-    html += '<td>数据集名称</td>\n'
-    html += '<td>key</td>\n' 
-    html += '<td>value</td>\n' 
-    html += '<td>备注</td>\n'
-    html += '</tr>\n'
+    html = ''
     for _, row in df.iterrows():
+        html += '<table style="width:100%;">\n'
+        html += '<tr>\n'
+        html += '<td>数据集名称</td>\n'
+        html += '<td>key</td>\n' 
+        html += '<td>value</td>\n' 
+        html += '<td>备注</td>\n'
+        html += '</tr>\n'
         html += '  <tr>\n'
         html += f"    <td rowspan='9' style='text-align: left; width:10%;'>{row['数据集名称']}</td>\n"
         html += f"    <td style='text-align: left; width:10%;'>任务</td>\n"
-        html += f"    <td style='text-align: left; width:20%;'>{row['任务']}</td>\n"
-        html += f"    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;'>{row['备注']}</td>\n"
+        html += f"    <td style='text-align: left; width:20%;white-space: normal;'>{row['任务']}</td>\n"
+        html += f"    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>{row['备注']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>语言</td>\n"
-        html += f"    <td style='text-align: left;'>{row['语言']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['语言']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>发布时间/Project</td>\n"
-        html += f"    <td style='text-align: left;'>{row['发布时间']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['发布时间']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>模态</td>\n"
-        html += f"    <td style='text-align: left;'>{row['模态']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['模态']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>训练阶段</td>\n"
-        html += f"    <td style='text-align: left;'>{row['训练阶段']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['训练阶段']}</td>\n"
         html += '  </tr>\n'
 
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>规模</td>\n"
-        html += f"    <td style='text-align: left;'>{row['规模']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['规模']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>数量</td>\n"
-        html += f"    <td style='text-align: left;'>{row['数量']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['数量']}</td>\n"
         html += '  </tr>\n'
         
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>涉及领域</td>\n"
-        html += f"    <td style='text-align: left;'>{row['涉及领域']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['涉及领域']}</td>\n"
         html += '  </tr>\n'
 
         html += '  <tr>\n'
         html += f"    <td style='text-align: left;'>链接</td>\n"
-        html += f"    <td style='text-align: left;'>{row['链接']}</td>\n"
+        html += f"    <td style='text-align: left;white-space: normal;'>{row['链接']}</td>\n"
         html += '  </tr>\n'
+        html += '</table>'
 
-
-       
-    html += '</table>'
     return html
 def process_1(sheet_name='智能表1',filename='遥感大模型论文汇总-智能表1.md'):
     # 读取指定工作表
@@ -225,7 +224,7 @@ def process_2(sheet_name='智能表2',filename='遥感大模型论文汇总-智�
     
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(html_table)     
-def process_2(sheet_name='智能表1',filename='大模型数据集.md'):
+def process_3(sheet_name='智能表1',filename='大模型数据集.md'):
     # 读取指定工作表
     file_path = '大模型数据集.xlsx'
     df_sheet1 = pd.read_excel(file_path, sheet_name=sheet_name)
@@ -241,5 +240,5 @@ def process_2(sheet_name='智能表1',filename='大模型数据集.md'):
 
 
         
-process_2()
+process_3()
 print("file has been created.")
