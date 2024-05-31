@@ -27,7 +27,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
     <td rowspan='9' style='text-align: left; width:30%;'><a href='https://arxiv.org/abs/2401.09712'>SkyEyeGPT: Unifying Remote Sensing Vision-Language Tasks via Instruction Tuning with Large Language Model</a></td>
     <td style='text-align: left; width:10%;'>Tag</td>
     <td style='text-align: left; width:20%;'>MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;'>1.遥感领域的视觉语言指令数据集（SkyEye968k），包括单任务和多任务对话指令，包括968k条样本的指令跟随数据集2. 提出SkyEyeGPT模型，通过一个对齐层将RS视觉特征投影到语言领域后，它们与任务特定的指令一起被馈送到基于LLM的RS解码器中；设计了一个两阶段微调方法，第一阶段是遥感图文对齐，第二阶段是多任务对话微调</td>
+    <td rowspan='9' style='text-align: left; width:40%'>1.遥感领域的视觉语言指令数据集（SkyEye968k），包括单任务和多任务对话指令，包括968k条样本的指令跟随数据集2. 提出SkyEyeGPT模型，通过一个对齐层将RS视觉特征投影到语言领域后，它们与任务特定的指令一起被馈送到基于LLM的RS解码器中；设计了一个两阶段微调方法，第一阶段是遥感图文对齐，第二阶段是多任务对话微调</td>
   </tr>
   <tr>
     <td style='text-align: left;'>Visual Encoder</td>
@@ -1367,7 +1367,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
     <td rowspan='11' style='text-align: left; width:30%;'><a href='https://arxiv.org/pdf/2204.02825'>An Empirical Study of Remote Sensing Pretraining</a></td>
     <td style='text-align: left; width:10%;'>Published in</td>
     <td style='text-align: left; width:20%;'>IEEE Transactions on Geoscience and Remote Sensing 2023</td>
-    <td rowspan='11' style='text-align: left; width:40%;word-wrap: break-word;'>提出了RS pretraining的概念。测试了CNN和VIT模型和一些增强方式。</td>
+    <td rowspan='11' style='text-align: left; width:40%'>提出了RS pretraining的概念。测试了CNN和VIT模型和一些增强方式。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>Type</td>
