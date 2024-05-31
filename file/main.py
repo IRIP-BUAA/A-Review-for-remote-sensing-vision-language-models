@@ -8,14 +8,15 @@ excel_data = pd.ExcelFile(file_path)
 sheet_names = excel_data.sheet_names
 print(sheet_names)
 def generate_html_table_1(df):
-    html = '<table style="width:100%;">\n'
-    html += '<tr>\n'
-    html += '<td>Paper</td>\n'
-    html += '<td>key</td>\n' 
-    html += '<td>value</td>\n' 
-    html += '<td>Short Summary</td>\n'
-    html += '</tr>\n'
+    html = ''
     for _, row in df.iterrows():
+        html += '<table style="width:100%;">\n'
+        html += '<tr>\n'
+        html += '<td>Paper</td>\n'
+        html += '<td>key</td>\n' 
+        html += '<td>value</td>\n' 
+        html += '<td>Short Summary</td>\n'
+        html += '</tr>\n'
         html += '  <tr>\n'
         html += f"    <td rowspan='9' style='text-align: left; width:30%;'>{row['Paper']}</td>\n"
         html += f"    <td style='text-align: left; width:10%;'>Tag</td>\n"
@@ -64,17 +65,18 @@ def generate_html_table_1(df):
         html += '  </tr>\n'
 
        
-    html += '</table>'
+        html += '</table>'
     return html
 def generate_html_table_2(df):
-    html = '<table style="width:100%;">\n'
-    html += '<tr>\n'
-    html += '<td>Paper</td>\n'
-    html += '<td>key</td>\n' 
-    html += '<td>value</td>\n' 
-    html += '<td>Short Summary</td>\n'
-    html += '</tr>\n'
+    html = ''
     for _, row in df.iterrows():
+        html += '<table style="width:100%;">\n'
+        html += '<tr>\n'
+        html += '<td>Paper</td>\n'
+        html += '<td>key</td>\n' 
+        html += '<td>value</td>\n' 
+        html += '<td>Short Summary</td>\n'
+        html += '</tr>\n'
         html += '  <tr>\n'
         html += f"    <td rowspan='11' style='text-align: left; width:30%;'>{row['Paper']}</td>\n"
         html += f"    <td style='text-align: left; width:10%;'>Published in</td>\n"
@@ -131,8 +133,7 @@ def generate_html_table_2(df):
         html += f"    <td style='text-align: left;'>other</td>\n"
         html += f"    <td style='text-align: left;'>{row['other']}</td>\n"
         html += '  </tr>\n'
-       
-    html += '</table>'
+        html += '</table>'
     return html
 def generate_html_table_dataset(df):
     html = ''
@@ -240,5 +241,5 @@ def process_3(sheet_name='智能表1',filename='大模型数据集.md'):
 
 
         
-process_3()
+process_1()
 print("file has been created.")
