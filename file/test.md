@@ -1,20 +1,3 @@
-# A-Review-for-remote-sensing-vision-language-models
-This is a repository for ...
-## Overleaf
-https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
-
-## Table of Contents
-- [A-Review-for-remote-sensing-vision-language-models](#a-review-for-remote-sensing-vision-language-models)
-  - [Overleaf](#overleaf)
-  - [Table of Contents](#table-of-contents)
-- [Types of Remote Sensing Vision Language Models](#types-of-remote-sensing-vision-language-models)
-  - [1](#1)
-- [Dataset](#dataset)
-
-
-
-# Types of Remote Sensing Vision Language Models
-## 1
 <table style="width:100%;">
 <tr>
 <td>Paper</td>
@@ -1353,5 +1336,3 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
     <td style='text-align: left;'>Arxiv 2023</td>
   </tr>
 </table>
-
-# Dataset
