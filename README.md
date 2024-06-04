@@ -11,6 +11,19 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
   - [1](#1)
   - [2](#2)
 - [Dataset](#dataset)
+  - [汇总](#汇总)
+  - [分类](#分类)
+  - [检测](#检测)
+  - [分割](#分割)
+  - [变化检测](#变化检测)
+  - [目标跟踪](#目标跟踪)
+  - [图像生成](#图像生成)
+  - [单模态预训练](#单模态预训练)
+  - [评估](#评估)
+  - [VQA](#vqa)
+  - [图文对](#图文对)
+  - [视觉定位](#视觉定位)
+  - [多模态预训练](#多模态预训练)
 
 
 
@@ -4830,6 +4843,7 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 
 
 # Dataset
+## 汇总
 <table style="width:100%;">
 <tr>
 <td>数据集名称</td>
@@ -4838,3284 +4852,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.robots.ox.ac.uk/~vgg/data/text/'>MJSynth</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'> </td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像，视频，语音，文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练，指令微调，对齐</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>27GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>20,000</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学、金融、通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/zjunlp/iepile'>IEPile</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text2Text Generation</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文/中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>信息抽取 (IE) 指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 200 万条指令样本，总计约 3.2 亿 Token</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、医学、金融等</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/THUDM/LongAlign-10k'>LongAlign-10k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>长上下文对齐</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文/中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>对齐</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 10,000 条长指令数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/tatsu-lab/stanford_alpaca?tab=readme-ov-file#data-release'>alpaca_data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>21.7MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>52K条指令跟随数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/BelleGroup/train_3.5M_CN'>BelleGroup/train</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text2Text Generation</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>7GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>350万条由BELLE项目生成的中文指令数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M'>BelleGroup/generated_chat_0.4M</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text2Text Generation</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>524MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>40万条由BELLE项目生成的个性化角色对话数据，包含角色介绍</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/BelleGroup/school_math_0.25M'>BelleGroup/school_math_0.25M</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text2Text Generation</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>132MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>25万条由BELLE项目生成的中文数学题数据，包含解题过程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/BelleGroup/multiturn_chat_0.8M'>BelleGroup/multiturn_chat_0.8M</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text2Text Generation</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>990MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>80万条由BELLE项目生成的用户与助手的多轮对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/YanweiLi/MGM-Pretrain'>MGM-Pretrain</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.68GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/177185'>DuReader</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>阅读理解，问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.8GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>300k个问题和660k个人工答案</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://paperswithcode.com/dataset/mmlu'>MMLU</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>大规模多任务语言理解基准测试集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>158MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>MMLU数据集共收集了15908个问题，并将其分为few-shot开发集、验证集和测试集。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/openai/grade-school-math'>GSM8K</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>高质量的英文小学数学问题测试集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>GSM8K（小学数学 8K）是一个包含 8.5K 高质量语言多样化小学数学单词问题的数据集，包含7.5K 训练问题和 1K 测试问题。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/hendrycks/math/?tab=readme-ov-file'>MATH</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>由数学竞赛问题组成的评测集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>latex代码</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>19.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>7.5K 训练数据和 5K 测试数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/hendrycks/apps'>APPS</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>衡量语言模型的编程能力的数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>编程题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.3GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>APPS共包含10000个编程问题，每个问题都配备了多个单元测试，其中5000个问题作为训练集，另外5000个问题作为测试集。训练集中的每个问题还包含若干个正确答案，这为模型的训练提供了丰富的资源。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、编程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/openai/human-eval'>HumanEval</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>评估大模型编程能力</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>54.1KB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>一共包括164条样本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、编程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/suzgunmirac/BIG-Bench-Hard'>BBH</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>超越模仿游戏基准</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>3.5MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>探索大型语言模型的未来能力，涵盖了200多个任务</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/google-research/google-research/tree/master/mbpp'>MBPP</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>全新的众包编程数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>351KB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1,000 个众包 Python 编程问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、编程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://allenai.org/data/arc'>AL2 ARC</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>小学水平的多项选择科学问题组成的新数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>649MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>7,787 个具有不同年级水平（从 3 年级到 9 年级）的多项选择题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/ceval/ceval-exam'>C-Eval</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>测试大模型推理能力的中文数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.47MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>包含13948 个多项选择题，涵盖了 52 个学科和四个难度级别。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/haonan-li/CMMLU'>CMMLU</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>测试大模型推理能力的中文数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.27MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>包含 11,528 个问题，涵盖了 67 个学科。每个学科至少有 105 个问题，我们将其分为包含 5 个问题的训练样本集（few-shot development set），以及包含超过 100 个问题的测试集（test set）。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.clue.ai/superclue.html'>SuperCLUE</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合性大模型评测数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/CLUEbenchmark/CLUE'>CLUE</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>语言建模、预训练或生成型任务</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>需要写邮件申请</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>214GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>CLUECorpus2020-small：14G1.新闻语料 8G2.社区互动-语料 3G3.维基百科-语料 1.1G4.评论数据-语料 2.3GCLUECorpus2020：100GCLUEOSCAR：100G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/OpenLMLab/GAOKAO-Bench'>GAOKAO-Bench</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>测评大模型语言理解能力、逻辑推理能力</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>7.2MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ruixiangcui/AGIEval?tab=readme-ov-file'>AGIEval</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>专门用于评估基础模型在「以人为本」（human-centric）的标准化考试中，如高考、公务员考试、法学院入学考试、数学竞赛和律师资格考试中的表现</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>该基准选取20种面向普通人类考生的官方、公开、高标准的资格考试、包括普通大学入学考试（如中国的高考和美国的SAT考试）、司法考试、数学竞赛等。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/DAMO-NLP-SG/M3Exam?tab=readme-ov-file'>M3Exam</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>针对大语言模型的多层次、多主题的知识评估数据集，旨在衡量中文大型语言模型在零样本和少样本设置中获取知识的能力</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>151MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>M3KE 收集了 20,477 个真人标准化考试题目（包含 4 个候选答案），覆盖 71 个任务，包括小学、初中、高中、大学、研究生入学考试题目，涉及人文、历史、政治、法律、教育、心理学、科学、工程技术、艺术等学科。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/JosephusCheung/GuanacoDataset'>Guanaco</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成，问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>申请中</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英语、简体中文、繁体中文（台湾）、繁体中文（香港）、日语、德语</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M'>firefly-train</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成，问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.08GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>115万 </td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/open-compass-OpenFinData'>OpenFinData</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>金融评测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.7MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1500</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>金融</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/togethercomputer/RedPajama-Data'>RedPajama-Data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>训练大型语言模型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英语， 德语， 法语， 意大利语， 西班牙语</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1,05MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>100B</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>语言</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>FineWeb</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>数据太大</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>15T</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/liuhaotian/LLaVA-Pretrain'>LLaVA-Pretrain</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>28G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>558K张图像及对应的caption</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://codeload.github.com/csitfun/LogiQA2.0_Chinese/zip/refs/heads/main'>LogiQA2</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>公务员考试逻辑推理题</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文，英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>117MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>10000+单项选择题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>逻辑推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/Math23K'>Math23k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>数学多步推理</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>8.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>23162个小学数学应用题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>数学推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://data.baai.ac.cn/details/WuDaoCorporaText'>WuDaoCorpora</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>大模型训练研究</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本、对话、图文对、视频文本对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>5T，200G开源</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> </td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>教育、科技等</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid'>InternVid</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>大规模的以视频为中心的多模态数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>视频、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.2GB开源</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>超过 700 万个视频，总时长近 76 万小时。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/ly261666/3rd_Anti-UAV/files'>Anti-UAV</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>无人机检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>34G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>RefGPT</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>基于RefGPT生成大量真实和定制的对话数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Hugging Face下载代码报错</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>包括RefGPT-Fact和RefGPT-Code两部分，其中RefGPT-Fact给出了5万中文的关于事实性知识的多轮对话，RefGPT-Code给出了3.9万中文编程相关的多轮对话数据。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、编程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/786?channel_id=op10'>AquaTrash</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>用于深度学习的垃圾图像</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>82.04MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>369张图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/787?channel_id=op10&utm_source=cvmartmp&utm_campaign=datasets&utm_medium=article'>MasksDatasetUnattendedMaskImages</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>口罩检测、口罩隔离、垃圾口罩检测等</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>38.99MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>7000+</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://open.flopsera.com/flopsera-open/details/BAAI-CCI2'>BAAI/CCI2-Data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>高质量中文互联网语料库</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>500GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1.25亿个网页</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://open.flopsera.com/flopsera-open/details/ycylsjj'>MDH-Patho</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>可用于病理图像等方面研究</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文，英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>15GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>58000+图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>病理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/liuhaotian/LLaVA-Instruct-150K'>LLaVA-Instruct-150K </a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>只下载了指令部分，图像部分是公开数据集的组合，在readme中注释需要哪些了</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>665k个问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/teknium/GPT4-LLM-Cleaned'>GPT4-LLM-Cleaned</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>借助GPT-4生成的英文对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>36MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>54600</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/dair-ai/emotion'>emotion</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>情感数据集，给出一句话判断其包含的情感</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>15MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>测试集2000，训练集16000</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/liekkas/table_recognition/summary'>table_recognition</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>表格识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像，文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.37MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>18</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/iic/ICDAR13_HCTR_Dataset/summary'>ICDAR13_HCTR_Dataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>ICDAR2013手写中文文本识别竞赛公开评测集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像，文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>400MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>3432</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Toyhom/Chinese-medical-dialogue-data'>Chinese medical dialogue data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文医疗对话数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>335MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>总计 792099个问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/tany0699/cats_and_dogs/summary'>cats_and_dogs</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>猫狗分类数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练，评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>10.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>训练集275张，评估集30张</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/FreedomIntelligence/Huatuo-26M'>Huatuo-26M</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文医疗问答数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>超过2600万个高质量的医疗问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Kent0n-Li/ChatDoctor'>doctorchat_data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>英文医疗问答数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>超过3万条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/Flmc/DISC-Med-SFT'>DISC-MedLLM</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文医疗问答数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>820MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>超过47万个衍生于现有的医疗数据集重新构建得到的样本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/BAAI/COIG'>COIG</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文指令语料库，包括翻译指令、考试指令、人类价值观对齐指令、反事实修正多轮聊天、Leetcode指令</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>总计191k 数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/speech_asr/speech_asr_aishell1_trainsets/summary'>speech_asr_aishell1_trainsets</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文语音识别Aishell-1学术数据集训练集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>语音</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>15GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>16K采样率，单通道音频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/huizheng/SIDD/summary'>SIDD</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>智能手机图像去噪数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>30GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/Wente47/M2E/summary'>M2E</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>M²E：多行数学公式数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>543.25MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>99,956个多行数学表达图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>数学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/tany0699/flowers14/files'>flowers14</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>花朵分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>214.8 1MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>13618张训练图片，98张验证图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/shaoxuan/WIDER_FACE/summary'>WIDER_FACE</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>人脸识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.8GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>32,203张图片和393,703个人脸标注</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/wangrongsheng/comparison_gpt4_data/tree/main'>comparison_gpt4_data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>52.8MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>36441条指令和回答列表</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/ChilleD/MultiArith'>MultiArith</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>多步数学推理</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>133KB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>600道数学单词问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>数学推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/skrishna/coin_flip'>CoinFlip</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>模型根据描述判断硬币是否朝上</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>4MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>训练集20k个样本，验证集1.33k个样本，测试集3.33k个样本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>符号推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/ChilleD/SVAMP'>SVAMP</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>数学单词问题</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>340KB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1000道数学单词问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>数学推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/buptwq/lora-stable-diffusion-finetune-dog/files'>lora-stable-diffusion-finetune-dog</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>小狗数据标注</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.58MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>5张图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/368'>NWPU VHR-10</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>卫星图像数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>73.41MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>800个高分辨率的卫星图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://allenai.org/data/strategyqa'>StrategyQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>引出需要隐含推理步骤的创造性和多样性的是/否问题。</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>12.1MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 2,780 个示例，每个示例由一个策略问题、其分解和证据段落组成。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>常识推理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/370'>RSOD</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像目标检测数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>309.86MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>976张</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/kaist-ai/CoT-Collection'>CoT_collection</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>思维链推理任务</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.36GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>9个CoT任务，涉及74771个样本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/WanJuanCC'>WanJuan2.0(WanJuan-CC)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>英文文本补全和通用英文能力任务</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>193.4GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 1T Tokens 的高质量英文网络文本数据集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/open-compass/mmbench/'>MMBench</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合评测MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文、中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>3000问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/yuweihao/MM-Vet/releases/download/v1/mm-vet.zip'>MM-Vet</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合评测MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>200张图像、218个问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/AILab-CVC/SEED-Bench'>SEED-Bench-1</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合评测MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>视频、图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/AILab-CVC/SEED-Bench-2'>SEED-Bench-2</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合评测MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/AILab-CVC/SEED-Bench-2-plus'>SEED-Bench-2-plus</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>综合评测MLLM</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/MBZUAI/GeoChat_Instruct'>GeoChat_Instruct</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/MBZUAI/GeoChat_Instruct'>GeoChat_Instruct</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感多模态大模型指令微调</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>318k个图像指令对</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8123,44 +4883,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>UCM-Captions</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>UCM-Captions</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该图像数据是从USGS国家地图城市区域影像集合中提取的，包含2,100张RGB航拍图像，覆盖21个类别。每张图像配有5条描述性文字，总计有2032条独特标注。图像分辨率为256×256像素，空间分辨率为1英尺。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该图像数据是从USGS国家地图城市区域影像集合中提取的，包含2,100张RGB航拍图像，覆盖21个类别。每张图像配有5条描述性文字，总计有2032条独特标注。图像分辨率为256×256像素，空间分辨率为1英尺。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2100张图像、每张图像5条描述</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7546397</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8168,44 +4914,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>Sydney-Captions</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>Sydney-Captions</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>悉尼数据集包含来自谷歌地球的澳大利亚悉尼的图像。它包含属于7个类别的613个图像。图像是(500,500) RGB，并为每个图像提供5个caption。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>悉尼数据集包含来自谷歌地球的澳大利亚悉尼的图像。它包含属于7个类别的613个图像。图像是(500,500) RGB，并为每个图像提供5个caption。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>613张图像，每张图像5条描述</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7546397</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8213,44 +4945,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>RSICD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>RSICD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>超过一万张遥感图像是从谷歌地球、百度地图、MapABC、天地图等平台收集而来的。这些图像被固定为 224X224 像素，具有不同的分辨率。总共有 10921 张遥感图像，每张图像配有5句描述，共有18,190条独特标注。据我们所知，这个数据集是用于remote sensing image caption任务中最大的数据集。数据集中的样本图像具有高类内多样性和低类间差异性。包含30种类型的遥感地物类型</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>超过一万张遥感图像是从谷歌地球、百度地图、MapABC、天地图等平台收集而来的。这些图像被固定为 224X224 像素，具有不同的分辨率。总共有 10921 张遥感图像，每张图像配有5句描述，共有18,190条独特标注。据我们所知，这个数据集是用于remote sensing image caption任务中最大的数据集。数据集中的样本图像具有高类内多样性和低类间差异性。包含30种类型的遥感地物类型</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>10921张图像，每张图像5条描述</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1712.07835</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8258,44 +4976,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/xiaoyuan1996/AMFMN'>RSITMD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/xiaoyuan1996/AMFMN'>RSITMD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感多模态检索</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSITMD（遥感图像-文本匹配数据集）是Yuan等人提出的一个细粒度且富有挑战性的遥感数据集，适用于遥感多模态检索任务。相比其他遥感图像-文本配对数据集，它具有描述物体间关系的详细说明。此外，该数据集还包含了关键词属性（每张图像1至5个关键词），可用于基于关键词的遥感文本检索任务。该数据集中共有4,743张图像跨越32个场景，共包含23,715条标注，其中21,829条为非重复标注。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSITMD（遥感图像-文本匹配数据集）是Yuan等人提出的一个细粒度且富有挑战性的遥感数据集，适用于遥感多模态检索任务。相比其他遥感图像-文本配对数据集，它具有描述物体间关系的详细说明。此外，该数据集还包含了关键词属性（每张图像1至5个关键词），可用于基于关键词的遥感文本检索任务。该数据集中共有4,743张图像跨越32个场景，共包含23,715条标注，其中21,829条为非重复标注。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>4743张图像，23715条标注</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2204.09868</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8303,44 +5007,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ZhanYang-nwpu/RSVG-pytorch'>DIOR_RSVG</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ZhanYang-nwpu/RSVG-pytorch'>DIOR_RSVG</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视觉定位</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>是Zhan等人于2022年引入的一个全面的遥感视觉定位基准数据集（Remote Sensing Visual Grounding, RSVG）。RSVG任务专注于在遥感图像中定位由查询语句所指的对象。该数据集建立在最初设计用于目标检测的DIOR遥感图像数据集基础之上。RSVGD包含38,320对遥感图像-文本对以及17,402张遥感图像，平均表达长度为7.47，词汇表规模为100。图像分辨率为800×800像素，空间分辨率范围从0.5米到30米。文本描述是根据模板和预定义规则合成生成的。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>是Zhan等人于2022年引入的一个全面的遥感视觉定位基准数据集（Remote Sensing Visual Grounding, RSVG）。RSVG任务专注于在遥感图像中定位由查询语句所指的对象。该数据集建立在最初设计用于目标检测的DIOR遥感图像数据集基础之上。RSVGD包含38,320对遥感图像-文本对以及17,402张遥感图像，平均表达长度为7.47，词汇表规模为100。图像分辨率为800×800像素，空间分辨率范围从0.5米到30米。文本描述是根据模板和预定义规则合成生成的。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>38320对遥感图像-文本对以及17402张遥感图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2210.12634</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8348,44 +5038,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/Zilun/RS5M'>RS5M</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/Zilun/RS5M'>RS5M</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图文匹配</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>图像-文本配对的数据集RS5M，其中包含500万张带有英文描述的遥感图像。该数据集是通过筛选公开可用的图像-文本配对数据集并用预训练的视觉-语言模型标注仅具有标签的遥感数据集得到的。这构成了第一个大规模的遥感图像-文本配对数据集。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>图像-文本配对的数据集RS5M，其中包含500万张带有英文描述的遥感图像。该数据集是通过筛选公开可用的图像-文本配对数据集并用预训练的视觉-语言模型标注仅具有标签的遥感数据集得到的。这构成了第一个大规模的遥感图像-文本配对数据集。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>500万张带有英文描述的遥感图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2306.11300</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8393,44 +5069,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/HaiyanHuang98/NWPU-Captions'>NWPU-Captions</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/HaiyanHuang98/NWPU-Captions'>NWPU-Captions</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>NWPU-Captions包含了157,500个句子，所有31,500张图片都由七名经验丰富的志愿者手动注释。NWPU-Captions相对于当前公开可用的基准数据集的优越性不仅在于其更大的规模，还在于其对复杂场景的更广泛覆盖以及描述词汇的丰富多样性。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>NWPU-Captions包含了157,500个句子，所有31,500张图片都由七名经验丰富的志愿者手动注释。NWPU-Captions相对于当前公开可用的基准数据集的优越性不仅在于其更大的规模，还在于其对复杂场景的更广泛覆盖以及描述词汇的丰富多样性。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>157,500个句子，31,500张图片</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1703.00121</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -8438,2699 +5100,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/jpwahle/machine-paraphrase-dataset/tree/main'>Identifying Machine-Paraphrased Plagiarism</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>训练和评估用于检测机器释义文本的模型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>500MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>200767个段</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>检测机器</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/Benchmark_for_Neural_Paraphrase_etc/tree/'>Benchmark for Neural Paraphrase Detection</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>神经释义检测的基准，用于区分原始内容和机器生成的内容</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2.1GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1,474,230 个对齐的段落</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>区分原始内容和机器生成</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/NatCat/tree/main/raw'>NatCat</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通用文本分类数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文档-类别对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>1.83GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>分类</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/Quoref/tree/main/sample'>Quoref</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>测试阅读理解系统的共指推理能力</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>21.7MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>24K 问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>阅读理解系统</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/QuAC/tree/main/raw'>QuAC (Question Answering in Context)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>上下文问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>问答对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>73.5MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>14K众包问答对话和98K问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>上下文问答</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/TriviaQA/tree/main/raw'>TriviaQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>基于文本的问答数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>3.1GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>950K问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/WikiQA/tree/main/raw'>WikiQA (Wikipedia open-domain Question Answering)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>开放域问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2015.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>问题和句子对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>6.8MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>3,047 个问题和 29,258 个句子</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>开放域问答</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://openxlab.org.cn/datasets/OpenDataLab/Pile/tree/main'>The Pile</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>语言建模</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>要去官网下载</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>数据集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>825 GiB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>22 个较小的高质量数据集组合</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>语言建模</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/BookCorpus/tree/main'>BookCorpus</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>要去官网下载</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2015.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>11,038本书(约74m句子和1g单词)</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/EXEQ-300k/tree/main/raw'>EXEQ-300k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>从详细的数学问题中生成简洁的数学标题</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>56.5MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>290,479 个详细问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FPubmed%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>Pubmed</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>糖尿病相关的科学出版物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2008.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本、链接</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>42.1GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>19717 篇、44338 个链接</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FPubMed_Paper_Reading_Dataset%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>PubMed Paper Reading Dataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>标记化文本的实体</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>27.25MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>875,698 个训练对、109,462 个开发对和 109,462 个测试对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FPubMed_RCT%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>PubMed RCT (PubMed 200k RCT)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>顺序句子分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>110MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>230 万个句子</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>开发顺序短文本分类更准确的算法、医学领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FMedHop%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>MedHop</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>研究论文摘要</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>opendatalab一天只能下5个数据集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>537.9MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FArxivPapers%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>ArxivPapers</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>机器学习相关的未标记论文集合</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>94K 篇论文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>机器学习</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FunarXive%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>unarXive</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>提取任意大小的引文上下文</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>100 万篇纯文本论文 6300 万引文上下文 3900 万参考字符串 1600 万个连接的引文网络</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>引文推荐中的方法 引文上下文分析 参考字符串解析 生成数据集</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FarXiv_Summarization_Dataset%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>arXiv Summarization Dataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>评估研究论文摘要方法</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FSCICAP%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>SCICAP</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>大型图形字幕数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>显性图形类型-图形图</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>416k个图形</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://link.juejin.cn/?target=https%3A%2F%2Fopendatalab.org.cn%2FMathMLben%3Fsource%3DJUU2JThFJTk4JUU5JTg3JTkx'>MathMLben (Formula semantics benchmark)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>数学格式转换（LaTeX ↔ MathML ↔ CAS）的评估工具的基准</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/thu-coai/CDial-GPT'>LCCC (Large-scale Cleaned Chinese Conversation corpus)</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文GPT模型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>939.5MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://motchallenge.net/data/MOT20/'>MOT20</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>行人检测、目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>4.7GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>行人检测挑战</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/zzliang/GRIT'>GRIT</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>区域定位</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://visualqa.org/download.html'>VQAv2</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>200k图像，1.1M个图像-问题对，11M个答案</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://okvqa.allenai.org/download.html'>OK-VQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>14k图像，14k问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://vizwiz.org/tasks-and-datasets/vqa/'>VizWiz-VQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>31K 个图像-问题对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://drive.google.com/drive/folders/1w8imCXWYn2LxajmGeGH_g5DaL2rabHev'>ScienceQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>21,208个问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>科学领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://cs.stanford.edu/people/dorarad/gqa/download.html'>GQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>113,018 个图像，22,669,678 个问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://iconqa.github.io/'>IconQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 96,817 个图像，107,439 个问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_'>OCR-VQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1,002,146 个图像-问题对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://textvqa.org/dataset/'>TextVQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>VQA</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、评估</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>28,408 个图像，45,336 个问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/qiuhuachuan/smile'>SmileConv</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>多轮的心理健康支持多轮对话</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>含有56k个多轮对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>心理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/HIT-SCIR-SC/QiaoBan'>QiaoBan</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文儿童情感陪伴对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1k</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>心理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/ShengbinYue/DISC-Law-SFT'>DISC-LawLLM</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>法律监督微调数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>403k</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>法律</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/Duxiaoman-DI/FinCorpus'>FinCorpus</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文金融资讯数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>压缩前21G，解压后60G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>金融</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/gbharti/finance-alpaca'>finance-alpaca</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>金融领域问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>金融</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/PleIAs/Post-OCR-Correction'>PleIAs/Post-OCR-Correction</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>法语、英语、德语和意大利语的文化遗产文本</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>10GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、文化</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/shibing624/medical/'>medical-pt</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>医疗知识问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>632.78 MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医疗</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/PleIAs/YouTube-Commons/tree/main'>PleIAs/YouTube-Commons</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>视频标题简介</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>视频、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>18GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 2,063,066 个视频的音频转录集合</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/Skylion007/openwebtext/'>OpenWebText</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>文本生成</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>解压后38G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/coseal/CodeUltraFeedback?row=0'>cosealCodeUltraFeedback</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>评判LLM对齐编码偏好的数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>38.2 MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>10,000</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用、编程</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/YeungNLP/moss-003-sft-data'>MOSS_003_sft_data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中英文多轮对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>8.72GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>110万</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/YeungNLP/WizardLM_evol_instruct_V2_143k'>WizardLM</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>使用Evol-Instruct得到的英文指令微调数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>394MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>143k</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/daven3/geosignal'>GeoSignal</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>地理考试题目</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>32.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>地理</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='链接: https://pan.baidu.com/s/1Nc8WQNxkeDUReIf-3N8Tfg, 密码: f2f5'>realworldblurdataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>图像增强</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>27GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>训练集：182 个不同场景的 3,758 个图像对。测试集：50 个不同场景的 980 个图像对。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='链接: https://pan.baidu.com/s/1BL31XjHM4NiWoVbaBbvg4w, 密码: 642d'>ihaze</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>图像增强</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>311MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://v3det.openxlab.org.cn/'>V3Det</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>目标检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>528.6MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>精确标注了13,204类物体</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/HuggingFaceM4/the_cauldron/tree/main'>HuggingFaceM4/the_cauldron</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图片</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>150G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://open-earth-map.org/'>OpenEarthMap</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>语义分割和领域适应</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>8.6GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>5000幅航空和卫星图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/314'>Fire and Smoke Dataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>目标检测数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>84.45MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>7000+</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/364'>TinyPerson</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>目标检测数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>8.23GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>72651</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cvmart.net/dataSets/detail/361'>AI-TOD</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>航空图像数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练、微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>22.95GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>28,036 张航拍图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://modelscope.cn/datasets/speech_asr/speech_asr_aishell1_trainsets/summary'>Aishell-1</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文语音识别学术数据集训练集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>语音</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>15GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>178小时</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatalab.com/OpenDataLab/UCSD'>UCSD</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>异常检测数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2010.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>707.2MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>22.6k</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/mlabonne/orpo-dpo-mix-40k?row=16'>mlabonne/orpo-dpo-mix-40k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>直接偏好优化</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>200M</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/hiyouga/DPO-En-Zh-20k?row=1'>hiyouga/DPO-En-Zh-20k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>直接偏好优化</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>50MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>2w对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>历史</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/LooksJuicy/ruozhiba/tree/main'>LooksJuicy/ruozhiba</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>弱智吧精选问题数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>350K</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/cognitivecomputations/Dolphin-2.9/tree/main'>cognitivecomputations/Dolphin-2.9</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/0-hero/Matter-0.1'>0-hero/Matter-0.1</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>使用各种子集和组合微调模型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2G</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/m-a-p/COIG-CQIA/tree/main'>m-a-p/COIG-CQIA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中国传统文化", "成语"</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>100M</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>中国传统文化"</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/fMoW/dataset'>fMoW</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/fMoW/dataset'>fMoW</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>数据集由来自200多个国家的100多万张图像组成。对于每张图像，提供至少一个包含63个类别之一的边界框注释，其中包括一个“错误检测”类别。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>数据集由来自200多个国家的100多万张图像组成。对于每张图像，提供至少一个包含63个类别之一的边界框注释，其中包括一个“错误检测”类别。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>100 多万张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018/papers/Christie_Functional_Map_of_CVPR_2018_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11138,44 +5131,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://weegee.vision.ucmerced.edu/datasets/landuse.html'>UCMerced_LandUse</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://weegee.vision.ucmerced.edu/datasets/landuse.html'>UCMerced_LandUse</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自 USGS National Map，由University of California, Merced于2010年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自 USGS National Map，由University of California, Merced于2010年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2010.0</td>
+    <td style='text-align: left;white-space: normal;'>2010</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2100张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://dl.acm.org/doi/abs/10.1145/1869790.1869829</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11183,44 +5162,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/BED4RS/'>WHU RS19</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/BED4RS/'>WHU RS19</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含19种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2012年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含19种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2012年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2012.0</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>950张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11228,44 +5193,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/palewithout/RSSCN7'>RSSCN7</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/palewithout/RSSCN7'>RSSCN7</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2015年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2015年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2015.0</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2800张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>http://mvr.whu.edu.cn/pubs/2015-IEEE_GRSL.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11273,44 +5224,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.researchgate.net/publication/271647282_RS_C11_Database'>RS_C11</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.researchgate.net/publication/271647282_RS_C11_Database'>RS_C11</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种土地利用类型的遥感影像，提取自Google Earth，由中科院于2016年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种土地利用类型的遥感影像，提取自Google Earth，由中科院于2016年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1232张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11318,44 +5255,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://gcheng-nwpu.github.io/#Datasets'>NWPU-RESISC45</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://gcheng-nwpu.github.io/#Datasets'>NWPU-RESISC45</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含45种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2016年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含45种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2016年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>31500张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7891544/</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11363,44 +5286,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/AID/'>AID</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/AID/'>AID</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含30种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含30种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>10000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7907303/</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11408,44 +5317,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/RSIA-LIESMARS-WHU/RSD46-WHU'>RSD46-WHU</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/RSIA-LIESMARS-WHU/RSD46-WHU'>RSD46-WHU</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth、天地图，由武汉大学于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth、天地图，由武汉大学于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>117000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7827088/</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11453,179 +5348,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/hfl/alpaca_zh_51k/tree/main'>hfl/alpaca_zh_51k</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>按指令回答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>gpt-3.5翻译的Alpaca指令数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>18M</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>51K条</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/hfl/stem_zh_instruction'>hfl/stem_zh_instruction</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>gpt-3.5爬取的STEM指令数据，包含物理、化学、医学、生物学、地球科学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>152M</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>256K条</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>物理、化学、医学、生物学、地球科学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/hfl/ruozhiba_gpt4_turbo'>hfl/ruozhiba_gpt4_turbo</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>gpt-4-turbo-2024-04-09获取的ruozhiba问答数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>2M</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>2449条</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>弱智吧问答</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的secenClass部分</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的secenClass部分</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自高分2卫星，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自高分2卫星，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
+    <td style='text-align: left;white-space: normal;'>30000张图像</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11633,89 +5379,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://wukong-dataset.github.io/wukong-dataset/index.html'>Noah-Wukong Dataset</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>图文对</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>预训练</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>14GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1亿个图文对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>通用</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset'>PatternNet</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset'>PatternNet</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含38种土地利用类型的遥感影像，提取自Google Map，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含38种土地利用类型的遥感影像，提取自Google Map，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>30400张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1706.03424</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11723,44 +5410,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/phelber/eurosat'>EuroSAT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/phelber/eurosat'>EuroSAT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种土地利用类型的遥感影像，提取自哨兵2，由德国凯泽斯劳滕大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种土地利用类型的遥感影像，提取自哨兵2，由德国凯泽斯劳滕大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>27000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8736785</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11768,89 +5441,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/ecnu-icalk/educhat-sft-002-data-osm'>educhat</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>教育领域对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>5.05 GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>400w条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>教育</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://drive.google.com/open?id=1Fk9a0DW8UyyQsR8dP2Qdakmr69NVBhq9'>OPTIMAL-31</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://drive.google.com/open?id=1Fk9a0DW8UyyQsR8dP2Qdakmr69NVBhq9'>OPTIMAL-31</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1860张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8454883</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -11858,314 +5472,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/databricks/databricks-dolly-15k'>dolly</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通用指令微调数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>13.1MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>15011条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/XueFuzhao/InstructionWild'>InstructionWild_v2</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通用指令微调数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>34.3MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>110K </td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://data.baai.ac.cn/details/OL-CC'>OL-CC</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>人工生成的开源中文对话指令集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>9.34MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'> 10k+ “指令-回答”数据对和 1.6k+ 人工指令数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/wangrui6/Zhihu-KOL'>Zhihu-KOL</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>从知乎爬取的中文对话数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1006218多条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/CohereForAI/aya_dataset'>Aya</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通过 Aya 注释平台手动收集和注释的多语言指令微调数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>多语言</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>204k</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/zjunlp/InstructIE'>InstructIE</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>基于主题的双语信息抽取数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>371700条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>信息抽取</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/CLRS'>Continual Learning Benchmark for Remote</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/CLRS'>Continual Learning Benchmark for Remote</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含25种土地利用类型的遥感影像，提取自Google Earth, Bing Map, Google Map, and Tianditu，由中南大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含25种土地利用类型的遥感影像，提取自Google Earth, Bing Map, Google Map, and Tianditu，由中南大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>15000张图片</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/1424-8220/20/4/1226</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12173,44 +5503,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1369487569196158978; http://www.jors.cn/jrs/ch/reader/create_pdf.aspx?file_no=20209323&flag=1'>TG1HRSSC</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1369487569196158978; http://www.jors.cn/jrs/ch/reader/create_pdf.aspx?file_no=20209323&flag=1'>TG1HRSSC</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全色谱段(PAN)、可见近红外(VNI)、短波红外谱段(SWI)，包含9种土地利用类型的遥感影像，提取自天宫一号，由中国科学院空间应用工程与技术中心于2021年发布，包含波段:0.5—0.8μm、1band(PAN), 0.4—1.0μm、54band((VNI), 1.0—2.5μm、52band((SWI),</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全色谱段(PAN)、可见近红外(VNI)、短波红外谱段(SWI)，包含9种土地利用类型的遥感影像，提取自天宫一号，由中国科学院空间应用工程与技术中心于2021年发布，包含波段:0.5—0.8μm、1band(PAN), 0.4—1.0μm、54band((VNI), 1.0—2.5μm、52band((SWI),</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>204张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12218,44 +5534,34 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1370312964720037889； http://www.msadc.cn/group1/M00/00/08/CgId02Bio4KAazc6AEZR3GfuVic489.pdf'>NaSC-TG2</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1370312964720037889； http://www.msadc.cn/group1/M00/00/08/CgId02Bio4KAazc6AEZR3GfuVic489.pdf
+'>NaSC-TG2</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物类型，提取自天宫二号，包含波段范围：0.40–1.04 µm，由中国科学院空间应用工程与技术中心于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物类型，
+提取自天宫二号，
+包含波段范围：0.40–1.04 µm，
+由中国科学院空间应用工程与技术中心于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>20000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12263,44 +5569,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://csc.lsu.edu/~saikat/deepsat/'>SAT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://csc.lsu.edu/~saikat/deepsat/'>SAT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SAT数据集，包括SAT-4、SAT-6，2个数据子集，分别包含4种、6种土地利用类型的遥感影像，提取自the National Agriculture Imagery Program (NAIP) dataset，由路易斯安那州立大学与NASA于2015年发布，采用MATLAB的.mat数据存储格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SAT数据集，包括SAT-4、SAT-6，2个数据子集，分别包含4种、6种土地利用类型的遥感影像，提取自the National Agriculture Imagery Program (NAIP) dataset，由路易斯安那州立大学与NASA于2015年发布，采用MATLAB的.mat数据存储格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2015.0</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>405000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12308,44 +5600,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.lmars.whu.edu.cn/prof_web/zhongyanfei/Code/Google_Dataset/Google%20dataset%20of%20SIRI-WHU_earth_im_tiff.7z'>SIRI-WHU</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.lmars.whu.edu.cn/prof_web/zhongyanfei/Code/Google_Dataset/Google%20dataset%20of%20SIRI-WHU_earth_im_tiff.7z'>SIRI-WHU</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SIRI-WHU数据集，包括 google image、USGS image2个数据子集，分别包含12种、4种土地利用类型的遥感影像，分别提取自Google Earth、USGS，由武汉大学于2016年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SIRI-WHU数据集，包括 google image、USGS image2个数据子集，分别包含12种、4种土地利用类型的遥感影像，分别提取自Google Earth、USGS，由武汉大学于2016年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2400张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7329997</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12353,44 +5631,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/RSI-CB'>RSI-CB</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/RSI-CB'>RSI-CB</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSI-CB数据集，包括RSI-CB128、RSI-CB256，2个数据子集，分别包含45种、35种土地利用类型的遥感影像，提取自多种数据，由中南大学于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSI-CB数据集，包括RSI-CB128、RSI-CB256，2个数据子集，分别包含45种、35种土地利用类型的遥感影像，提取自多种数据，由中南大学于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>36000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12398,44 +5662,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的CV-BrCT部分</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的CV-BrCT部分</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，CV-BrCT数据子集，包含8种土地利用类型的遥感影像，提取自航空影像及地面街景影像，由Federal University of Minas Gerais于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，CV-BrCT数据子集，包含8种土地利用类型的遥感影像，提取自航空影像及地面街景影像，由Federal University of Minas Gerais于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>48342张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12443,44 +5693,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的AiRound部分</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的AiRound部分</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，AiRound数据子集，包含11种土地利用类型的遥感影像，提取自Sentinel-2等多源数据，由Federal University of Minas Gerais于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，AiRound数据子集，包含11种土地利用类型的遥感影像，提取自Sentinel-2等多源数据，由Federal University of Minas Gerais于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>13980张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12488,44 +5724,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://ai.stanford.edu/~gaheitz/Research/TAS/'>TAS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://ai.stanford.edu/~gaheitz/Research/TAS/'>TAS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由斯坦福大学于2008年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由斯坦福大学于2008年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2008.0</td>
+    <td style='text-align: left;white-space: normal;'>2008</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>30张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12533,44 +5755,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://sourceforge.net/projects/oirds/'>OIRDS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sourceforge.net/projects/oirds/'>OIRDS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物目标，提取自USGS、DARPA、VIVID，由雷神公司等于2009年发布，采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物目标，提取自USGS、DARPA、VIVID，由雷神公司等于2009年发布，采用oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2009.0</td>
+    <td style='text-align: left;white-space: normal;'>2009</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>900张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12578,44 +5786,31 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://downloads.greyc.fr/vedai/'>VEDAI</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://downloads.greyc.fr/vedai/'>VEDAI</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种类型的遥感地物目标，提取自Utah AGRC，由卡昂大学于2015年发布，采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种类型的遥感地物目标，提取自Utah AGRC，由卡昂大学于2015年发布，采用oriented bounding boxes(OBB)标注格式
+</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2015.0</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1210张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12623,44 +5818,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/datasets/guofeng/hrsc2016'>HRSC2016</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/datasets/guofeng/hrsc2016'>HRSC2016</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含27种类型的遥感地物目标，提取自Google Earth，由西北工业大学于2016年发布，采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含27种类型的遥感地物目标，提取自Google Earth，由西北工业大学于2016年发布，采用oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1061张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12668,44 +5849,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-52777'>DLR3k</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-52777'>DLR3k</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标提取自无人机(Canon Eos 1Ds Mark III)由德国航天航空中心于2016年发布采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标提取自无人机(Canon Eos 1Ds Mark III)由德国航天航空中心于2016年发布采用oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2016.0</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>20张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12713,44 +5880,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/CrazyStoneonRoad/TGRS-HRRSD-Dataset'>TGRS-HRRSD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/CrazyStoneonRoad/TGRS-HRRSD-Dataset'>TGRS-HRRSD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含13种类型的遥感地物目标，提取自Google Earth、百度地图，由中科院于2017年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含13种类型的遥感地物目标，提取自Google Earth、百度地图，由中科院于2017年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>21761张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8676107</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12758,44 +5911,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://challenge.xviewdataset.org/data-download'>xView</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://challenge.xviewdataset.org/data-download'>xView</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含60种类型的遥感地物目标，提取自WorldView 3，由DIUx、NGA于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含60种类型的遥感地物目标，提取自WorldView 3，由DIUx、NGA于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1129张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12803,44 +5942,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://levir.buaa.edu.cn/Code.htm'>LEVIR</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://levir.buaa.edu.cn/Code.htm'>LEVIR</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物目标，提取自Google Earth，由北京航天航空大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物目标，提取自Google Earth，由北京航天航空大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>22000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8106808</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12848,44 +5973,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.iuii.ua.es/datasets/masati/'>MASATI</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.iuii.ua.es/datasets/masati/'>MASATI</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标，提取自Bing Maps，由阿利坎特大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标，提取自Bing Maps，由阿利坎特大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>7389张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/4/511</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12893,44 +6004,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://research.utwente.nl/en/datasets/itcvd-dataset'>ITCVD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://research.utwente.nl/en/datasets/itcvd-dataset'>ITCVD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由University of Twente Research Information于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由University of Twente Research Information于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>135张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8451454</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12938,44 +6035,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/iSAID/index.html'>iSAID</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/iSAID/index.html'>iSAID</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物目标，提取自Google Earth、JL-1、GF-2，由武汉大学于2019年发布，采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物目标，提取自Google Earth、JL-1、GF-2，由武汉大学于2019年发布，采用oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2806张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1905.12886</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -12983,44 +6066,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2019/07/10/bridge-dataset/'>Bridge Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2019/07/10/bridge-dataset/'>Bridge Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth、 OpenStreetMap，由Federal University of Minas Gerais于2019年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth、 OpenStreetMap，由Federal University of Minas Gerais于2019年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>500张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8876942</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13028,44 +6097,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cosmiqworks.org/RarePlanes/ https://www.graviti.cn/open-datasets/RarePlanes'>RarePlanes</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cosmiqworks.org/RarePlanes/ https://www.graviti.cn/open-datasets/RarePlanes'>RarePlanes</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种飞机遥感影像，提取自WorldView-3，由In-Q-Tel、AI.Reverie于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种飞机遥感影像，提取自WorldView-3，由In-Q-Tel、AI.Reverie于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1507张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2006.02963</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13073,44 +6128,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=2&tab=data'>飞机目标识别-训练数据集</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=2&tab=data'>飞机目标识别-训练数据集</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种飞机类型的遥感地物目标,提取自国产自主产权系列卫星，由中科院于2021年发布，采用oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种飞机类型的遥感地物目标,提取自国产自主产权系列卫星，由中科院于2021年发布，采用oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>430张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13118,44 +6159,31 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=6&tab=data'>船只智能检测-训练数据集</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=6&tab=data'>船只智能检测-训练数据集</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自国产自主产权系列卫星由中科院于2021年发布采用，oriented bounding boxes(OBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自国产自主产权系列卫星
+由中科院于2021年发布采用，oriented bounding boxes(OBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>25张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13163,44 +6191,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-Detection</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-Detection</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>32825张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2111.12960</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13208,44 +6222,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-DET</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-DET</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>10209张图象</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13253,44 +6253,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-VID</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-VID</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>288个视频片段</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13298,44 +6284,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>DroneCrowd</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>DroneCrowd</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像人群计数</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自无人机数据，由天津大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自无人机数据，由天津大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1807张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13343,44 +6315,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.0</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.0</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>15类，共188282个目标</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>15类，共188282个目标</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2806张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13388,44 +6346,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.5</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.5</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>16类，共400000±个目标</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>16类，共400000±个目标</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2806张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13433,44 +6377,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA2.0</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA2.0</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'> 18类，共1,793,658个目标</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'> 18类，共1,793,658个目标</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>11268张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13478,44 +6408,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opensar.sjtu.edu.cn/DataAndCodes.html'>OpenSARShip</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://opensar.sjtu.edu.cn/DataAndCodes.html'>OpenSARShip</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1，由上海交通大学于2017年发布，采用Chip标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1，由上海交通大学于2017年发布，采用Chip标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>41张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8067489</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13523,44 +6439,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/chaozhong2010/HRSID'>HRSID</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/chaozhong2010/HRSID'>HRSID</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1B、TerraSAR-X、TanDEM-X，由电子科技大学于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1B、TerraSAR-X、TanDEM-X，由电子科技大学于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>5604张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9127939</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13568,44 +6470,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.usgs.gov/core-science-systems/nli/landsat/spatial-procedures-automated-removal-cloud-and-shadow-sparcs'>SPARCS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.usgs.gov/core-science-systems/nli/landsat/spatial-procedures-automated-removal-cloud-and-shadow-sparcs'>SPARCS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自 Landsat 8 OLI/TIRS，由University of Tennessee Knoxville于2014年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自 Landsat 8 OLI/TIRS，由University of Tennessee Knoxville于2014年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2014.0</td>
+    <td style='text-align: left;white-space: normal;'>2014</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>80张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/6/6/4907stats?stats=v&utm_source=TrendMD&utm_medium=cpc&utm_campaign=Remote_Sens_TrendMD_0</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13613,44 +6501,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/1154821'>CITY-OSM</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/1154821'>CITY-OSM</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6个城市，2种类别：街道和建筑，提取自Google Maps、OpenStreetMap，由ETH Zürich于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6个城市，2种类别：街道和建筑，提取自Google Maps、OpenStreetMap，由ETH Zürich于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1671张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1707.06879</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13658,44 +6532,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>WHDLD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>WHDLD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自UC Merced，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自UC Merced，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>4940张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/6/964</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13703,44 +6563,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>DLRSD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>DLRSD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>基于UCMerced_LandUse数据集进行标注，包含17种类型的遥感地物类型标注数据，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>基于UCMerced_LandUse数据集进行标注，包含17种类型的遥感地物类型标注数据，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2100张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/6/964</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13748,44 +6594,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ishann/aeroscapes'>Aeroscapes</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ishann/aeroscapes'>Aeroscapes</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种类型的遥感地物类型，提取自航空影像，由Carnegie Mellon University于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种类型的遥感地物类型，提取自航空影像，由Carnegie Mellon University于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>3269张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8354272</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13793,44 +6625,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.airs-dataset.com/'>AIRS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.airs-dataset.com/'>AIRS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自LINZ Data Service，由 University of Tokyo等，于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自LINZ Data Service，由 University of Tokyo等，于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1047张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1807.09532</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13838,44 +6656,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/rmkemker/RIT-18'>RIT-18</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmkemker/RIT-18'>RIT-18</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含18种类型的遥感地物类型，提取自Tetracam Micro-MCA6，包含7波段，由Rochester Institute of Technology于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含18种类型的遥感地物类型，提取自Tetracam Micro-MCA6，包含7波段，由Rochester Institute of Technology于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>3张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271618301229</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13883,44 +6687,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1AsdnO2-nadxTaq9_9Mo3Eg?pwd=tftf#list/path=%2F'>HSODBIT-V1</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1AsdnO2-nadxTaq9_9Mo3Eg?pwd=tftf#list/path=%2F'>HSODBIT-V1</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>高光谱显著性目标检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>319幅高光谱图像及对应的伪彩色图像和像素级标注</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>319幅高光谱图像及对应的伪彩色图像和像素级标注</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>323张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13928,44 +6718,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/satellogic/EarthView/tree/main'>EarthView</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/satellogic/EarthView/tree/main'>EarthView</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>计算机视觉分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>外网不会下</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感模型预训练</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>外网不会下</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>300万张高分辨率训练数据集</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -13973,44 +6749,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/dronedeploy/dd-ml-segmentation-benchmark'>DroneDeploy</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/dronedeploy/dd-ml-segmentation-benchmark'>DroneDeploy</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自航空影像drones，由DroneDeploy于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自航空影像drones，由DroneDeploy于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>55张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14018,359 +6780,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/camel-ai'>camel</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通用指令微调数据（由GPT-3.5-Turbo生成的）</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>多语言、编程语言</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1659328条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/XueFuzhao/InstructionWild'>InstructionWild_v1</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>通用指令微调数据（由OpenAI API生成的）</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>104K条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>nan</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/PlexPt/chatgpt-corpus/releases/tag/3'>Chatgpt_corpus</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>GPT3.5生成的自问自答数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>327万条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/lmsys/lmsys-chat-1m'>LMSYS-Chat-1M</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>使用25个sota LLM生成的对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>需要申请</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>多语言</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1M条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/fnlp/moss-002-sft-data'>MOSS_002_sft_data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>Text-Davinci-003生成的对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1074551条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/lawinstruct/lawinstruct/tree/main'>LawInstruct</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>为不同法律任务编写详细的指令</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1200万个示例</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>法律</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/mitroadmaps/roadtracer/'>RoadTracer</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/mitroadmaps/roadtracer/'>RoadTracer</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google earth、OSM，由MIT于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google earth、OSM，由MIT于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>3000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://roadmaps.csail.mit.edu/roadtracer/</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14378,44 +6811,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/Bijie_pages.html'>Bijie Landslide Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/Bijie_pages.html'>Bijie Landslide Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自TripleSat，由武汉大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自TripleSat，由武汉大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>770张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://link.springer.com/article/10.1007/s10346-020-01353-2</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14423,44 +6842,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/3DFGC_pages.html'>GF2 Dataset for 3DFGC</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/3DFGC_pages.html'>GF2 Dataset for 3DFGC</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种土地利用类型的遥感影像，提取自GF2，由武汉大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种土地利用类型的遥感影像，提取自GF2，由武汉大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>11张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.tandfonline.com/doi/abs/10.1080/01431161.2019.1699973</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14468,44 +6873,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://project.inria.fr/aerialimagelabeling/'>Semantic Drone Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://project.inria.fr/aerialimagelabeling/'>Semantic Drone Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含22种土地利用类型的遥感影像，提取自航拍影像，由Graz University of Technology于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含22种土地利用类型的遥感影像，提取自航拍影像，由Graz University of Technology于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>400张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://inria.hal.science/hal-01468452/document</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14513,44 +6904,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_Cloud_Dataset.html'>WHU Cloud Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_Cloud_Dataset.html'>WHU Cloud Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自Landsat 8，由武汉大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自Landsat 8，由武汉大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>859张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9099032</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14558,44 +6935,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://landcover.ai.linuxpolska.com/'>landcover_ai</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://landcover.ai.linuxpolska.com/'>landcover_ai</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自  public geodetic resource，由linuxpolska等于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自  public geodetic resource，由linuxpolska等于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>41张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2005.02264</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14603,44 +6966,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.uavid.nl/'>UAVid</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.uavid.nl/'>UAVid</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自航空影像，由University of Twente于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自航空影像，由University of Twente于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>300张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.10438</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14648,44 +6997,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/457/datasets'>全国人工智能大赛AI遥感影像</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/457/datasets'>全国人工智能大赛AI遥感影像</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一级大类8种，二级子类17种，数据为0.1米-4米分辨率的高分一、二、六号，高景二号，北京二号，以及部分航空等数据源的可见光、多光谱载荷图像，由鹏城实验室和协办单位合作采集、标注、构建；</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一级大类8种，二级子类17种，数据为0.1米-4米分辨率的高分一、二、六号，高景二号，北京二号，以及部分航空等数据源的可见光、多光谱载荷图像，由鹏城实验室和协办单位合作采集、标注、构建；</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>100000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14693,44 +7028,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/475'>BDCI2020</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/475'>BDCI2020</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，由BDCI于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，由BDCI于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>145981</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14738,44 +7059,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Junjue-Wang/LoveDA'>LoveDA</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Junjue-Wang/LoveDA'>LoveDA</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自Google Earth，由武汉大学于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自Google Earth，由武汉大学于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>5987张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.researchgate.net/publication/355390292_LoveDA_A_Remote_Sensing_Land-Cover_Dataset_for_Domain_Adaptive_Semantic_Segmentation</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14783,44 +7090,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.grss-ieee.org/community/technical-committees/2022-ieee-grss-data-fusion-contest/'>MiniFrance-DFC22</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.grss-ieee.org/community/technical-committees/2022-ieee-grss-data-fusion-contest/'>MiniFrance-DFC22</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自航空影像，由IADF TC于2022年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自航空影像，由IADF TC于2022年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2322张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14828,44 +7121,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Roads</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Roads</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2013.0</td>
+    <td style='text-align: left;white-space: normal;'>2013</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>804张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.cs.toronto.edu/~vmnih/docs/Mnih_Volodymyr_PhD_Thesis.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14873,44 +7152,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Builds</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Builds</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2013.0</td>
+    <td style='text-align: left;white-space: normal;'>2013</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>151张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.cs.toronto.edu/~vmnih/docs/Mnih_Volodymyr_PhD_Thesis.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14918,44 +7183,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Land Cover Classificat</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Land Cover Classificat</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>803张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Demir_DeepGlobe_2018_A_CVPR_2018_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -14963,44 +7214,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Road Detection Challen</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Road Detection Challen</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>6226张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Demir_DeepGlobe_2018_A_CVPR_2018_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15008,44 +7245,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>总共三部分，global cities、East Asia、Aerial imagery datase，包含1种类型的遥感地物类型，由武汉大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>总共三部分，global cities、East Asia、Aerial imagery datase，包含1种类型的遥感地物类型，由武汉大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>25781张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8444434</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15053,44 +7276,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/ORSSD-dataset'>ORSSD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/ORSSD-dataset'>ORSSD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自 Google Earth，由北京交通大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自 Google Earth，由北京交通大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>800张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1906.08462</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15098,44 +7307,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/EORSSD-dataset'>EORSSD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/EORSSD-dataset'>EORSSD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自Google Earth，由北京交通大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自Google Earth，由北京交通大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2000张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2011.13144</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15143,44 +7338,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset'>38-Cloud</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset'>38-Cloud</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 云体分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集中有 8400 个图像块，38个训练场景，测试集中有 9201 个图像块，20个测试场景。每个图像块包含 4 个相应的光谱通道，分别是红色（波段 4）、绿色（波段 3）、蓝色（波段 2）和近红外（波段 5）。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1901.10077</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15188,44 +7369,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/95-Cloud-An-Extension-to-38-Cloud-Dataset'>95-Cloud</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/95-Cloud-An-Extension-to-38-Cloud-Dataset'>95-Cloud</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 云体分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集中有 34701个图像块，95个训练场景，测试集中有 9201 个图像块，20个测试场景。每个图像块包含 4 个相应的光谱通道，分别是红色（波段 4）、绿色（波段 3）、蓝色（波段 2）和近红外（波段 5）。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://deepai.org/publication/cloud-net-a-cloud-segmentation-cnn-for-landsat-8-remote-sensing-imagery-optimized-with-filtered-jaccard-loss-function</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15233,44 +7400,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Fine部分</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Fine部分</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>10张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15278,44 +7431,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Large-scale部分</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Large-scale部分</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>150张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15323,44 +7462,32 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/MarcWong/UDD'>Urban Drone Dataset(UDD)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/MarcWong/UDD'>Urban Drone Dataset(UDD)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包括UDD5、UDD6两个数据子集，分别包含5、6种类型的遥感地物类型，提取自无人机数据（DJI Phantom 4），由北京大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包括UDD5、UDD6两个数据子集，分别包含5、6种类型的遥感地物类型，提取自无人机数据（DJI Phantom 4），由北京大学于2018年发布
+
+</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集120张图像，测试集40张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://link.springer.com/chapter/10.1007/978-3-030-03398-9_30</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15368,44 +7495,31 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-POOLS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-POOLS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 水池分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布
+</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>由8个不同街区的200张4K图像组成(每个街区25张图像)，包含3980个带注释的水池</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15413,44 +7527,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-WATERTANKS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-WATERTANKS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 水箱分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>由6个社区的150张4K图像组成(每个社区25张图像)，包含16216个带注释的水箱。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>这个和上面那个是一个,和一起叫"BH-DATASET"</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15458,44 +7558,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://web.eee.sztaki.hu/remotesensing/airchange_benchmark.html'>SZTAKI-INRIA AirChange</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://web.eee.sztaki.hu/remotesensing/airchange_benchmark.html'>SZTAKI-INRIA AirChange</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，由MTA SZTAKI于2009年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，由MTA SZTAKI于2009年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2009.0</td>
+    <td style='text-align: left;white-space: normal;'>2009</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>13×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/iel5/36/4358825/05169964.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15503,44 +7589,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/gistairc/ABCDdataset'>AIST Building Change Detection(ABCD)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/gistairc/ABCDdataset'>AIST Building Change Detection(ABCD)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型提取自 aerial images 由National Institute of Advanced Industrial Science and Technology (AIST)于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型提取自 aerial images 由National Institute of Advanced Industrial Science and Technology (AIST)于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含fixed-scale、resized 2个子集，分别有4,253 * 2、4,223 * 2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7986759</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15548,44 +7620,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Change Detection Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Change Detection Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由武汉大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由武汉大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8444434</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15593,44 +7651,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://paperswithcode.com/dataset/cdd-dataset-season-varying'>CDD Dataset (season-varying)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://paperswithcode.com/dataset/cdd-dataset-season-varying'>CDD Dataset (season-varying)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 季节变化</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种变化类型，提取自Google Earth (DigitalGlobe)，由GosNIIAS于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种变化类型，提取自Google Earth (DigitalGlobe)，由GosNIIAS于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集10000, 验证集3000, 测试集3000</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://paperswithcode.com/paper/change-detection-in-remote-sensing-images</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15638,44 +7682,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/oscd/'>Onera Satellite Change Detection (OSCD)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/oscd/'>Onera Satellite Change Detection (OSCD)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Universit´e Paris-Saclay、 T´el´ecom ParisTech于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Universit´e Paris-Saclay、 T´el´ecom ParisTech于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>14×2张训练，10×2张测试</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.08468</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15683,44 +7713,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://sigma.whu.edu.cn/newspage.php?q=2019_03_26'>Multi-temporal Scene WuHan (MtS-WH)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://sigma.whu.edu.cn/newspage.php?q=2019_03_26'>Multi-temporal Scene WuHan (MtS-WH)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 多时相场景变化检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种土地利用类型的遥感影像，提取自IKONOS传感器，由武汉大学2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种土地利用类型的遥感影像，提取自IKONOS传感器，由武汉大学2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>每个时相训练集包括190张影像，测试集包括1920张影像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15728,44 +7744,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images/tree/master/dataset'>DSIFN Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images/tree/master/dataset'>DSIFN Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自GoogleEarth，由武汉大学于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自GoogleEarth，由武汉大学于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练数据集中有3600对图像，验证数据集中有340对图像，测试数据集中有48对图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271620301532</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15773,44 +7775,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/hrscd/'>High Resolution Semantic Change (HRSCD)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/hrscd/'>High Resolution Semantic Change (HRSCD)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自 IGS’s BD ORTHO database，由ETH Zürich / EcoVision Lab于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自 IGS’s BD ORTHO database，由ETH Zürich / EcoVision Lab于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>291×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.08452</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15818,44 +7806,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://xview2.org/dataset'>xBD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://xview2.org/dataset'>xBD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 灾害前后变化检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全球六种不同类型自然灾害，每种灾害四种变化状态</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全球六种不同类型自然灾害，每种灾害四种变化状态</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>22068张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPRW_2019/html/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15863,44 +7837,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/daifeng2016/Change-Detection-Dataset-for-High-Resolution-Satellite-Imagery'>Change-Detection-dataset-for-High-resolution-Satellite-Image</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/daifeng2016/Change-Detection-Dataset-for-High-Resolution-Satellite-Imagery'>Change-Detection-dataset-for-High-resolution-Satellite-Image</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由ieee于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由ieee于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'> 20张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9161009</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15908,44 +7868,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://chenhao.in/LEVIR/'>LEVIR-CD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://chenhao.in/LEVIR/'>LEVIR-CD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由北京航空航天大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由北京航空航天大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>637张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/12/10/1662</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15953,44 +7899,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rs.sensetime.com/competition/index.html#/info'>SenseEarth ChangeDetection</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rs.sensetime.com/competition/index.html#/info'>SenseEarth ChangeDetection</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种变化类型的遥感地物类型，由商汤科技于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种变化类型的遥感地物类型，由商汤科技于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练2968张, 验证847张</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -15998,44 +7930,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/SCD/'>SEmantic Change detectiON Data(SECOND)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/SCD/'>SEmantic Change detectiON Data(SECOND)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自航空影像，由ETH Zürich / EcoVision Lab于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自航空影像，由ETH Zürich / EcoVision Lab于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>4662×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://captain-whu.github.io/SCD/SCD_files/Semantic_Change_Detection.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16043,44 +7961,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://zenodo.org/records/4280482'>Sentinel-2 Multitemporal Cities Pairs</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/records/4280482'>Sentinel-2 Multitemporal Cities Pairs</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Wageningen University于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Wageningen University于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>1520×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2101.08122</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16088,44 +7992,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/liumency/SYSU-CD'>Sun Yat-Sen University (SYSU)-CD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/liumency/SYSU-CD'>Sun Yat-Sen University (SYSU)-CD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型变化信息，提取自 aerial image，由中山大学于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型变化信息，提取自 aerial image，由中山大学于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>20000×2张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9467555</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16133,44 +8023,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=30'>S2Looking</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=30'>S2Looking</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自国产自主产权系列卫星，由中科院于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自国产自主产权系列卫星，由中科院于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>3500对训练图像，500对验证图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16178,44 +8054,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=27'>LEVIR-CD2</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=27'>LEVIR-CD2</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，基于LEVIR-CD数据集，由中科院于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，基于LEVIR-CD数据集，由中科院于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2800对训练图像、840对验证图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16223,44 +8085,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://gitlab.citius.usc.es/hiperespectral/ChangeDetectionDataset'>Change Detection Dataset(CDD)</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://gitlab.citius.usc.es/hiperespectral/ChangeDetectionDataset'>Change Detection Dataset(CDD)</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，包含224波段，提取自HYPERION,AVIRIS sensor，于2019年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，包含224波段，提取自HYPERION,AVIRIS sensor，于2019年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>3对图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16268,44 +8116,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data'>Dstl Satellite Imagery Feature Detection</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data'>Dstl Satellite Imagery Feature Detection</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感实例分割 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自WorldView 3，由DigitalGlobe于2017年发布，采用MultiPolygons标注格式，波段范围：全色450-800 nm，3波段；多光谱 (red, red edge, coastal, blue, green, yellow, near-IR1 and near-IR2)400 nm - 1040 nm，8波段；短波红外 1195 nm - 2365 nm，8波段</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自WorldView 3，由DigitalGlobe于2017年发布，采用MultiPolygons标注格式，波段范围：全色450-800 nm，3波段；多光谱 (red, red edge, coastal, blue, green, yellow, near-IR1 and near-IR2)400 nm - 1040 nm，8波段；短波红外 1195 nm - 2365 nm，8波段</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集25张图像，测试集32张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16313,224 +8147,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset'>OpenChat</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>由sharegpt生成的多领域指令微调数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>70K条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/DA-southampton/RedGPT'>RedGPT-Dataset-V1-CN</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>包含5万对中文reference-dialogue二元组，其中dialog是基于reference生成的多轮对话。</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>包含5万条中文多轮对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/yizhongw/self-instruct'>Self-Instruct</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>使用gpt3生成的对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>52445条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/stingning/ultrachat'>UltraChat</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>用两个独立的 ChatGPT Turbo API 进行对话生成的多轮对话数据</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1468352条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>多领域</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.crowdai.org/challenges/mapping-challenge'>Mapping Challenge</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.crowdai.org/challenges/mapping-challenge'>Mapping Challenge</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感实例分割 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Map，由crowdAI于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Map，由crowdAI于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集280741张图像，验证集60317张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.frontiersin.org/articles/10.3389/frai.2020.534696/full</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16538,44 +8178,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://competitions.codalab.org/competitions/20100'>2018 Open AI Tanzania Building Footprint</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://competitions.codalab.org/competitions/20100'>2018 Open AI Tanzania Building Footprint</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感实例分割 建筑物</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由SUZA等于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由SUZA等于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>13张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16583,44 +8209,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/4172871'>Sentinel-2 Cloud Mask Catalogue</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/4172871'>Sentinel-2 Cloud Mask Catalogue</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感实例分割 云体分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自Sentinel-2，于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自Sentinel-2，于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>513张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16628,44 +8240,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=16'>CASIA-aircraft</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=16'>CASIA-aircraft</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感目标检测 飞机检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含29093个训练数据，11603个验证数据，17425个测试数据，共计58121个</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16673,44 +8271,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/131586'>CASIA-Ship</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/131586'>CASIA-Ship</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感目标检测 船体检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含571个训练数据，220个验证数据，327个测试数据，共计1118个</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16718,44 +8302,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://data.mendeley.com/datasets/7j9bv9vwsx/2'>MLRSNet</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://data.mendeley.com/datasets/7j9bv9vwsx/2'>MLRSNet</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多标签分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth，由中国地质大学于2020年发布，最大标签数13</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth，由中国地质大学于2020年发布，最大标签数13</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>109161张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271620302677</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16763,44 +8333,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/91853'>UAV123</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/91853'>UAV123</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>UAV123数据集，包含3个子集，子集1包含103个序列，子集2包含12个序列，子集3包含8个序列，提取自 UAV (DJIS1000)、UAV simulator，由King Abdullah University of Science and Technology于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>UAV123数据集，包含3个子集，子集1包含103个序列，子集2包含12个序列，子集3包含8个序列，提取自 UAV (DJIS1000)、UAV simulator，由King Abdullah University of Science and Technology于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>总共包含123个视频序列和超过110K帧</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://link.springer.com/chapter/10.1007/978-3-319-46448-0_27</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16808,44 +8364,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://www.csdata.org/p/387/'>地/空背景下红外图像弱小飞机目标检测跟踪数据集</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.csdata.org/p/387/'>地/空背景下红外图像弱小飞机目标检测跟踪数据集</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标跟踪 红外图像弱小飞机目标检测跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由国防科技大学于2019年发布，采用Chip标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由国防科技大学于2019年发布，采用Chip标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>共计22段数据、30条航迹、16177帧图像、16944个目标</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>http://www.csdata.org/p/387/</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16853,44 +8395,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.scidb.cn/en/detail?dataSetId=808025946870251520'>复杂背景下红外弱小运动目标检测数据集</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.scidb.cn/en/detail?dataSetId=808025946870251520'>复杂背景下红外弱小运动目标检测数据集</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标检测、跟踪 复杂背景下红外弱小运动目标</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自航拍影像，由国防科技大学于2021年发布，采用Chip标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自航拍影像，由国防科技大学于2021年发布，采用Chip标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含350个视频，150185个图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.scidb.cn/en/detail?dataSetId=808025946870251520</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16898,44 +8426,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-SOT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-SOT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频单目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>167段视频序列，1393000帧</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9573394</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16943,44 +8457,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-MOT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-MOT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频多目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2018.0</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集56段视频，24201帧, 验证集7段视频,2819帧 测试集33段视频，12968帧 </td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9573394</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -16988,44 +8488,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-SOT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-SOT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频单目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>100段视频序列，32,825帧图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9625976</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17033,44 +8519,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-MOT</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-MOT</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频多目标跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>100段视频序列，32,825帧图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9625976</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17078,44 +8550,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/phillipi/pix2pix'>Aerial to Map</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/phillipi/pix2pix'>Aerial to Map</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 风格迁移</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自Google Maps，由UC Berkeley于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自Google Maps，由UC Berkeley于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>训练集1096张图像 ，验证集1098 张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17123,44 +8581,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://www.dropbox.com/s/k2i3p7puuwl2g59/Haze1k.zip?dl=0'>SateHaze1k</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.dropbox.com/s/k2i3p7puuwl2g59/Haze1k.zip?dl=0'>SateHaze1k</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 图像去噪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自GF-2、GF-3，由清华大学于2017年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自GF-2、GF-3，由清华大学于2017年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2017.0</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>400×3张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_WACV_2020/papers/Huang_Single_Satellite_Optical_Imagery_Dehazing_using_SAR_Image_Prior_Based_WACV_2020_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17168,44 +8612,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Multi-view Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Multi-view Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>21600张训练，6800张测试</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_A_Novel_Recurrent_Encoder-Decoder_Structure_for_Large-Scale_Multi-View_Stereo_Reconstruction_CVPR_2020_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17213,44 +8643,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Stereo Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Stereo Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>16632张训练，5236 张测试</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_A_Novel_Recurrent_Encoder-Decoder_Structure_for_Large-Scale_Multi-View_Stereo_Reconstruction_CVPR_2020_paper.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17258,44 +8674,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset1.0</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset1.0</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>173张训练，127张测试</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Rational_Polynomial_Camera_Model_Warping_for_Deep_Learning_Based_Satellite_ICCV_2021_paper.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17303,44 +8705,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset2.0</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset2.0</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>5011张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Rational_Polynomial_Camera_Model_Warping_for_Deep_Learning_Based_Satellite_ICCV_2021_paper.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17348,314 +8736,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/nvidia/ChatQA-Training-Data'>ChatQA-Training-Data</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>对话训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>562215个对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/H-D-T/Buzz'>H-D-TBuzz</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>对话训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>8500万次对话</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://hf-mirror.com/datasets/HuggingFaceM4/the_cauldron'>HuggingFaceM_4the_cauldron</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>视觉训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>1880992row</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>mintlabvandyBrainWash-CVPR24</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>nvidiaChatRAG-Bench</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='nan'>wikipedia</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1dIFOm4V2pM_AjhmkD1-Usw?pwd=SARD'>SARDet-100K</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1dIFOm4V2pM_AjhmkD1-Usw?pwd=SARD'>SARDet-100K</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测 合成孔径雷达目标检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖六个不同的类别,由南开大学2024年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖六个不同的类别,由南开大学2024年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含约117K张图像和246K个对象实例</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2403.06534.pdf</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17663,44 +8767,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset'>LEVIR-CC</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset'>LEVIR-CC</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕 变化检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>每对图像包括变化前和变化后的，五句描述变化的话，由北京航空航天大学于2022年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>每对图像包括变化前和变化后的，五句描述变化的话，由北京航空航天大学于2022年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含10077对双时态遥感图像和50385个描述图像之间差异的句子</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9934924</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17708,44 +8798,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://opendatasharing.s3.us-west-2.amazonaws.com/SkyScript'>SkyScript</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://opendatasharing.s3.us-west-2.amazonaws.com/SkyScript'>SkyScript</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖超过29K个不同的语义标签</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖超过29K个不同的语义标签</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>520万对遥感图像-文本对</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2312.12856</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17753,44 +8829,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-LR</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-LR</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 低分辨率</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>使用哨兵2号的图像和来自OSM的问题和答案</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>使用哨兵2号的图像和来自OSM的问题和答案</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>772张图像、77232个问题</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2003.07333</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17798,44 +8860,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-HR</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-HR</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 高分辨率</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>USGS的高分辨率(15.24cm)正校正图像和OSM的问答</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>USGS的高分辨率(15.24cm)正校正图像和OSM的问答</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>10659张图像、955664个问题</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2003.07333</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17843,44 +8891,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA×BEN</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA×BEN</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从BigEarthNet数据集中提取图像/问题/答案</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从BigEarthNet数据集中提取图像/问题/答案</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含近1500万个样本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9553307</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17888,44 +8922,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/spectralpublic/RSIVQA'>RSIVQA</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/spectralpublic/RSIVQA'>RSIVQA</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSIVQA的图像来自三个RSI分类数据集(UCM、Sydney和AID)和两个RSI目标检测数据集(HRRSD和DOTA)。基于图像生成问题和答案，形成图像-问题-答案三元组。问题、答案及其对应关系可以在此存储库的txt文件中找到。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSIVQA的图像来自三个RSI分类数据集(UCM、Sydney和AID)和两个RSI目标检测数据集(HRRSD和DOTA)。基于图像生成问题和答案，形成图像-问题-答案三元组。问题、答案及其对应关系可以在此存储库的txt文件中找到。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>有37264张图像和111693张图像-问答三元组</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9444570</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17933,44 +8953,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/YZHJessica/CDVQA'>CDVQA</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/YZHJessica/CDVQA'>CDVQA</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 变化检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>选择现有的语义变化检测数据集SECOND作为基础数据，自动生成CDVQA数据集。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>选择现有的语义变化检测数据集SECOND作为基础数据，自动生成CDVQA数据集。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含2968对航拍图像和超过122000对对应的问答</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2112.06343</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -17978,44 +8984,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/jonathan-roberts1/SATIN'>SATIN</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/jonathan-roberts1/SATIN'>SATIN</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类 场景分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一个元数据集，包含27个卫星和航空图像数据集，涵盖6个不同的任务:土地覆盖、土地利用、分层土地利用、复杂场景、罕见场景和假彩色场景。这些图像是全球分布的，由跨越5个数量级的分辨率、多个视图大小和250多个不同的类标签组成。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一个元数据集，包含27个卫星和航空图像数据集，涵盖6个不同的任务:土地覆盖、土地利用、分层土地利用、复杂场景、罕见场景和假彩色场景。这些图像是全球分布的，由跨越5个数量级的分辨率、多个视图大小和250多个不同的类标签组成。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2304.11619</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18023,44 +9015,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/blanchon/FAIR1M'>FAIR1M</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/blanchon/FAIR1M'>FAIR1M</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像目标检测 遥感地物类型</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含37种类型的遥感地物目标，共100 0000+个目标，提取自Gaofen satellites、Google Earth，由中科院等于2021年发布</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含37种类型的遥感地物目标，共100 0000+个目标，提取自Gaofen satellites、Google Earth，由中科院等于2021年发布</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>15000+张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2103.05569</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18068,44 +9046,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021'>FloodNet</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021'>FloodNet</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类、分割、问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>无人机收集，总共2343张图像，10个语义类别</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>无人机收集，总共2343张图像，10个语义类别</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>总共2343张图像，用于分类和分割的测试集有400张，测试集有1050张图像，用于VQA的有1450张图像、4511给问答对</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2012.02951</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18113,44 +9077,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/mikonvergence/LAION-EO'>LAION-5B</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/mikonvergence/LAION-EO'>LAION-5B</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像文本对</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>LAION-5B的子集，卫星图像文本对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>LAION-5B的子集，卫星图像文本对</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>版本0有24,933张图像、版本1有112,985张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2309.15535</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18158,44 +9108,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://lcmou.github.io/ERA_Dataset/'>CapERA</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://lcmou.github.io/ERA_Dataset/'>CapERA</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感视频字幕</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>25个类别，每个视频五个字幕</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>25个类别，每个视频五个字幕</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>视频、文本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2864个5秒的视频，每秒24帧，14,320个字幕</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/15/8/2139</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18203,44 +9139,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSICap</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSICap</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像文本对</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该数据集为每张图像提供了详细的描述，包括场景描述(例如，住宅区、机场或农田)以及物体信息(例如，颜色、形状、数量、绝对位置等)</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该数据集为每张图像提供了详细的描述，包括场景描述(例如，住宅区、机场或农田)以及物体信息(例如，颜色、形状、数量、绝对位置等)</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2585对具有高质量人工注释字幕的图像-文本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2307.15266</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18248,44 +9170,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSIEval</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSIEval</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕、问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>100个人工注释的标题和936个视觉问答对，包含丰富的信息和开放式的问题和答案。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2307.15266</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18293,44 +9201,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/like413/OPT-RSVG'>OPT-RSVG</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/like413/OPT-RSVG'>OPT-RSVG</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像视觉定位</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>14个类别</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文、英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>14个类别</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含25,452张图像和48,952对图像查询</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://www.researchgate.net/publication/373146282_LaLGA_Multi-Scale_LanguageAware_Visual_Grounding_on_Remote_Sensing_Data</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18338,44 +9232,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://sunyuxi.github.io/publication/GeoVG'>GeoVG</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sunyuxi.github.io/publication/GeoVG'>GeoVG</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像视觉定位</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>4,239张图片，包括5,994个对象实例和7,933个指代表达</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://dl.acm.org/doi/abs/10.1145/3503161.3548316</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18383,44 +9263,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://mediatum.ub.tum.de/1474000'>SEN12MS </a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://mediatum.ub.tum.de/1474000'>SEN12MS </a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类、用于土地覆盖制图的语义分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>所有块都以10米的地面采样距离进行完全地理参考，并覆盖所有有人居住的大陆和所有气象季节</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>所有块都以10米的地面采样距离进行完全地理参考，并覆盖所有有人居住的大陆和所有气象季节</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2019.0</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>420G</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>由180,662个双极合成孔径雷达（SAR）图像块、多光谱Sentinel-2图像块和MODIS土地覆盖地图三元组组成</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1906.07789</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18428,44 +9294,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://bigearth.net/'>BigEarthNet-MM</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://bigearth.net/'>BigEarthNet-MM</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检索和分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>由BigEarthNet-S1和S2组成</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>由BigEarthNet-S1和S2组成</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含 590,326 对 Sentinel-1 和 Sentinel-2 图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2105.07921</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18473,44 +9325,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DiRS/'>MillionAID</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DiRS/'>MillionAID</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Million-AID的场景类别采用三级树的层次分类网络进行组织，51个叶节点在第二级分为28个父节点，在第一级分为8个节点，分别代表农业用地、商业用地、工业用地、公共服务用地、住宅用地、交通用地、未利用用地和水域8个底层场景类别。场景分类网络为数据集提供了良好的场景分类关系组织和可扩展性。每个场景类别的图像数量在2000到45000张之间，使数据集具有长尾分布的特性。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Million-AID的场景类别采用三级树的层次分类网络进行组织，51个叶节点在第二级分为28个父节点，在第一级分为8个节点，分别代表农业用地、商业用地、工业用地、公共服务用地、住宅用地、交通用地、未利用用地和水域8个底层场景类别。场景分类网络为数据集提供了良好的场景分类关系组织和可扩展性。每个场景类别的图像数量在2000到45000张之间，使数据集具有长尾分布的特性。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含100万个场景分类实例、有51个语义场景类别</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2006.12485</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18518,44 +9356,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/seasonal-contrast'>SeCo</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/seasonal-contrast'>SeCo</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像无监督预训练  不同季节的图像</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从Sentinel-2收集的，其原则是收集大规模、未标记和未经整理的遥感数据集，这些数据集包含来自不同时间戳的多个地球位置的图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从Sentinel-2收集的，其原则是收集大规模、未标记和未经整理的遥感数据集，这些数据集包含来自不同时间戳的多个地球位置的图像</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>两个版本有一个100K的，有一个1M的</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2103.16607</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18563,29 +9387,17 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/sustainlab-group/SatMAE'>FMoWS2</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/sustainlab-group/SatMAE'>FMoWS2</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>nan</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
@@ -18593,14 +9405,12 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
     <td style='text-align: left;white-space: normal;'>训练图像712874张，验证图像84939张，测试图像84966张</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2207.08051</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18608,44 +9418,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/GeoX-Lab/G-RSIM/tree/main/TOV_v1'>TOV-RS-balanced</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/GeoX-Lab/G-RSIM/tree/main/TOV_v1'>TOV-RS-balanced</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含31个类别的50万个样本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/10110958</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18653,44 +9449,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/SSL4EO-S12'>SSL4EO-S12</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/SSL4EO-S12'>SSL4EO-S12</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像无监督/自监督预训练 用于地球观测的大规模多模态多时相数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>该数据集由来自全球251079个地点的未标记的三元组(Sentinel-1双极化SAR, Sentinel-2大气顶部多光谱，Sentinel-2表面反射率多光谱)组成，每个patch覆盖2640mx2640m，包括四个季节时间戳。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2211.07044</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18698,44 +9480,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/allenai/satlas-pretrain/tree/main/dataset'>SatlasPretrain</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/allenai/satlas-pretrain/tree/main/dataset'>SatlasPretrain</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像理解</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>30T</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>超过30 TB的卫星图像与137个标签类别</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2211.15660</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18743,44 +9511,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/utkarshmall13/CACo'>CACo</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/utkarshmall13/CACo'>CACo</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像自监督预训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>超过100万图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/CVPR2023/html/Mall_Change-Aware_Sampling_and_Contrastive_Learning_for_Satellite_Images_CVPR_2023_paper.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18788,44 +9542,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ViTAE-Transformer/SAMRS'>SAMRS</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ViTAE-Transformer/SAMRS'>SAMRS</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2022.0</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含三个子集：SOTA子集17480张图像，18个类；SIOR子集23463张图像，20个类；FAST子集64147张图像，37个类</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2305.02034</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18833,44 +9573,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/geo-bench'>GEO-Bench</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/geo-bench'>GEO-Bench</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感数据上预训练模型评估</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>六个分类和六个分割任务</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2306.03831</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18878,44 +9604,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/ChatEarthNet'>ChatEarthNet</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/ChatEarthNet'>ChatEarthNet</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像图文对</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>由ChatGPT-3.5生成的163,488对带有标题的图像-文本对和ChatGPT-4V(vision)生成的另外10,000对带有标题的图像-文本对组成</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2402.11325</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18923,44 +9635,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/vishalned/MMEarth-data'>MMEarth</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/vishalned/MMEarth-data'>MMEarth</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多模态预训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像、文本</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含分布在世界各地的120万个地点的数据，在每个地点，收集了12个地理对齐模态的数据，分为像素级和图像级模式</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2405.02771</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -18968,899 +9666,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://drive.google.com/drive/folders/1jBxZcTBfDOZqjjbL6hm80IJV8qOG5pBQ?source=post_page-----d9d0696fdcd7--------------------------------'>火焰烟雾数据集</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>火焰检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>32.8MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>6744张图片，训练集5395张，验证集1349张</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>火焰检测</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/gjy3035/PCC-Net'>PCC-Net</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>人数统计工具</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/mpatacchiola/deepgaze'>deepgaze-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>颜色检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/JunweiLiang/Object_Detection_Tracking'>Object_Detection_Tracking-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>视频中的对象跟踪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ahmetgunduz/Real-time-GesRec'>Real-time-GesRec-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'> 手势识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/atulapra/Emotion-detection'>Emotion-detection-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>人类情感识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/oneshell/road-lane-detection'>road-lane-detection</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>车道线检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/dhruv2601/Business-Card-Scanner'>Business-Card-Scanner</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>名片扫描仪</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/sergiomsilva/alpr-unconstrained'>alpr-unconstrained</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>车牌识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/MyScript/myscript-math-web'>myscript-math-web-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>手写数字识别</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/amberkakkar01/IRIS-Flower-classification'>IRIS-Flower-classification-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>鸢尾花分类</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/jfthuong/photo-organizer'>photo-organizer-main</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>家庭照片人脸检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ShawnHymel/openmv-lego-brick-finder'>openmv-lego-brick-finder-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>乐高积木查找器</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/AnshulSood11/PPE-Detection-YOLO-Deep_SORT'>PPE-Detection-YOLO-Deep_SORT-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>个人防护装备检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/naemazam/Real-Time-Face-Mask-Detection'>Real-Time-Face-Mask-Detection-main</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'> 口罩检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/erdos-project/pylot'>pylot-master</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'> 交通灯检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/kuanhungchen/awesome-tiny-object-detection'>awesome-tiny-object-detection</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>行人检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>计算机视觉</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/TIGER-Lab/WebInstructSub'>WebInstructSub</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>科学问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>3.26GB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>来自MathStackExchange的1484630个数学问题，来自ScienceStackExchange的317209个物理、化学、生物、计算机科学问题，来自Socratic的533384个数学、自然科学、人文社科问题</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>科学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/zjunlp/Mol-Instructions'>Mol-Instructions</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>生物相关的指令微调数据集，包括三个部分：面向分子的指令、面向蛋白质的指令和生物分子文本指令</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>2043K条数据</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>生物</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/162-hpJIlstgqTyC8SSFPcw#list/path=%2F'>全国shp数据汇总</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/162-hpJIlstgqTyC8SSFPcw#list/path=%2F'>全国shp数据汇总</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>用于地理学、城市规划、环境科学、交通管理等领域的研究</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>中国地理信息数字化的集大成者。它汇总了从中国湖泊、县界、公路、河流、铁路、国界线、经纬线、省会城市、省级行政区、县城驻地到线状省界的全方位地理信息。这些数据集以Shapefile（shp）格式提供，是GIS中最常用的地理数据格式之一。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>中国地理信息数字化的集大成者。它汇总了从中国湖泊、县界、公路、河流、铁路、国界线、经纬线、省会城市、省级行政区、县城驻地到线状省界的全方位地理信息。这些数据集以Shapefile（shp）格式提供，是GIS中最常用的地理数据格式之一。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>矢量</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -19868,44 +9697,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1OLoK0pGHxbwpLSYrGzlQ6w (提取码:8ju2)'>东亚建筑物矢量数据</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1OLoK0pGHxbwpLSYrGzlQ6w (提取码:8ju2)'>东亚建筑物矢量数据</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>用于推动城市方面的大尺度研究</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该数据集从0.5米分辨率的谷歌影像中提取获得</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该数据集从0.5米分辨率的谷歌影像中提取获得</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>矢量</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>共计2.8亿个建筑矢量，涵盖中国、日本、韩国、朝鲜和蒙古5个国家。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -19913,44 +9728,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1hfzASlI8qpubcKwrLdnkyw?pwd=8888 '>SinoLC-1</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1hfzASlI8qpubcKwrLdnkyw?pwd=8888 '>SinoLC-1</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>中国首套1m分辨率的全国土地覆盖数据集</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>140GB</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>盖中国全境约960万平方公里的1米分辨率土地</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -19958,134 +9759,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://tianchi.aliyun.com/dataset/90188/'>CMedQA</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文社区医学问答</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>85.6MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>54000个问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://tianchi.aliyun.com/dataset/90163'>CMDD</a></td>
-    <td style='text-align: left; width:10%;'>任务</td>
-    <td style='text-align: left; width:20%;white-space: normal;'>中文医疗对话</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>中文</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2021.0</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>模态</td>
-    <td style='text-align: left;white-space: normal;'>文本</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>指令微调</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>141MB</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>数量</td>
-    <td style='text-align: left;white-space: normal;'>792099个问答对</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>医学</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>链接</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-</table><table style="width:100%;">
-<tr>
-<td>数据集名称</td>
-<td>key</td>
-<td>value</td>
-<td>备注</td>
-</tr>
-  <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/boranhan/Geospatial_Foundation_Models'>GeoPile-2</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/boranhan/Geospatial_Foundation_Models'>GeoPile-2</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多模态预训练</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>整合了四种关键遥感器模态的数据——RGB、Sentinel-2、SAR和DSM；整合四个数据集：SEN12MS、MDAS、GeoPile、MillionAID</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>整合了四种关键遥感器模态的数据——RGB、Sentinel-2、SAR和DSM；整合四个数据集：SEN12MS、MDAS、GeoPile、MillionAID</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>四种模态、约两百万张图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>http://arxiv.org/abs/2404.01260</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20093,44 +9790,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/mit-ll/tornet'>TorNet</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/mit-ll/tornet'>TorNet</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>AI预测龙卷风</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>每个风暴或龙卷风的样本包括两组六幅雷达图像。这两组图像对应于不同的雷达扫描角度。这六幅图像展示了不同的雷达数据产品，如反射率（显示降水强度）或径向速度（指示风是向雷达移动还是远离雷达）。</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>每个风暴或龙卷风的样本包括两组六幅雷达图像。这两组图像对应于不同的雷达扫描角度。这六幅图像展示了不同的雷达数据产品，如反射率（显示降水强度）或径向速度（指示风是向雷达移动还是远离雷达）。</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>该数据集包含超过200,000幅雷达图像，其中13,587幅描绘了龙卷风。其余的图像是非龙卷风的，来自两种类别的风暴：随机选择的严重风暴或误报风暴（导致预报员发出警告但没有产生龙卷风的风暴）</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2401.16437</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20138,44 +9821,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://zenodo.org/records/7936885'>CACD</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/records/7936885'>CACD</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>用于农情监测、粮食安全评估、气候变化研究、生物多样性保护</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>中国1986-2021年30米分辨率的年度耕地数据集，每年1个tif文件</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://zenodo.org/records/7936885</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20183,44 +9852,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/ennauata/buildings2vec'>Vectorizing World Buildings</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ennauata/buildings2vec'>Vectorizing World Buildings</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>提取建筑轮廓</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2020.0</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>2001 张 256×256 像素的航空影像，训练集有 1601 张，测试集有 400 张</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ennauata.github.io/buildings2vec/page.html</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20228,44 +9883,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu-mix%20(vector)/whu_mix(vector).html'>WHU-Mix (vector) building dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu-mix%20(vector)/whu_mix(vector).html'>WHU-Mix (vector) building dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 建筑物分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2023.0</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包括超过 64,000 张图像和 754,000 个单独的建筑实例，总地理面积约为 1100 平方公里。</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/10104584</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20273,44 +9914,30 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/romainloiseau/EarthParserDataset'>Earth Parser Dataset</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/romainloiseau/EarthParserDataset'>Earth Parser Dataset</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 无监督实例分割和语义分割</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>涵盖了七个不同的场景，总面积超过7.7平方公里，包含约9800万个三维点</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>http://arxiv.org/abs/2304.09704</td>
   </tr>
-</table><table style="width:100%;">
+</table>
+
+<table style="width:100%;">
 <tr>
 <td>数据集名称</td>
 <td>key</td>
@@ -20318,41 +9945,5349 @@ https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 <td>备注</td>
 </tr>
   <tr>
-    <td rowspan='9' style='text-align: left; width:10%;'><a href='https://github.com/zk2172-columbia/constellation-dataset'>Constellation</a></td>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zk2172-columbia/constellation-dataset'>Constellation</a></td>
     <td style='text-align: left; width:10%;'>任务</td>
     <td style='text-align: left; width:20%;white-space: normal;'>遥感图像目标检测 高海拔下的目标检测</td>
-    <td rowspan='9' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>语言</td>
-    <td style='text-align: left;white-space: normal;'>英文</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
   </tr>
   <tr>
     <td style='text-align: left;'>发布时间/Project</td>
-    <td style='text-align: left;white-space: normal;'>2024.0</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
   </tr>
   <tr>
     <td style='text-align: left;'>模态</td>
     <td style='text-align: left;white-space: normal;'>图像</td>
   </tr>
   <tr>
-    <td style='text-align: left;'>训练阶段</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>规模</td>
-    <td style='text-align: left;white-space: normal;'>nan</td>
-  </tr>
-  <tr>
     <td style='text-align: left;'>数量</td>
     <td style='text-align: left;white-space: normal;'>包含了从城市交通路口高海拔摄像头获取的13K图像</td>
-  </tr>
-  <tr>
-    <td style='text-align: left;'>涉及领域</td>
-    <td style='text-align: left;white-space: normal;'>遥感</td>
   </tr>
   <tr>
     <td style='text-align: left;'>链接</td>
     <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2404.16944v1</td>
   </tr>
 </table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='未开源'>TextRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像图文匹配</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>https://www.mdpi.com/2072-4292/12/3/405</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2144张图像，从AID、Merced、PatternNet 和 NWPU 数据集收集图像，每个图像都由五个不同的句子注释。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='未开源'>VQA-TextRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像VQA</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>https://www.tandfonline.com/doi/abs/10.1080/01431161.2022.2145583</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>VQA-TextRS是一个由来自四个源数据集的2,144张RS图像组成的数据集，每个图像
+有2-3对英语问答，共计6245对，分为4个问题类。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.isprs.org/education/benchmarks/UrbanSemLab/Default.aspx'>ISPRS Vaihingen</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含33幅不同大小的遥感图像，6个最常见的土地覆盖类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://isprs-annals.copernicus.org/articles/I-3/293/2012/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.isprs.org/education/benchmarks/UrbanSemLab/Default.aspx'>ISPRS Potsdam</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含28幅相同size的图像，6个最常见的土地覆盖类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://isprs-annals.copernicus.org/articles/I-3/293/2012/</td>
+  </tr>
+</table>
+
+## 分类
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://weegee.vision.ucmerced.edu/datasets/landuse.html'>UCMerced_LandUse</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自 USGS National Map，由University of California, Merced于2010年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2010</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2100张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://dl.acm.org/doi/abs/10.1145/1869790.1869829</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/BED4RS/'>WHU RS19</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含19种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2012年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>950张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/palewithout/RSSCN7'>RSSCN7</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2015年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2800张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>http://mvr.whu.edu.cn/pubs/2015-IEEE_GRSL.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.researchgate.net/publication/271647282_RS_C11_Database'>RS_C11</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种土地利用类型的遥感影像，提取自Google Earth，由中科院于2016年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1232张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://gcheng-nwpu.github.io/#Datasets'>NWPU-RESISC45</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含45种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2016年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>31500张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7891544/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/AID/'>AID</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含30种土地利用类型的遥感影像，提取自Google Earth，由武汉大学于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>10000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7907303/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/RSIA-LIESMARS-WHU/RSD46-WHU'>RSD46-WHU</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth、天地图，由武汉大学于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>117000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7827088/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的secenClass部分</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自高分2卫星，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>30000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset'>PatternNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含38种土地利用类型的遥感影像，提取自Google Map，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>30400张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1706.03424</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/phelber/eurosat'>EuroSAT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种土地利用类型的遥感影像，提取自哨兵2，由德国凯泽斯劳滕大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>27000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8736785</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://drive.google.com/open?id=1Fk9a0DW8UyyQsR8dP2Qdakmr69NVBhq9'>OPTIMAL-31</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含21种土地利用类型的遥感影像，提取自Google Earth，由西北工业大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1860张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8454883</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/CLRS'>Continual Learning Benchmark for Remote</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含25种土地利用类型的遥感影像，提取自Google Earth, Bing Map, Google Map, and Tianditu，由中南大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>15000张图片</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/1424-8220/20/4/1226</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1369487569196158978; http://www.jors.cn/jrs/ch/reader/create_pdf.aspx?file_no=20209323&flag=1'>TG1HRSSC</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全色谱段(PAN)、可见近红外(VNI)、短波红外谱段(SWI)，包含9种土地利用类型的遥感影像，提取自天宫一号，由中国科学院空间应用工程与技术中心于2021年发布，包含波段:0.5—0.8μm、1band(PAN), 0.4—1.0μm、54band((VNI), 1.0—2.5μm、52band((SWI),</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>204张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.msadc.cn/main/setsubDetail?id=1370312964720037889； http://www.msadc.cn/group1/M00/00/08/CgId02Bio4KAazc6AEZR3GfuVic489.pdf
+'>NaSC-TG2</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物类型，
+提取自天宫二号，
+包含波段范围：0.40–1.04 µm，
+由中国科学院空间应用工程与技术中心于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>20000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://csc.lsu.edu/~saikat/deepsat/'>SAT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SAT数据集，包括SAT-4、SAT-6，2个数据子集，分别包含4种、6种土地利用类型的遥感影像，提取自the National Agriculture Imagery Program (NAIP) dataset，由路易斯安那州立大学与NASA于2015年发布，采用MATLAB的.mat数据存储格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>405000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.lmars.whu.edu.cn/prof_web/zhongyanfei/Code/Google_Dataset/Google%20dataset%20of%20SIRI-WHU_earth_im_tiff.7z'>SIRI-WHU</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>SIRI-WHU数据集，包括 google image、USGS image2个数据子集，分别包含12种、4种土地利用类型的遥感影像，分别提取自Google Earth、USGS，由武汉大学于2016年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2400张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7329997</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/lehaifeng/RSI-CB'>RSI-CB</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSI-CB数据集，包括RSI-CB128、RSI-CB256，2个数据子集，分别包含45种、35种土地利用类型的遥感影像，提取自多种数据，由中南大学于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>36000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的CV-BrCT部分</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，CV-BrCT数据子集，包含8种土地利用类型的遥感影像，提取自航空影像及地面街景影像，由Federal University of Minas Gerais于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>48342张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/'>Multi-View Datasets中的AiRound部分</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Multi-View Datasets数据集，AiRound数据子集，包含11种土地利用类型的遥感影像，提取自Sentinel-2等多源数据，由Federal University of Minas Gerais于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>13980张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://data.mendeley.com/datasets/7j9bv9vwsx/2'>MLRSNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多标签分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含46种土地利用类型的遥感影像，提取自Google Earth，由中国地质大学于2020年发布，最大标签数13</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>109161张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271620302677</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/jonathan-roberts1/SATIN'>SATIN</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类 场景分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一个元数据集，包含27个卫星和航空图像数据集，涵盖6个不同的任务:土地覆盖、土地利用、分层土地利用、复杂场景、罕见场景和假彩色场景。这些图像是全球分布的，由跨越5个数量级的分辨率、多个视图大小和250多个不同的类标签组成。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2304.11619</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021'>FloodNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类、分割、问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>无人机收集，总共2343张图像，10个语义类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>总共2343张图像，用于分类和分割的测试集有400张，测试集有1050张图像，用于VQA的有1450张图像、4511给问答对</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2012.02951</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://mediatum.ub.tum.de/1474000'>SEN12MS </a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类、用于土地覆盖制图的语义分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>所有块都以10米的地面采样距离进行完全地理参考，并覆盖所有有人居住的大陆和所有气象季节</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>由180,662个双极合成孔径雷达（SAR）图像块、多光谱Sentinel-2图像块和MODIS土地覆盖地图三元组组成</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1906.07789</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://bigearth.net/'>BigEarthNet-MM</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检索和分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>由BigEarthNet-S1和S2组成</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含 590,326 对 Sentinel-1 和 Sentinel-2 图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2105.07921</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DiRS/'>MillionAID</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>Million-AID的场景类别采用三级树的层次分类网络进行组织，51个叶节点在第二级分为28个父节点，在第一级分为8个节点，分别代表农业用地、商业用地、工业用地、公共服务用地、住宅用地、交通用地、未利用用地和水域8个底层场景类别。场景分类网络为数据集提供了良好的场景分类关系组织和可扩展性。每个场景类别的图像数量在2000到45000张之间，使数据集具有长尾分布的特性。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含100万个场景分类实例、有51个语义场景类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2006.12485</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/GeoX-Lab/G-RSIM/tree/main/TOV_v1'>TOV-RS-balanced</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含31个类别的50万个样本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/10110958</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/allenai/satlas-pretrain/tree/main/dataset'>SatlasPretrain</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>超过30 TB的卫星图像与137个标签类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2211.15660</td>
+  </tr>
+</table>
+
+## 检测
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://ai.stanford.edu/~gaheitz/Research/TAS/'>TAS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由斯坦福大学于2008年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2008</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>30张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sourceforge.net/projects/oirds/'>OIRDS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物目标，提取自USGS、DARPA、VIVID，由雷神公司等于2009年发布，采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2009</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>900张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://downloads.greyc.fr/vedai/'>VEDAI</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种类型的遥感地物目标，提取自Utah AGRC，由卡昂大学于2015年发布，采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2015</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1210张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/datasets/guofeng/hrsc2016'>HRSC2016</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含27种类型的遥感地物目标，提取自Google Earth，由西北工业大学于2016年发布，采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1061张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12760/22294_read-52777'>DLR3k</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标提取自无人机(Canon Eos 1Ds Mark III)由德国航天航空中心于2016年发布采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>20张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/CrazyStoneonRoad/TGRS-HRRSD-Dataset'>TGRS-HRRSD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含13种类型的遥感地物目标，提取自Google Earth、百度地图，由中科院于2017年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>21761张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8676107</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://challenge.xviewdataset.org/data-download'>xView</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含60种类型的遥感地物目标，提取自WorldView 3，由DIUx、NGA于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1129张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://levir.buaa.edu.cn/Code.htm'>LEVIR</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物目标，提取自Google Earth，由北京航天航空大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>22000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8106808</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.iuii.ua.es/datasets/masati/'>MASATI</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物目标，提取自Bing Maps，由阿利坎特大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>7389张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/4/511</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://research.utwente.nl/en/datasets/itcvd-dataset'>ITCVD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由University of Twente Research Information于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>135张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8451454</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/iSAID/index.html'>iSAID</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物目标，提取自Google Earth、JL-1、GF-2，由武汉大学于2019年发布，采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2806张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1905.12886</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.patreo.dcc.ufmg.br/2019/07/10/bridge-dataset/'>Bridge Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth、 OpenStreetMap，由Federal University of Minas Gerais于2019年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>500张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8876942</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cosmiqworks.org/RarePlanes/ https://www.graviti.cn/open-datasets/RarePlanes'>RarePlanes</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种飞机遥感影像，提取自WorldView-3，由In-Q-Tel、AI.Reverie于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1507张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2006.02963</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=2&tab=data'>飞机目标识别-训练数据集</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种飞机类型的遥感地物目标,提取自国产自主产权系列卫星，由中科院于2021年发布，采用oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>430张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/contestDetail?id=6&tab=data'>船只智能检测-训练数据集</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自国产自主产权系列卫星
+由中科院于2021年发布采用，oriented bounding boxes(OBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>25张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-Detection</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>32825张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2111.12960</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-DET</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>10209张图象</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-VID</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>288个视频片段</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>DroneCrowd</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像人群计数</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自无人机数据，由天津大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1807张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2001.06303</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.0</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>15类，共188282个目标</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2806张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA1.5</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>16类，共400000±个目标</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2806张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/DOTA/index.html'>DOTA2.0</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'> 18类，共1,793,658个目标</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>11268张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1711.10398</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://opensar.sjtu.edu.cn/DataAndCodes.html'>OpenSARShip</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1，由上海交通大学于2017年发布，采用Chip标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>41张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8067489</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/chaozhong2010/HRSID'>HRSID</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Sentinel-1B、TerraSAR-X、TanDEM-X，由电子科技大学于2020年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>5604张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9127939</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/fMoW/dataset'>fMoW</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>数据集由来自200多个国家的100多万张图像组成。对于每张图像，提供至少一个包含63个类别之一的边界框注释，其中包括一个“错误检测”类别。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100 多万张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018/papers/Christie_Functional_Map_of_CVPR_2018_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1AsdnO2-nadxTaq9_9Mo3Eg?pwd=tftf#list/path=%2F'>HSODBIT-V1</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>高光谱显著性目标检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>319幅高光谱图像及对应的伪彩色图像和像素级标注</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>323张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=16'>CASIA-aircraft</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感目标检测 飞机检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含29093个训练数据，11603个验证数据，17425个测试数据，共计58121个</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/131586'>CASIA-Ship</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感目标检测 船体检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自Google Earth，由中科院于2021年发布，采用json标注</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含571个训练数据，220个验证数据，327个测试数据，共计1118个</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://pan.baidu.com/s/1dIFOm4V2pM_AjhmkD1-Usw?pwd=SARD'>SARDet-100K</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检测 合成孔径雷达目标检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖六个不同的类别,由南开大学2024年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含约117K张图像和246K个对象实例</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2403.06534.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/blanchon/FAIR1M'>FAIR1M</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像目标检测 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含37种类型的遥感地物目标，共100 0000+个目标，提取自Gaofen satellites、Google Earth，由中科院等于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>15000+张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2103.05569</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zk2172-columbia/constellation-dataset'>Constellation</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像目标检测 高海拔下的目标检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含了从城市交通路口高海拔摄像头获取的13K图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2404.16944v1</td>
+  </tr>
+</table>
+
+## 分割
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.usgs.gov/core-science-systems/nli/landsat/spatial-procedures-automated-removal-cloud-and-shadow-sparcs'>SPARCS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自 Landsat 8 OLI/TIRS，由University of Tennessee Knoxville于2014年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2014</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>80张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/6/6/4907stats?stats=v&utm_source=TrendMD&utm_medium=cpc&utm_campaign=Remote_Sens_TrendMD_0</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/1154821'>CITY-OSM</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6个城市，2种类别：街道和建筑，提取自Google Maps、OpenStreetMap，由ETH Zürich于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1671张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1707.06879</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>WHDLD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自UC Merced，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>4940张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/6/964</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0'>DLRSD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>基于UCMerced_LandUse数据集进行标注，包含17种类型的遥感地物类型标注数据，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2100张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/10/6/964</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ishann/aeroscapes'>Aeroscapes</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含11种类型的遥感地物类型，提取自航空影像，由Carnegie Mellon University于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>3269张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/8354272</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.airs-dataset.com/'>AIRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自LINZ Data Service，由 University of Tokyo等，于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1047张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1807.09532</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmkemker/RIT-18'>RIT-18</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含18种类型的遥感地物类型，提取自Tetracam Micro-MCA6，包含7波段，由Rochester Institute of Technology于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>3张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271618301229</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/dronedeploy/dd-ml-segmentation-benchmark'>DroneDeploy</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自航空影像drones，由DroneDeploy于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>55张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/mitroadmaps/roadtracer/'>RoadTracer</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google earth、OSM，由MIT于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>3000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://roadmaps.csail.mit.edu/roadtracer/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/Bijie_pages.html'>Bijie Landslide Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自TripleSat，由武汉大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>770张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://link.springer.com/article/10.1007/s10346-020-01353-2</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/3DFGC_pages.html'>GF2 Dataset for 3DFGC</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种土地利用类型的遥感影像，提取自GF2，由武汉大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>11张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.tandfonline.com/doi/abs/10.1080/01431161.2019.1699973</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://project.inria.fr/aerialimagelabeling/'>Semantic Drone Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含22种土地利用类型的遥感影像，提取自航拍影像，由Graz University of Technology于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>400张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://inria.hal.science/hal-01468452/document</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_Cloud_Dataset.html'>WHU Cloud Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种土地利用类型的遥感影像，提取自Landsat 8，由武汉大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>859张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9099032</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://landcover.ai.linuxpolska.com/'>landcover_ai</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自  public geodetic resource，由linuxpolska等于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>41张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2005.02264</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.uavid.nl/'>UAVid</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自航空影像，由University of Twente于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>300张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.10438</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/457/datasets'>全国人工智能大赛AI遥感影像</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>一级大类8种，二级子类17种，数据为0.1米-4米分辨率的高分一、二、六号，高景二号，北京二号，以及部分航空等数据源的可见光、多光谱载荷图像，由鹏城实验室和协办单位合作采集、标注、构建；</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.datafountain.cn/competitions/475'>BDCI2020</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，由BDCI于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>145981</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Junjue-Wang/LoveDA'>LoveDA</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自Google Earth，由武汉大学于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>5987张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.researchgate.net/publication/355390292_LoveDA_A_Remote_Sensing_Land-Cover_Dataset_for_Domain_Adaptive_Semantic_Segmentation</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.grss-ieee.org/community/technical-committees/2022-ieee-grss-data-fusion-contest/'>MiniFrance-DFC22</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种土地利用类型的遥感影像，提取自航空影像，由IADF TC于2022年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2322张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Roads</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2013</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>804张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.cs.toronto.edu/~vmnih/docs/Mnih_Volodymyr_PhD_Thesis.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Builds</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由University of Toronto于2013年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2013</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>151张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.cs.toronto.edu/~vmnih/docs/Mnih_Volodymyr_PhD_Thesis.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Land Cover Classificat</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含7种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>803张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Demir_DeepGlobe_2018_A_CVPR_2018_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://deepglobe.org/challenge.html'>DeepGlobe Road Detection Challen</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自DigitalGlobe，由CVPR于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>6226张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Demir_DeepGlobe_2018_A_CVPR_2018_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>总共三部分，global cities、East Asia、Aerial imagery datase，包含1种类型的遥感地物类型，由武汉大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>25781张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8444434</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/ORSSD-dataset'>ORSSD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自 Google Earth，由北京交通大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>800张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1906.08462</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/rmcong/EORSSD-dataset'>EORSSD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含8种类型的遥感地物类型，提取自Google Earth，由北京交通大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2000张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2011.13144</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset'>38-Cloud</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 云体分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集中有 8400 个图像块，38个训练场景，测试集中有 9201 个图像块，20个测试场景。每个图像块包含 4 个相应的光谱通道，分别是红色（波段 4）、绿色（波段 3）、蓝色（波段 2）和近红外（波段 5）。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1901.10077</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/SorourMo/95-Cloud-An-Extension-to-38-Cloud-Dataset'>95-Cloud</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 云体分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Landsat 8，由Simon Fraser University于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集中有 34701个图像块，95个训练场景，测试集中有 9201 个图像块，20个测试场景。每个图像块包含 4 个相应的光谱通道，分别是红色（波段 4）、绿色（波段 3）、蓝色（波段 2）和近红外（波段 5）。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://deepai.org/publication/cloud-net-a-cloud-segmentation-cnn-for-landsat-8-remote-sensing-imagery-optimized-with-filtered-jaccard-loss-function</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Fine部分</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含15种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>10张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://x-ytong.github.io/project/GID.html'>WHU_GID中的Large-scale部分</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，提取自高分2卫星，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>150张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0034425719303414</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/MarcWong/UDD'>Urban Drone Dataset(UDD)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 地物类型分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包括UDD5、UDD6两个数据子集，分别包含5、6种类型的遥感地物类型，提取自无人机数据（DJI Phantom 4），由北京大学于2018年发布
+
+</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集120张图像，测试集40张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://link.springer.com/chapter/10.1007/978-3-030-03398-9_30</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-POOLS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 水池分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布
+</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>由8个不同街区的200张4K图像组成(每个街区25张图像)，包含3980个带注释的水池</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://patreo.dcc.ufmg.br/2020/07/29/bh-pools-watertanks-datasets/'>BH-WATERTANKS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 水箱分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>各包含1种类型的遥感地物类型，提取自GoogleEarth，由Federal University of Minas Gerais于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>由6个社区的150张4K图像组成(每个社区25张图像)，包含16216个带注释的水箱。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>这个和上面那个是一个,和一起叫"BH-DATASET"</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data'>Dstl Satellite Imagery Feature Detection</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自WorldView 3，由DigitalGlobe于2017年发布，采用MultiPolygons标注格式，波段范围：全色450-800 nm，3波段；多光谱 (red, red edge, coastal, blue, green, yellow, near-IR1 and near-IR2)400 nm - 1040 nm，8波段；短波红外 1195 nm - 2365 nm，8波段</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集25张图像，测试集32张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.crowdai.org/challenges/mapping-challenge'>Mapping Challenge</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Map，由crowdAI于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集280741张图像，验证集60317张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.frontiersin.org/articles/10.3389/frai.2020.534696/full</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://competitions.codalab.org/competitions/20100'>2018 Open AI Tanzania Building Footprint</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由SUZA等于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>13张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/record/4172871'>Sentinel-2 Cloud Mask Catalogue</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 云体分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含3种类型的遥感地物类型，提取自Sentinel-2，于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>513张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021'>FloodNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类、分割、问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>无人机收集，总共2343张图像，10个语义类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>总共2343张图像，用于分类和分割的测试集有400张，测试集有1050张图像，用于VQA的有1450张图像、4511给问答对</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2012.02951</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://mediatum.ub.tum.de/1474000'>SEN12MS </a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像场景分类、用于土地覆盖制图的语义分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>所有块都以10米的地面采样距离进行完全地理参考，并覆盖所有有人居住的大陆和所有气象季节</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>由180,662个双极合成孔径雷达（SAR）图像块、多光谱Sentinel-2图像块和MODIS土地覆盖地图三元组组成</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1906.07789</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ViTAE-Transformer/SAMRS'>SAMRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含三个子集：SOTA子集17480张图像，18个类；SIOR子集23463张图像，20个类；FAST子集64147张图像，37个类</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2305.02034</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu-mix%20(vector)/whu_mix(vector).html'>WHU-Mix (vector) building dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 建筑物分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包括超过 64,000 张图像和 754,000 个单独的建筑实例，总地理面积约为 1100 平方公里。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/10104584</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/romainloiseau/EarthParserDataset'>Earth Parser Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割 无监督实例分割和语义分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>涵盖了七个不同的场景，总面积超过7.7平方公里，包含约9800万个三维点</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>http://arxiv.org/abs/2304.09704</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.isprs.org/education/benchmarks/UrbanSemLab/Default.aspx'>ISPRS Vaihingen</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含33幅不同大小的遥感图像，6个最常见的土地覆盖类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://isprs-annals.copernicus.org/articles/I-3/293/2012/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.isprs.org/education/benchmarks/UrbanSemLab/Default.aspx'>ISPRS Potsdam</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分割</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2012</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含28幅相同size的图像，6个最常见的土地覆盖类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://isprs-annals.copernicus.org/articles/I-3/293/2012/</td>
+  </tr>
+</table>
+
+## 变化检测
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://web.eee.sztaki.hu/remotesensing/airchange_benchmark.html'>SZTAKI-INRIA AirChange</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，由MTA SZTAKI于2009年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2009</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>13×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/iel5/36/4358825/05169964.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/gistairc/ABCDdataset'>AIST Building Change Detection(ABCD)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型提取自 aerial images 由National Institute of Advanced Industrial Science and Technology (AIST)于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含fixed-scale、resized 2个子集，分别有4,253 * 2、4,223 * 2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7986759</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html'>WHU Building Change Detection Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自航空影像，由武汉大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/8444434</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://paperswithcode.com/dataset/cdd-dataset-season-varying'>CDD Dataset (season-varying)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 季节变化</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种变化类型，提取自Google Earth (DigitalGlobe)，由GosNIIAS于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集10000, 验证集3000, 测试集3000</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://paperswithcode.com/paper/change-detection-in-remote-sensing-images</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/oscd/'>Onera Satellite Change Detection (OSCD)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Universit´e Paris-Saclay、 T´el´ecom ParisTech于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>14×2张训练，10×2张测试</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.08468</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://sigma.whu.edu.cn/newspage.php?q=2019_03_26'>Multi-temporal Scene WuHan (MtS-WH)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 多时相场景变化检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含9种土地利用类型的遥感影像，提取自IKONOS传感器，由武汉大学2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>每个时相训练集包括190张影像，测试集包括1920张影像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images/tree/master/dataset'>DSIFN Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自GoogleEarth，由武汉大学于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练数据集中有3600对图像，验证数据集中有340对图像，测试数据集中有48对图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.sciencedirect.com/science/article/pii/S0924271620301532</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rcdaudt.github.io/hrscd/'>High Resolution Semantic Change (HRSCD)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自 IGS’s BD ORTHO database，由ETH Zürich / EcoVision Lab于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>291×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/1810.08452</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://xview2.org/dataset'>xBD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 灾害前后变化检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含全球六种不同类型自然灾害，每种灾害四种变化状态</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>22068张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPRW_2019/html/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.html</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/daifeng2016/Change-Detection-Dataset-for-High-Resolution-Satellite-Imagery'>Change-Detection-dataset-for-High-resolution-Satellite-Image</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由ieee于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'> 20张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9161009</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://chenhao.in/LEVIR/'>LEVIR-CD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，由北京航空航天大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>637张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/12/10/1662</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rs.sensetime.com/competition/index.html#/info'>SenseEarth ChangeDetection</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种变化类型的遥感地物类型，由商汤科技于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练2968张, 验证847张</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://captain-whu.github.io/SCD/'>SEmantic Change detectiON Data(SECOND)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含6种类型的遥感地物类型，提取自航空影像，由ETH Zürich / EcoVision Lab于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>4662×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://captain-whu.github.io/SCD/SCD_files/Semantic_Change_Detection.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://zenodo.org/records/4280482'>Sentinel-2 Multitemporal Cities Pairs</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Sentinel-2，由Wageningen University于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>1520×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2101.08122</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/liumency/SYSU-CD'>Sun Yat-Sen University (SYSU)-CD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型变化信息，提取自 aerial image，由中山大学于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>20000×2张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9467555</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=30'>S2Looking</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自国产自主产权系列卫星，由中科院于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>3500对训练图像，500对验证图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.rsaicp.com/portal/dataDetail?id=27'>LEVIR-CD2</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 建筑物</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物类型，提取自Google Earth，基于LEVIR-CD数据集，由中科院于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2800对训练图像、840对验证图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://gitlab.citius.usc.es/hiperespectral/ChangeDetectionDataset'>Change Detection Dataset(CDD)</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感变化检测 遥感地物类型</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含5种类型的遥感地物类型，包含224波段，提取自HYPERION,AVIRIS sensor，于2019年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>3对图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/YZHJessica/CDVQA'>CDVQA</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 变化检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>选择现有的语义变化检测数据集SECOND作为基础数据，自动生成CDVQA数据集。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含2968对航拍图像和超过122000对对应的问答</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2112.06343</td>
+  </tr>
+</table>
+
+## 目标跟踪
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://aistudio.baidu.com/datasetdetail/91853'>UAV123</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>UAV123数据集，包含3个子集，子集1包含103个序列，子集2包含12个序列，子集3包含8个序列，提取自 UAV (DJIS1000)、UAV simulator，由King Abdullah University of Science and Technology于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>总共包含123个视频序列和超过110K帧</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://link.springer.com/chapter/10.1007/978-3-319-46448-0_27</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://www.csdata.org/p/387/'>地/空背景下红外图像弱小飞机目标检测跟踪数据集</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标跟踪 红外图像弱小飞机目标检测跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含1种类型的遥感地物目标，提取自航拍影像，由国防科技大学于2019年发布，采用Chip标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2019</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>共计22段数据、30条航迹、16177帧图像、16944个目标</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>http://www.csdata.org/p/387/</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.scidb.cn/en/detail?dataSetId=808025946870251520'>复杂背景下红外弱小运动目标检测数据集</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频目标检测、跟踪 复杂背景下红外弱小运动目标</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自航拍影像，由国防科技大学于2021年发布，采用Chip标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含350个视频，150185个图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.scidb.cn/en/detail?dataSetId=808025946870251520</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-SOT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频单目标跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>167段视频序列，1393000帧</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9573394</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/VisDrone/VisDrone-Dataset'>VisDrone2019-MOT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频多目标跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含10种类型的遥感地物目标，提取自无人机数据，由天津大学于2018年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2018</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集56段视频，24201帧, 验证集7段视频,2819帧 测试集33段视频，12968帧 </td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9573394</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-SOT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频单目标跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100段视频序列，32,825帧图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9625976</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://satvideodt.github.io/'>VISO-MOT</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频多目标跟踪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>包含4种类型的遥感地物目标，提取自JL1，由国防科技大学于2021年发布，采用horizontal bounding boxes (HBB)标注格式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100段视频序列，32,825帧图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/9625976</td>
+  </tr>
+</table>
+
+## 图像生成
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/phillipi/pix2pix'>Aerial to Map</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 风格迁移</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自Google Maps，由UC Berkeley于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>训练集1096张图像 ，验证集1098 张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://www.dropbox.com/s/k2i3p7puuwl2g59/Haze1k.zip?dl=0'>SateHaze1k</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 图像去噪</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>提取自GF-2、GF-3，由清华大学于2017年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>400×3张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_WACV_2020/papers/Huang_Single_Satellite_Optical_Imagery_Dehazing_using_SAR_Image_Prior_Based_WACV_2020_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Multi-view Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>21600张训练，6800张测试</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_A_Novel_Recurrent_Encoder-Decoder_Structure_for_Large-Scale_Multi-View_Stereo_Reconstruction_CVPR_2020_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/WHU_MVS_Stereo_dataset.html'>WHU Stereo Dataset</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自航拍影像，由武汉大学于2020年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>16632张训练，5236 张测试</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_A_Novel_Recurrent_Encoder-Decoder_Structure_for_Large-Scale_Multi-View_Stereo_Reconstruction_CVPR_2020_paper.pdf</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset1.0</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>173张训练，127张测试</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Rational_Polynomial_Camera_Model_Warping_for_Deep_Learning_Based_Satellite_ICCV_2021_paper.html</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='http://gpcv.whu.edu.cn/data/whu_tlc.html'>WHU TCL SatMVS dataset2.0</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像生成 三维重建</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>用于重建DSM，提取自ZY3，由武汉大学于2021年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>5011张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Rational_Polynomial_Camera_Model_Warping_for_Deep_Learning_Based_Satellite_ICCV_2021_paper.html</td>
+  </tr>
+</table>
+
+## 单模态预训练
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/satellogic/EarthView/tree/main'>EarthView</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感模型预训练</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>300万张高分辨率训练数据集</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/seasonal-contrast'>SeCo</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像无监督预训练  不同季节的图像</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从Sentinel-2收集的，其原则是收集大规模、未标记和未经整理的遥感数据集，这些数据集包含来自不同时间戳的多个地球位置的图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>两个版本有一个100K的，有一个1M的</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2103.16607</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/utkarshmall13/CACo'>CACo</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像自监督预训练</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>超过100万图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://openaccess.thecvf.com/content/CVPR2023/html/Mall_Change-Aware_Sampling_and_Contrastive_Learning_for_Satellite_Images_CVPR_2023_paper.html</td>
+  </tr>
+</table>
+
+## 评估
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ServiceNow/geo-bench'>GEO-Bench</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感数据上预训练模型评估</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>六个分类和六个分割任务</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2306.03831</td>
+  </tr>
+</table>
+
+## VQA
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-LR</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 低分辨率</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>使用哨兵2号的图像和来自OSM的问题和答案</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>772张图像、77232个问题</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2003.07333</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA-HR</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 高分辨率</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>USGS的高分辨率(15.24cm)正校正图像和OSM的问答</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>10659张图像、955664个问题</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2003.07333</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://rsvqa.sylvainlobry.com/#dataset'>RSVQA×BEN</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>从BigEarthNet数据集中提取图像/问题/答案</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含近1500万个样本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9553307</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/spectralpublic/RSIVQA'>RSIVQA</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSIVQA的图像来自三个RSI分类数据集(UCM、Sydney和AID)和两个RSI目标检测数据集(HRRSD和DOTA)。基于图像生成问题和答案，形成图像-问题-答案三元组。问题、答案及其对应关系可以在此存储库的txt文件中找到。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>有37264张图像和111693张图像-问答三元组</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9444570</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/YZHJessica/CDVQA'>CDVQA</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像问答 变化检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>选择现有的语义变化检测数据集SECOND作为基础数据，自动生成CDVQA数据集。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含2968对航拍图像和超过122000对对应的问答</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2112.06343</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021'>FloodNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像分类、分割、问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>无人机收集，总共2343张图像，10个语义类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>总共2343张图像，用于分类和分割的测试集有400张，测试集有1050张图像，用于VQA的有1450张图像、4511给问答对</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2012.02951</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSIEval</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕、问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100个人工注释的标题和936个视觉问答对，包含丰富的信息和开放式的问题和答案。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2307.15266</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='nan'>VQA-TextRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像VQA</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>https://www.tandfonline.com/doi/abs/10.1080/01431161.2022.2145583</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>VQA-TextRS是一个由来自四个源数据集的2,144张RS图像组成的数据集，每个图像
+有2-3对英语问答，共计6245对，分为4个问题类。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>nan</td>
+  </tr>
+</table>
+
+## 图文对
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/xiaoyuan1996/AMFMN'>RSITMD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感多模态检索</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>RSITMD（遥感图像-文本匹配数据集）是Yuan等人提出的一个细粒度且富有挑战性的遥感数据集，适用于遥感多模态检索任务。相比其他遥感图像-文本配对数据集，它具有描述物体间关系的详细说明。此外，该数据集还包含了关键词属性（每张图像1至5个关键词），可用于基于关键词的遥感文本检索任务。该数据集中共有4,743张图像跨越32个场景，共包含23,715条标注，其中21,829条为非重复标注。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>4743张图像，23715条标注</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2204.09868</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/Zilun/RS5M'>RS5M</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图文匹配</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>图像-文本配对的数据集RS5M，其中包含500万张带有英文描述的遥感图像。该数据集是通过筛选公开可用的图像-文本配对数据集并用预训练的视觉-语言模型标注仅具有标签的遥感数据集得到的。这构成了第一个大规模的遥感图像-文本配对数据集。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>500万张带有英文描述的遥感图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2306.11300</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://huggingface.co/datasets/mikonvergence/LAION-EO'>LAION-5B</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像文本对</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>LAION-5B的子集，卫星图像文本对</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>版本0有24,933张图像、版本1有112,985张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2309.15535</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSICap</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕、图文检索</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该数据集为每张图像提供了详细的描述，包括场景描述(例如，住宅区、机场或农田)以及物体信息(例如，颜色、形状、数量、绝对位置等)</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2585对具有高质量人工注释字幕的图像-文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2307.15266</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://bigearth.net/'>BigEarthNet-MM</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像检索和分类</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>由BigEarthNet-S1和S2组成</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2021</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含 590,326 对 Sentinel-1 和 Sentinel-2 图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2105.07921</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/ChatEarthNet'>ChatEarthNet</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像图文对</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>由ChatGPT-3.5生成的163,488对带有标题的图像-文本对和ChatGPT-4V(vision)生成的另外10,000对带有标题的图像-文本对组成</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2402.11325</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='nan'>TextRS</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像图文匹配</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2020</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2144张图像，从AID、Merced、PatternNet 和 NWPU 数据集收集图像，每个图像都由五个不同的句子注释。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/12/3/405</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>UCM-Captions</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>该图像数据是从USGS国家地图城市区域影像集合中提取的，包含2,100张RGB航拍图像，覆盖21个类别。每张图像配有5条描述性文字，总计有2032条独特标注。图像分辨率为256×256像素，空间分辨率为1英尺。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2100张图像、每张图像5条描述</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7546397</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>Sydney-Captions</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>悉尼数据集包含来自谷歌地球的澳大利亚悉尼的图像。它包含属于7个类别的613个图像。图像是(500,500) RGB，并为每个图像提供5个caption。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2016</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>613张图像，每张图像5条描述</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/abstract/document/7546397</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/201528014227051/RSICD_optimal'>RSICD</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕、图文检索</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>超过一万张遥感图像是从谷歌地球、百度地图、MapABC、天地图等平台收集而来的。这些图像被固定为 224X224 像素，具有不同的分辨率。总共有 10921 张遥感图像，每张图像配有5句描述，共有18,190条独特标注。据我们所知，这个数据集是用于remote sensing image caption任务中最大的数据集。数据集中的样本图像具有高类内多样性和低类间差异性。包含30种类型的遥感地物类型</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2017</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>10921张图像，每张图像5条描述</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1712.07835</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/HaiyanHuang98/NWPU-Captions'>NWPU-Captions</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>NWPU-Captions包含了157,500个句子，所有31,500张图片都由七名经验丰富的志愿者手动注释。NWPU-Captions相对于当前公开可用的基准数据集的优越性不仅在于其更大的规模，还在于其对复杂场景的更广泛覆盖以及描述词汇的丰富多样性。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>157,500个句子，31,500张图片</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/1703.00121</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset'>LEVIR-CC</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕 变化检测</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>每对图像包括变化前和变化后的，五句描述变化的话，由北京航空航天大学于2022年发布</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含10077对双时态遥感图像和50385个描述图像之间差异的句子</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://ieeexplore.ieee.org/document/9934924</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://opendatasharing.s3.us-west-2.amazonaws.com/SkyScript'>SkyScript</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>涵盖超过29K个不同的语义标签</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>520万对遥感图像-文本对</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2312.12856</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://lcmou.github.io/ERA_Dataset/'>CapERA</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视频字幕</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>25个类别，每个视频五个字幕</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>视频、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>2864个5秒的视频，每秒24帧，14,320个字幕</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.mdpi.com/2072-4292/15/8/2139</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/Lavender105/RSGPT'>RSIEval</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像字幕、问答</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>100个人工注释的标题和936个视觉问答对，包含丰富的信息和开放式的问题和答案。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2307.15266</td>
+  </tr>
+</table>
+
+## 视觉定位
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/ZhanYang-nwpu/RSVG-pytorch'>DIOR_RSVG</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感视觉定位</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>是Zhan等人于2022年引入的一个全面的遥感视觉定位基准数据集（Remote Sensing Visual Grounding, RSVG）。RSVG任务专注于在遥感图像中定位由查询语句所指的对象。该数据集建立在最初设计用于目标检测的DIOR遥感图像数据集基础之上。RSVGD包含38,320对遥感图像-文本对以及17,402张遥感图像，平均表达长度为7.47，词汇表规模为100。图像分辨率为800×800像素，空间分辨率范围从0.5米到30米。文本描述是根据模板和预定义规则合成生成的。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>38320对遥感图像-文本对以及17402张遥感图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/pdf/2210.12634</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/like413/OPT-RSVG'>OPT-RSVG</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像视觉定位</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>14个类别</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2023</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含25,452张图像和48,952对图像查询</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://www.researchgate.net/publication/373146282_LaLGA_Multi-Scale_LanguageAware_Visual_Grounding_on_Remote_Sensing_Data</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://sunyuxi.github.io/publication/GeoVG'>GeoVG</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像视觉定位</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>4,239张图片，包括5,994个对象实例和7,933个指代表达</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://dl.acm.org/doi/abs/10.1145/3503161.3548316</td>
+  </tr>
+</table>
+
+## 多模态预训练
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/zhu-xlab/SSL4EO-S12'>SSL4EO-S12</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像无监督/自监督预训练 用于地球观测的大规模多模态多时相数据集</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2022</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>该数据集由来自全球251079个地点的未标记的三元组(Sentinel-1双极化SAR, Sentinel-2大气顶部多光谱，Sentinel-2表面反射率多光谱)组成，每个patch覆盖2640mx2640m，包括四个季节时间戳。</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2211.07044</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/vishalned/MMEarth-data'>MMEarth</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多模态预训练</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>nan</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像、文本</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>包含分布在世界各地的120万个地点的数据，在每个地点，收集了12个地理对齐模态的数据，分为像素级和图像级模式</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>https://arxiv.org/abs/2405.02771</td>
+  </tr>
+</table>
+
+<table style="width:100%;">
+<tr>
+<td>数据集名称</td>
+<td>key</td>
+<td>value</td>
+<td>备注</td>
+</tr>
+  <tr>
+    <td rowspan='6' style='text-align: left; width:10%;'><a href='https://github.com/boranhan/Geospatial_Foundation_Models'>GeoPile-2</a></td>
+    <td style='text-align: left; width:10%;'>任务</td>
+    <td style='text-align: left; width:20%;white-space: normal;'>遥感图像多模态预训练</td>
+    <td rowspan='6' style='text-align: left; width:40%;word-wrap: break-word;white-space: normal;'>整合了四种关键遥感器模态的数据——RGB、Sentinel-2、SAR和DSM；整合四个数据集：SEN12MS、MDAS、GeoPile、MillionAID</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>发布时间/Project</td>
+    <td style='text-align: left;white-space: normal;'>2024</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>模态</td>
+    <td style='text-align: left;white-space: normal;'>图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>数量</td>
+    <td style='text-align: left;white-space: normal;'>四种模态、约两百万张图像</td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>链接</td>
+    <td style='text-align: left;white-space: normal;'>http://arxiv.org/abs/2404.01260</td>
+  </tr>
+</table>
+
