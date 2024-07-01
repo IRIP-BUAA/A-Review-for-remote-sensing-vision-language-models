@@ -1,8 +1,8 @@
 # A-Review-for-remote-sensing-vision-language-models
 This is a repository for ...
 ## Overleaf
-[[https://www.overleaf.com/5212514212whxgnhhvnszs#e67464](https://www.overleaf.com/5212514212whxgnhhvnszs#e67464)
-](https://www.overleaf.com/5212514212whxgnhhvnszs#e67464)
+
+https://www.overleaf.com/5212514212whxgnhhvnszs#e67464
 TGRS版本（旧，不更新）: https://www.overleaf.com/5469324254jsdvcqwcsmzz#0edfd1
 ## Detail page
 You can see details of all papers and datasets here: [homepage](https://irip-buaa.github.io/)
