@@ -1,6 +1,6 @@
 # A Survey on Remote Sensing Foundation Models: From Vision to Multimodality
 This is a repository for "A Survey on Remote Sensing Foundation Models: From Vision to Multimodality". 
-
+🌏 Please check out our survey paper: [A Survey on Remote Sensing Foundation Models: From Vision to Multimodality](https://arxiv.org/abs/2503.22081)
 ## Detail page
 You can see details of all papers and datasets here: [homepage](https://irip-buaa.github.io/)
 ## Table of Contents
