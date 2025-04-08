@@ -1,14 +1,11 @@
 # A Survey on Remote Sensing Foundation Models: From Vision to Multimodality
 This is a repository for "A Survey on Remote Sensing Foundation Models: From Vision to Multimodality". 
+
 🌏 Please check out our survey paper: [A Survey on Remote Sensing Foundation Models: From Vision to Multimodality](https://arxiv.org/abs/2503.22081)
 ## Detail page
 You can see details of all papers and datasets here: [homepage](https://irip-buaa.github.io/)
 ## Table of Contents
-- [A-Review-for-remote-sensing-vision-language-models](#a-review-for-remote-sensing-vision-language-models)
-  - [Overleaf](#overleaf)
-  - [Detail page](#detail-page)
-  - [Table of Contents](#table-of-contents)
-- [dataset](#dataset)
+- [Dataset](#Dataset)
   - [图像](#图像)
   - [图像、文本](#图像文本)
   - [视频](#视频)
@@ -21,7 +18,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
   - [MLLM](#mllm)
   - [Agent](#agent)
 
-# dataset
+# Dataset
 
 ## 图像
 
