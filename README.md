@@ -212,7 +212,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | CSPT | [Consecutive Pre-Training A Knowledge Transfer Learning Strategy with Relevant Unlabeled Data for Remote Sensing Domain](https://www.mdpi.com/2072-4292/14/22/5675) | Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Consecutive-Pre-Training-A-Knowledge-Transfer-Learning-Strategy-with-Relevant-Unlabeled-Data-for-Remote-Sensing-Domain) |
 | Levir-KR | [Geographical Knowledge-Driven RepresentationLearning for Remote Sensing Images](https://arxiv.org/pdf/2107.05276) | TGRS 2022 | [Link](https://irip-buaa.github.io/posts/Geographical-Knowledge-Driven-RepresentationLearning-for-Remote-Sensing-Images) |
 | - | [Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images](https://arxiv.org/abs/2106.10605) | TGRS 2022 | [Link](https://irip-buaa.github.io/posts/Global-and-Local-Contrastive-Self-Supervised-Learning-for-Semantic-Segmentation-of-HR-Remote-Sensing-Images) |
-| - | [SatMAE Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery](https://arxiv.org/abs/2207.08051) | NeurIPS 2022 | [Link](https://irip-buaa.github.io/posts/SatMAE-Pre-training-Transformers-for-Temporal-and-Multi-Spectral-Satellite-Imagery) |
+| SatMAE | [SatMAE Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery](https://arxiv.org/abs/2207.08051) | NeurIPS 2022 | [Link](https://irip-buaa.github.io/posts/SatMAE-Pre-training-Transformers-for-Temporal-and-Multi-Spectral-Satellite-Imagery) |
 | RSBYOL | [Self-Supervised Learning for Invariant Representations from Multi-Spectral and SAR Images](https://arxiv.org/abs/2205.02049) | JSTARS 2022 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Learning-for-Invariant-Representations-from-Multi-Spectral-and-SAR-Images) |
 | MATTER | [Self-Supervised Material and Texture Representation Learning for Remote Sensing Tasks](https://arxiv.org/abs/2112.01715) | CVPR 2022 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Material-and-Texture-Representation-Learning-for-Remote-Sensing-Tasks) |
 | DINO-MM | [Self-supervised vision transformers for joint sar-optical representation learning](https://arxiv.org/abs/2204.05381) | Arxiv 2022 | [Link](https://irip-buaa.github.io/posts/Self-supervised-vision-transformers-for-joint-sar-optical-representation-learning) |
@@ -226,7 +226,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | MAE | [Cross-Scale MAE A Tale of Multiscale Exploitation in Remote Sensing](https://openreview.net/pdf?id=5oEVdOd6TV) | NeurIPS 2023 | [Link](https://irip-buaa.github.io/posts/Cross-Scale-MAE-A-Tale-of-Multiscale-Exploitation-in-Remote-Sensing) |
 | CtxMIM | [CtxMIM Context-Enhanced Masked Image Modeling for Remote Sensing Image Understanding](https://arxiv.org/abs/2310.00022) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/CtxMIM-Context-Enhanced-Masked-Image-Modeling-for-Remote-Sensing-Image-Understanding) |
 | DeCUR | [DeCUR decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/DeCUR-decoupling-common-&-unique-representations-for-multimodal-self-supervision) |
-| - | [DINO-MC Self-supervised Contrastive Learning for Remote Sensing Imagery with Multi-sized Local Crops](https://arxiv.org/pdf/2303.06670) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/DINO-MC-Self-supervised-Contrastive-Learning-for-Remote-Sensing-Imagery-with-Multi-sized-Local-Crops) |
+| DINO-MC | [Extending Global-local View Alignment for Self-supervised Learning with Remote Sensing Imagery](https://arxiv.org/pdf/2303.06670) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/DINO-MC-Self-supervised-Contrastive-Learning-for-Remote-Sensing-Imagery-with-Multi-sized-Local-Crops) |
 | EarthPT | [EarthPT a foundation model for Earth Observation](https://arxiv.org/abs/2309.07207) | NeurIPS CCAI workshop 2023 | [Link](https://irip-buaa.github.io/posts/EarthPT-a-foundation-model-for-Earth-Observation) |
 | FG-MAE | [Feature Guided Masked Autoencoder for Self-supervised Learning in Remote Sensing](https://arxiv.org/abs/2310.18653) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Feature-Guided-Masked-Autoencoder-for-Self-supervised-Learning-in-Remote-Sensing) |
 | - | [FoMo-Bench a multi-modal, multi-scale and multi-task Forest Monitoring Benchmark for remote sensing foundation models](https://arxiv.org/abs/2312.10114) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/FoMo-Bench-a-multi-modal,-multi-scale-and-multi-task-Forest-Monitoring-Benchmark-for-remote-sensing-foundation-models) |
@@ -254,6 +254,9 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | SpectralGPT | [SpectralGPT Spectral Foundation Model](https://arxiv.org/pdf/2311.07113) | TPAMI 2024 | [Link](https://irip-buaa.github.io/posts/SpectralGPT-Spectral-Foundation-Model) |
 | SwiMDiff | [SwiMDiff Scene-wide Matching Contrastive Learning with Diffusion Constraint for Remote Sensing Image](https://arxiv.org/abs/2401.05093) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/SwiMDiff-Scene-wide-Matching-Contrastive-Learning-with-Diffusion-Constraint-for-Remote-Sensing-Image) |
 | - | [Multi-source remote sensing pretraining based on contrastive self-supervised learning](https://www.mdpi.com/2072-4292/14/18/4632) | Remote Sensing 22 | [Link](https://irip-buaa.github.io/posts/Multi-source-remote-sensing-pretraining-based-on-contrastive-self-supervised-learning) |
+| RSICap | [RSGPT: A Remote Sensing Vision Language Model and Benchmark](https://arxiv.org/abs/2307.15266) | Arxiv 2023 | - |
+| HyperSIGMA | [HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model](https://arxiv.org/abs/2406.11519) | IEEE TPAMI 2025 | [GitHub Repository](https://github.com/WHU-Sigma/HyperSIGMA) |
+| RS-CLIP | [RS-CLIP: Zero shot remote sensing scene classification via contrastive vision-language supervision](https://www.sciencedirect.com/science/article/pii/S1569843223003217) | International Journal of Applied Earth Observation and Geoinformation 2023 | [GitHub Repository](https://github.com/lx709/RS-CLIP) |
 
 ## VLM
 
@@ -273,7 +276,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 ## MLLM
 
-| - | Paper Name | Published in | Detailed Info |
+| Model Name | Paper Name | Published in | Detailed Info |
 | - |------------|--------------|---------------|
 | RSICap | [RSGPT A Remote Sensing Vision Language Model and Benchmark](https://arxiv.org/abs/2307.15266) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/RSGPT-A-Remote-Sensing-Vision-Language-Model-and-Benchmark) |
 | EarthGPT | [EarthGPT A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain](https://arxiv.org/abs/2401.16822) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/EarthGPT-A-Universal-Multi-modal-Large-Language-Model-for-Multi-sensor-Image-Comprehension-in-Remote-Sensing-Domain) |
