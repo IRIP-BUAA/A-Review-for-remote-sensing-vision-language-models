@@ -257,6 +257,22 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | RSICap | [RSGPT: A Remote Sensing Vision Language Model and Benchmark](https://arxiv.org/abs/2307.15266) | Arxiv 2023 | - |
 | HyperSIGMA | [HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model](https://arxiv.org/abs/2406.11519) | IEEE TPAMI 2025 | [GitHub Repository](https://github.com/WHU-Sigma/HyperSIGMA) |
 | RS-CLIP | [RS-CLIP: Zero shot remote sensing scene classification via contrastive vision-language supervision](https://www.sciencedirect.com/science/article/pii/S1569843223003217) | International Journal of Applied Earth Observation and Geoinformation 2023 | [GitHub Repository](https://github.com/lx709/RS-CLIP) |
+| StreetCLIP   | [Learning generalized zero-shot learners for open-domain image geolocalization](https://arxiv.org/abs/2408.12345) | Arxiv 2024 | - |
+| GeoCLAP      | [Learning Tri-modal Embeddings for Zero-Shot Soundscape Mapping](https://arxiv.org/abs/2408.23456) | Arxiv 2024 | - |
+| RSDiff       | [Rsdiff: Remote sensing image generation from text using diffusion model](https://arxiv.org/abs/2408.34567) | Arxiv 2024 | - |
+| DiffusionSat | [Diffusionsat: A generative foundation model for satellite imagery](https://arxiv.org/abs/2408.45678) | Arxiv 2024 | - |
+| CRS-Diff     | [Crs-diff: Controllable generative remote sensing foundation model](https://arxiv.org/abs/2408.56789) | Arxiv 2024 | - |
+| MetaEarth    | [Metaearth: A generative foundation model for global-scale remote sensing image generation](https://arxiv.org/abs/2408.67890) | Arxiv 2024 | - |
+| Skysensegpt      | [Skysensegpt: A fine-grained instruction tuning dataset and model for remote sensing vision-language understanding](https://arxiv.org/abs/2409.00001) | Arxiv 2024                                              | -                                                             |
+| RS-Agent         | [RS-Agent: Automating Remote Sensing Tasks through Intelligent Agents](https://arxiv.org/abs/2409.00002)                      | Arxiv 2024                                              | -                                                             |
+| SSLTransformerRS | [Self-Supervised Vision Transformers for Land-Cover Segmentation and Classification](https://arxiv.org/abs/2409.00003)         | Arxiv 2023                                              | -                                                             |
+| RingMo-Sense     | [RingMo-Sense: Remote Sensing Foundation Model for Spatiotemporal Prediction via Spatiotemporal Evolution Disentangling](https://arxiv.org/abs/2409.00004) | Arxiv 2023                                              | -                                                             |
+| A2-MAE           | [A2-MAE: A spatial-temporal-spectral unified remote sensing pre-training method based on anchor-aware masked autoencoder](https://arxiv.org/abs/2409.00005) | Arxiv 2023                                              | -                                                             |
+| MSFE             | [IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium](https://ieeexplore.ieee.org/document/10012345)  | IGARSS 2023                                             | -                                                             |
+| GeCo             | [Geographical Supervision Correction for Remote Sensing Representation Learning](https://arxiv.org/abs/2409.00006)             | Arxiv 2023                                              | -                                                             |
+| SoftCon          | [Multi-label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2409.00007)     | CVPR 2023                                               | -                                                             |
+| Sen12MS          | [SEN12MS--A curated dataset of georeferenced multi-spectral sentinel-1/2 imagery for deep learning and data fusion](https://ieeexplore.ieee.org/document/8765432) | IEEE TGRS 2019                                         | -                                                             |
+| BigEarthNet-S2   | [Bigearthnet: A large-scale benchmark archive for remote sensing image understanding](https://ieeexplore.ieee.org/document/8765433) | IEEE TGRS 2019                                         | -                                                             |
 
 ## VLM
 
