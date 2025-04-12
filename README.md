@@ -134,8 +134,6 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [VISO-Detection](https://satvideodt.github.io/) | 检测 | [Link](https://irip-buaa.github.io/posts/VISO-Detection) |
 | [WHU TCL SatMVS dataset1.0](http://gpcv.whu.edu.cn/data/whu_tlc.html) | 图像生成 | [Link](https://irip-buaa.github.io/posts/WHU-TCL-SatMVS-dataset1.0) |
 | [WHU TCL SatMVS dataset2.0](http://gpcv.whu.edu.cn/data/whu_tlc.html) | 图像生成 | [Link](https://irip-buaa.github.io/posts/WHU-TCL-SatMVS-dataset2.0) |
-<!-- | [船只智能检测-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=6&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/船只智能检测-训练数据集) |
-| [飞机目标识别-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=2&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/飞机目标识别-训练数据集) | -->
 | [MiniFrance-DFC22](https://www.grss-ieee.org/community/technical-committees/2022-ieee-grss-data-fusion-contest/) | 分割 | [Link](https://irip-buaa.github.io/posts/MiniFrance-DFC22) |
 | [SAMRS](https://github.com/ViTAE-Transformer/SAMRS) | 分割 | [Link](https://irip-buaa.github.io/posts/SAMRS) |
 | [TOV-RS-balanced](https://github.com/GeoX-Lab/G-RSIM/tree/main/TOV_v1) | 分类 | [Link](https://irip-buaa.github.io/posts/TOV-RS-balanced) |
