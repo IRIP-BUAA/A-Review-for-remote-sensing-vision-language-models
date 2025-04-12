@@ -73,9 +73,9 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [VisDrone2019-DET](https://github.com/VisDrone/VisDrone-Dataset) | 检测 | [Link](https://irip-buaa.github.io/posts/VisDrone2019-DET) |
 | [WHDLD](https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0) | 分割 | [Link](https://irip-buaa.github.io/posts/WHDLD) |
 | [WHU Building Change Detection Dataset](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) | 变化检测 | [Link](https://irip-buaa.github.io/posts/WHU-Building-Change-Detection-Dataset) |
-| [WHU_GID中的Fine部分](https://x-ytong.github.io/project/GID.html) | 分割 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的Fine部分) |
-| [WHU_GID中的Large-scale部分](https://x-ytong.github.io/project/GID.html) | 分割 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的Large-scale部分) |
-| [WHU_GID中的secenClass部分](https://x-ytong.github.io/project/GID.html) | 分类 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的secenClass部分) |
+| [The "Fine" part in WHU_GID](https://x-ytong.github.io/project/GID.html) | 分割 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的Fine部分) |
+| [The "Large-scale" part in WHU_GID](https://x-ytong.github.io/project/GID.html) | 分割 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的Large-scale部分) |
+| [The "secenClass" part in WHU_GID](https://x-ytong.github.io/project/GID.html) | 分类 | [Link](https://irip-buaa.github.io/posts/WHU_GID中的secenClass部分) |
 | [xView](https://challenge.xviewdataset.org/data-download) | 检测 | [Link](https://irip-buaa.github.io/posts/xView) |
 | [38-Cloud](https://github.com/SorourMo/38-Cloud-A-Cloud-Segmentation-Dataset) | 分割 | [Link](https://irip-buaa.github.io/posts/38-Cloud) |
 | [Bijie Landslide Dataset](http://gpcv.whu.edu.cn/data/Bijie_pages.html) | 分割 | [Link](https://irip-buaa.github.io/posts/Bijie-Landslide-Dataset) |
@@ -106,9 +106,9 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [landcover_ai](https://landcover.ai.linuxpolska.com/) | 分割 | [Link](https://irip-buaa.github.io/posts/landcover_ai) |
 | [LEVIR-CD](https://chenhao.in/LEVIR/) | 变化检测 | [Link](https://irip-buaa.github.io/posts/LEVIR-CD) |
 | [MLRSNet](https://data.mendeley.com/datasets/7j9bv9vwsx/2) | 分类 | [Link](https://irip-buaa.github.io/posts/MLRSNet) |
-| [Multi-View Datasets中的AiRound部分](http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/) | 分类 | [Link](https://irip-buaa.github.io/posts/Multi-View-Datasets中的AiRound部分) |
-| [Multi-View Datasets中的CV-BrCT部分](http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/) | 分类 | [Link](https://irip-buaa.github.io/posts/Multi-View-Datasets中的CV-BrCT部分) |
-| [RarePlanes](https://www.cosmiqworks.org/RarePlanes/ https://www.graviti.cn/open-datasets/RarePlanes) | 检测 | [Link](https://irip-buaa.github.io/posts/RarePlanes) |
+| [The "AiRound" part in Multi-View Datasets](http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/) | 分类 | [Link](https://irip-buaa.github.io/posts/Multi-View-Datasets中的AiRound部分) |
+| [The "CV-BrCT" part in Multi-View Datasets](http://www.patreo.dcc.ufmg.br/2020/07/22/multi-view-datasets/) | 分类 | [Link](https://irip-buaa.github.io/posts/Multi-View-Datasets中的CV-BrCT部分) |
+| [RarePlanes](https://www.cosmiqworks.org/RarePlanes/) | 检测 | [Link](https://irip-buaa.github.io/posts/RarePlanes) |
 | [SEmantic Change detectiON Data(SECOND)](https://captain-whu.github.io/SCD/) | 变化检测 | [Link](https://irip-buaa.github.io/posts/SEmantic-Change-detectiON-Data(SECOND)) |
 | [SenseEarth ChangeDetection](https://rs.sensetime.com/competition/index.html#/info) | 变化检测 | [Link](https://irip-buaa.github.io/posts/SenseEarth-ChangeDetection) |
 | [Sentinel-2 Cloud Mask Catalogue](https://zenodo.org/record/4172871) | 分割 | [Link](https://irip-buaa.github.io/posts/Sentinel-2-Cloud-Mask-Catalogue) |
@@ -126,16 +126,16 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [LEVIR-CD2](https://www.rsaicp.com/portal/dataDetail?id=27) | 变化检测 | [Link](https://irip-buaa.github.io/posts/LEVIR-CD2) |
 | [LoveDA](https://github.com/Junjue-Wang/LoveDA) | 分割 | [Link](https://irip-buaa.github.io/posts/LoveDA) |
 | [MillionAID](https://captain-whu.github.io/DiRS/) | 分类 | [Link](https://irip-buaa.github.io/posts/MillionAID) |
-| [NaSC-TG2](http://www.msadc.cn/main/setsubDetail?id=1370312964720037889； http://www.msadc.cn/group1/M00/00/08/CgId02Bio4KAazc6AEZR3GfuVic489.pdf) | 分类 | [Link](https://irip-buaa.github.io/posts/NaSC-TG2) |
+| [NaSC-TG2](http://www.msadc.cn/main/setsubDetail?id=1370312964720037889) | 分类 | [Link](https://irip-buaa.github.io/posts/NaSC-TG2) |
 | [S2Looking](https://www.rsaicp.com/portal/dataDetail?id=30) | 变化检测 | [Link](https://irip-buaa.github.io/posts/S2Looking) |
 | [SeCo](https://github.com/ServiceNow/seasonal-contrast) | 单模态预训练 | [Link](https://irip-buaa.github.io/posts/SeCo) |
 | [Sun Yat-Sen University (SYSU)-CD](https://github.com/liumency/SYSU-CD) | 变化检测 | [Link](https://irip-buaa.github.io/posts/Sun-Yat-Sen-University-(SYSU)-CD) |
-| [TG1HRSSC](http://www.msadc.cn/main/setsubDetail?id=1369487569196158978; http://www.jors.cn/jrs/ch/reader/create_pdf.aspx?file_no=20209323&flag=1) | 分类 | [Link](https://irip-buaa.github.io/posts/TG1HRSSC) |
+| [TG1HRSSC](http://www.msadc.cn/main/setsubDetail?id=1369487569196158978) | 分类 | [Link](https://irip-buaa.github.io/posts/TG1HRSSC) |
 | [VISO-Detection](https://satvideodt.github.io/) | 检测 | [Link](https://irip-buaa.github.io/posts/VISO-Detection) |
 | [WHU TCL SatMVS dataset1.0](http://gpcv.whu.edu.cn/data/whu_tlc.html) | 图像生成 | [Link](https://irip-buaa.github.io/posts/WHU-TCL-SatMVS-dataset1.0) |
 | [WHU TCL SatMVS dataset2.0](http://gpcv.whu.edu.cn/data/whu_tlc.html) | 图像生成 | [Link](https://irip-buaa.github.io/posts/WHU-TCL-SatMVS-dataset2.0) |
-| [船只智能检测-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=6&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/船只智能检测-训练数据集) |
-| [飞机目标识别-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=2&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/飞机目标识别-训练数据集) |
+<!-- | [船只智能检测-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=6&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/船只智能检测-训练数据集) |
+| [飞机目标识别-训练数据集](https://www.rsaicp.com/portal/contestDetail?id=2&tab=data) | 检测 | [Link](https://irip-buaa.github.io/posts/飞机目标识别-训练数据集) | -->
 | [MiniFrance-DFC22](https://www.grss-ieee.org/community/technical-committees/2022-ieee-grss-data-fusion-contest/) | 分割 | [Link](https://irip-buaa.github.io/posts/MiniFrance-DFC22) |
 | [SAMRS](https://github.com/ViTAE-Transformer/SAMRS) | 分割 | [Link](https://irip-buaa.github.io/posts/SAMRS) |
 | [TOV-RS-balanced](https://github.com/GeoX-Lab/G-RSIM/tree/main/TOV_v1) | 分类 | [Link](https://irip-buaa.github.io/posts/TOV-RS-balanced) |
