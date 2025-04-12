@@ -6,21 +6,21 @@ This is a repository for "A Survey on Remote Sensing Foundation Models: From Vis
 You can see details of all papers and datasets here: [homepage](https://irip-buaa.github.io/)
 ## Table of Contents
 - [Dataset](#Dataset)
-  - [图像](#图像)
-  - [图像、文本](#图像文本)
-  - [视频](#视频)
-  - [视频、文本](#视频文本)
-- [paper](#paper)
+  - [Image](#Image)
+  - [Image+Text](#Image+Text)
+  - [Video](#Video)
+  <!-- - [视频、文本](#视频文本) -->
+- [Model](#Model)
   - [Pretrain](#pretrain)
   - [Other](#other)
   - [VLM](#vlm)
-  - [Nan](#nan)
+  <!-- - [Nan](#nan) -->
   - [MLLM](#mllm)
   - [Agent](#agent)
 
 # Dataset
 
-## 图像
+## Image
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
@@ -151,7 +151,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [HSODBIT-V1](https://pan.baidu.com/s/1AsdnO2-nadxTaq9_9Mo3Eg?pwd=tftf#list/path=%2F) | 检测 | [Link](https://irip-buaa.github.io/posts/HSODBIT-V1) |
 | [SARDet-100K](https://pan.baidu.com/s/1dIFOm4V2pM_AjhmkD1-Usw?pwd=SARD) | 检测 | [Link](https://irip-buaa.github.io/posts/SARDet-100K) |
 
-## 图像、文本
+## Image+Text
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
@@ -182,7 +182,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [ChatEarthNet](https://github.com/zhu-xlab/ChatEarthNet) | 图文对 | [Link](https://irip-buaa.github.io/posts/ChatEarthNet) |
 | [MMEarth](https://github.com/vishalned/MMEarth-data) | 多模态预训练 | [Link](https://irip-buaa.github.io/posts/MMEarth) |
 
-## 视频
+## Video
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
@@ -194,14 +194,14 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [VISO-MOT](https://satvideodt.github.io/) | 目标跟踪 | [Link](https://irip-buaa.github.io/posts/VISO-MOT) |
 | [VISO-SOT](https://satvideodt.github.io/) | 目标跟踪 | [Link](https://irip-buaa.github.io/posts/VISO-SOT) |
 | [复杂背景下红外弱小运动目标检测数据集](https://www.scidb.cn/en/detail?dataSetId=808025946870251520) | 目标跟踪 | [Link](https://irip-buaa.github.io/posts/复杂背景下红外弱小运动目标检测数据集) |
-
-## 视频、文本
+| [CapERA](https://lcmou.github.io/ERA_Dataset/) | 图文对 | [Link](https://irip-buaa.github.io/posts/CapERA) |
+<!-- ## 视频、文本
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
-| [CapERA](https://lcmou.github.io/ERA_Dataset/) | 图文对 | [Link](https://irip-buaa.github.io/posts/CapERA) |
+| [CapERA](https://lcmou.github.io/ERA_Dataset/) | 图文对 | [Link](https://irip-buaa.github.io/posts/CapERA) | -->
 
-# paper
+# Model
 
 ## Pretrain
 
@@ -282,7 +282,8 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [Neural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities](https://arxiv.org/abs/2403.15356) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Neural-Plasticity-Inspired-Foundation-Model-for-Observing-the-Earth-Crossing-Modalities) |
 | [On the Foundations of Earth and Climate Foundation Models](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/On-the-Foundations-of-Earth-and-Climate-Foundation-Models) |
 | [SARATR-X A Foundation Model for Synthetic Aperture Radar Images Target Recognition](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/SARATR-X-A-Foundation-Model-for-Synthetic-Aperture-Radar-Images-Target-Recognition) |
-
+| [Changes to Captions An Attentive Network for Remote Sensing Change Captioning](https://arxiv.org/abs/2304.01091) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Changes-to-Captions-An-Attentive-Network-for-Remote-Sensing-Change-Captioning) |
+| [Multi-source interactive stair attention for remote sensing image captioning](https://www.mdpi.com/2072-4292/15/3/579) | RS 2023 | [Link](https://irip-buaa.github.io/posts/Multi-source-interactive-stair-attention-for-remote-sensing-image-captioning) |
 ## VLM
 
 | Paper Name | Published in | Detailed Info |
@@ -298,12 +299,12 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [RemoteCLIP A Vision Language Foundation Model for Remote Sensing](https://arxiv.org/abs/2306.11029) | TGRS 2024 | [Link](https://irip-buaa.github.io/posts/RemoteCLIP-A-Vision-Language-Foundation-Model-for-Remote-Sensing) |
 | [SkyScript A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing](https://arxiv.org/abs/2312.12856) | AAAI 2024 | [Link](https://irip-buaa.github.io/posts/SkyScript-A-Large-and-Semantically-Diverse-Vision-Language-Dataset-for-Remote-Sensing) |
 
-## Nan
+<!-- ## Nan
 
 | Paper Name | Published in | Detailed Info |
 |------------|--------------|---------------|
 | [Changes to Captions An Attentive Network for Remote Sensing Change Captioning](https://arxiv.org/abs/2304.01091) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Changes-to-Captions-An-Attentive-Network-for-Remote-Sensing-Change-Captioning) |
-| [Multi-source interactive stair attention for remote sensing image captioning](https://www.mdpi.com/2072-4292/15/3/579) | RS 2023 | [Link](https://irip-buaa.github.io/posts/Multi-source-interactive-stair-attention-for-remote-sensing-image-captioning) |
+| [Multi-source interactive stair attention for remote sensing image captioning](https://www.mdpi.com/2072-4292/15/3/579) | RS 2023 | [Link](https://irip-buaa.github.io/posts/Multi-source-interactive-stair-attention-for-remote-sensing-image-captioning) | -->
 
 ## MLLM
 
