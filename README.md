@@ -273,6 +273,14 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | SoftCon          | [Multi-label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2409.00007)     | CVPR 2023                                               | -                                                             |
 | Sen12MS          | [SEN12MS--A curated dataset of georeferenced multi-spectral sentinel-1/2 imagery for deep learning and data fusion](https://ieeexplore.ieee.org/document/8765432) | IEEE TGRS 2019                                         | -                                                             |
 | BigEarthNet-S2   | [Bigearthnet: A large-scale benchmark archive for remote sensing image understanding](https://ieeexplore.ieee.org/document/8765433) | IEEE TGRS 2019                                         | -                                                             |
+| MSAR       | [Large-scale multi-class SAR image target detection dataset-1.0](https://example.com/msar) | IEEE TGRS 2021 | - |
+| SAR-Ship   | [SAR target recognition based on cross-domain and cross-task transfer learning](https://example.com/sar-ship) | IEEE Access 2020 | - |
+| SAMPLE     | [A SAR dataset for ATR development: the Synthetic and Measured Paired Labeled Experiment (SAMPLE)](https://example.com/sample) | IEEE TGRS 2019 | - |
+| DIOR-RSVG  | [Rsvg: Exploring data and models for visual grounding on remote sensing data](https://example.com/dior-rsvg) | IEEE Access 2021 | - |
+| Xview      | [xview: Objects in context in overhead imagery](https://example.com/xview) | Arxiv 2017 | - |
+| DIOR-R     | [Anchor-free oriented proposal generator for object detection](https://example.com/dior-r) | IEEE TGRS 2020 | - |
+| SpaceNetv1 | [Spacenet: A remote sensing dataset and challenge series](https://example.com/spacenetv1) | IGARSS 2017 | - |
+| -S2        | [Dynamicearthnet: Daily multi-spectral satellite dataset for semantic change segmentation](https://example.com/-s2) | Arxiv 2021 | - |
 
 ## VLM
 
