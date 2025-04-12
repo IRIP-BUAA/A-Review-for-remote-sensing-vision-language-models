@@ -12,11 +12,11 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
   <!-- - [视频、文本](#视频文本) -->
 - [Model](#Model)
   - [Pretrain](#pretrain)
-  - [Other](#other)
   - [VLM](#vlm)
   <!-- - [Nan](#nan) -->
   - [MLLM](#mllm)
   - [Agent](#agent)
+  - [Other](#other)
 
 # Dataset
 
@@ -153,31 +153,31 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
-| [Sydney-Captions](https://github.com/201528014227051/RSICD_optimal) | 图文对 | [Link](https://irip-buaa.github.io/posts/Sydney-Captions) |
-| [UCM-Captions](https://github.com/201528014227051/RSICD_optimal) | 图文对 | [Link](https://irip-buaa.github.io/posts/UCM-Captions) |
-| [RSICD](https://github.com/201528014227051/RSICD_optimal) | 图文对 | [Link](https://irip-buaa.github.io/posts/RSICD) |
+| [Sydney-Captions](https://github.com/201528014227051/RSICD_optimal) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/Sydney-Captions) |
+| [UCM-Captions](https://github.com/201528014227051/RSICD_optimal) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/UCM-Captions) |
+| [RSICD](https://github.com/201528014227051/RSICD_optimal) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/RSICD) |
 | [RSVQA-HR](https://rsvqa.sylvainlobry.com/#dataset) | VQA | [Link](https://irip-buaa.github.io/posts/RSVQA-HR) |
 | [RSVQA-LR](https://rsvqa.sylvainlobry.com/#dataset) | VQA | [Link](https://irip-buaa.github.io/posts/RSVQA-LR) |
-| [TextRS](N/A) | 图文对 | [Link](https://irip-buaa.github.io/posts/TextRS) |
-| [BigEarthNet-MM](https://bigearth.net/) | 图文对 | [Link](https://irip-buaa.github.io/posts/BigEarthNet-MM) |
+| [TextRS](N/A) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/TextRS) |
+| [BigEarthNet-MM](https://bigearth.net/) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/BigEarthNet-MM) |
 | [FloodNet](https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021) | VQA | [Link](https://irip-buaa.github.io/posts/FloodNet) |
 | [RSIVQA](https://github.com/spectralpublic/RSIVQA) | VQA | [Link](https://irip-buaa.github.io/posts/RSIVQA) |
 | [RSVQA×BEN](https://rsvqa.sylvainlobry.com/#dataset) | VQA | [Link](https://irip-buaa.github.io/posts/RSVQA×BEN) |
 | [CDVQA](https://github.com/YZHJessica/CDVQA) | VQA | [Link](https://irip-buaa.github.io/posts/CDVQA) |
-| [GeoVG](https://sunyuxi.github.io/publication/GeoVG) | 视觉定位 | [Link](https://irip-buaa.github.io/posts/GeoVG) |
-| [LEVIR-CC](https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset) | 图文对 | [Link](https://irip-buaa.github.io/posts/LEVIR-CC) |
-| [NWPU-Captions](https://github.com/HaiyanHuang98/NWPU-Captions) | 图文对 | [Link](https://irip-buaa.github.io/posts/NWPU-Captions) |
-| [RSITMD](https://github.com/xiaoyuan1996/AMFMN) | 图文对 | [Link](https://irip-buaa.github.io/posts/RSITMD) |
+| [GeoVG](https://sunyuxi.github.io/publication/GeoVG) | Visual Localization | [Link](https://irip-buaa.github.io/posts/GeoVG) |
+| [LEVIR-CC](https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/LEVIR-CC) |
+| [NWPU-Captions](https://github.com/HaiyanHuang98/NWPU-Captions) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/NWPU-Captions) |
+| [RSITMD](https://github.com/xiaoyuan1996/AMFMN) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/RSITMD) |
 | [SSL4EO-S12](https://github.com/zhu-xlab/SSL4EO-S12) | Multimodal Pre-training | [Link](https://irip-buaa.github.io/posts/SSL4EO-S12) |
 | [VQA-TextRS](N/A) | VQA | [Link](https://irip-buaa.github.io/posts/VQA-TextRS) |
-| [DIOR_RSVG](https://github.com/ZhanYang-nwpu/RSVG-pytorch) | 视觉定位 | [Link](https://irip-buaa.github.io/posts/DIOR_RSVG) |
-| [LAION-5B](https://huggingface.co/datasets/mikonvergence/LAION-EO) | 图文对 | [Link](https://irip-buaa.github.io/posts/LAION-5B) |
-| [OPT-RSVG](https://github.com/like413/OPT-RSVG) | 视觉定位 | [Link](https://irip-buaa.github.io/posts/OPT-RSVG) |
-| [RS5M](https://huggingface.co/datasets/Zilun/RS5M) | 图文对 | [Link](https://irip-buaa.github.io/posts/RS5M) |
-| [RSICap](https://github.com/Lavender105/RSGPT) | 图文对 | [Link](https://irip-buaa.github.io/posts/RSICap) |
-| [RSIEval](https://github.com/Lavender105/RSGPT) | 图文对 | [Link](https://irip-buaa.github.io/posts/RSIEval) |
-| [SkyScript](https://opendatasharing.s3.us-west-2.amazonaws.com/SkyScript) | 图文对 | [Link](https://irip-buaa.github.io/posts/SkyScript) |
-| [ChatEarthNet](https://github.com/zhu-xlab/ChatEarthNet) | 图文对 | [Link](https://irip-buaa.github.io/posts/ChatEarthNet) |
+| [DIOR_RSVG](https://github.com/ZhanYang-nwpu/RSVG-pytorch) | Visual Localization | [Link](https://irip-buaa.github.io/posts/DIOR_RSVG) |
+| [LAION-5B](https://huggingface.co/datasets/mikonvergence/LAION-EO) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/LAION-5B) |
+| [OPT-RSVG](https://github.com/like413/OPT-RSVG) | Visual Localization | [Link](https://irip-buaa.github.io/posts/OPT-RSVG) |
+| [RS5M](https://huggingface.co/datasets/Zilun/RS5M) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/RS5M) |
+| [RSICap](https://github.com/Lavender105/RSGPT) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/RSICap) |
+| [RSIEval](https://github.com/Lavender105/RSGPT) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/RSIEval) |
+| [SkyScript](https://opendatasharing.s3.us-west-2.amazonaws.com/SkyScript) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/SkyScript) |
+| [ChatEarthNet](https://github.com/zhu-xlab/ChatEarthNet) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/ChatEarthNet) |
 | [MMEarth](https://github.com/vishalned/MMEarth-data) | Multimodal Pre-training | [Link](https://irip-buaa.github.io/posts/MMEarth) |
 
 ## Video
@@ -197,7 +197,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 | Dataset Name | Categories | Detailed Info |
 |------------|------------|---------------|
-| [CapERA](https://lcmou.github.io/ERA_Dataset/) | 图文对 | [Link](https://irip-buaa.github.io/posts/CapERA) | -->
+| [CapERA](https://lcmou.github.io/ERA_Dataset/) | Image-Text Pair | [Link](https://irip-buaa.github.io/posts/CapERA) | -->
 
 # Model
 
@@ -213,18 +213,18 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [On Creating Benchmark Dataset for Aerial Image Interpretation Reviews, Guidances, and Million-AID](https://arxiv.org/pdf/2006.12485) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 2021 | [Link](https://irip-buaa.github.io/posts/On-Creating-Benchmark-Dataset-for-Aerial-Image-Interpretation-Reviews,-Guidances,-and-Million-AID) |
 | [Seasonal ContrastUnsupervised Pre-Training from Uncurated Remote Sensing Data](https://arxiv.org/abs/2103.16607) | CVPR 2021 | [Link](https://irip-buaa.github.io/posts/Seasonal-ContrastUnsupervised-Pre-Training-from-Uncurated-Remote-Sensing-Data) |
 | [Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding](https://arxiv.org/abs/2104.07070) | CVPR 2021 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Learning-of-Remote-Sensing-Scene-Representations-Using-Contrastive-Multiview-Coding) |
-| [Advancing plain vision transformer toward remote sensing foundation model](https://arxiv.org/abs/2208.03987) | IEEE Transactions on Geoscience and Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Advancing-plain-vision-transformer-toward-remote-sensing-foundation-model) |
+| [Advancing plain vision transformer toward remote sensing foundation model](https://arxiv.org/abs/2208.03987) | TGRS 2022 | [Link](https://irip-buaa.github.io/posts/Advancing-plain-vision-transformer-toward-remote-sensing-foundation-model) |
 | [Consecutive Pre-Training A Knowledge Transfer Learning Strategy with Relevant Unlabeled Data for Remote Sensing Domain](https://www.mdpi.com/2072-4292/14/22/5675) | Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Consecutive-Pre-Training-A-Knowledge-Transfer-Learning-Strategy-with-Relevant-Unlabeled-Data-for-Remote-Sensing-Domain) |
-| [Geographical Knowledge-Driven RepresentationLearning for Remote Sensing Images](https://arxiv.org/pdf/2107.05276) | IEEE Transactions on Geoscience and Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Geographical-Knowledge-Driven-RepresentationLearning-for-Remote-Sensing-Images) |
-| [Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images](https://arxiv.org/abs/2106.10605) | IEEE Transactions on Geoscience and Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Global-and-Local-Contrastive-Self-Supervised-Learning-for-Semantic-Segmentation-of-HR-Remote-Sensing-Images) |
+| [Geographical Knowledge-Driven RepresentationLearning for Remote Sensing Images](https://arxiv.org/pdf/2107.05276) | TGRS 2022 | [Link](https://irip-buaa.github.io/posts/Geographical-Knowledge-Driven-RepresentationLearning-for-Remote-Sensing-Images) |
+| [Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images](https://arxiv.org/abs/2106.10605) | TGRS 2022 | [Link](https://irip-buaa.github.io/posts/Global-and-Local-Contrastive-Self-Supervised-Learning-for-Semantic-Segmentation-of-HR-Remote-Sensing-Images) |
 | [SatMAE Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery](https://arxiv.org/abs/2207.08051) | NeurIPS 2022 | [Link](https://irip-buaa.github.io/posts/SatMAE-Pre-training-Transformers-for-Temporal-and-Multi-Spectral-Satellite-Imagery) |
-| [Self-Supervised Learning for Invariant Representations from Multi-Spectral and SAR Images](https://arxiv.org/abs/2205.02049) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 2022 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Learning-for-Invariant-Representations-from-Multi-Spectral-and-SAR-Images) |
+| [Self-Supervised Learning for Invariant Representations from Multi-Spectral and SAR Images](https://arxiv.org/abs/2205.02049) | JSTARS 2022 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Learning-for-Invariant-Representations-from-Multi-Spectral-and-SAR-Images) |
 | [Self-Supervised Material and Texture Representation Learning for Remote Sensing Tasks](https://arxiv.org/abs/2112.01715) | CVPR 2022 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Material-and-Texture-Representation-Learning-for-Remote-Sensing-Tasks) |
 | [Self-supervised vision transformers for joint sar-optical representation learning](https://arxiv.org/abs/2204.05381) | Arxiv 2022 | [Link](https://irip-buaa.github.io/posts/Self-supervised-vision-transformers-for-joint-sar-optical-representation-learning) |
 | [Semantic segmentation of remote sensing images with self-supervised semantic-aware inpainting](https://ieeexplore.ieee.org/document/9913413) | IEEE Geoscience and Remote Sensing Letters 2022 | [Link](https://irip-buaa.github.io/posts/Semantic-segmentation-of-remote-sensing-images-with-self-supervised-semantic-aware-inpainting) |
 | [A billion-scale foundation model for remote sensing images](https://arxiv.org/abs/2304.05215) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/A-billion-scale-foundation-model-for-remote-sensing-images) |
 | [A Self-Supervised Cross-Modal Remote Sensing Foundation Model with Multi-Domain Representation and Cross-Domain Fusion](https://ieeexplore.ieee.org/abstract/document/10282433) | IGARSS 2023 | [Link](https://irip-buaa.github.io/posts/A-Self-Supervised-Cross-Modal-Remote-Sensing-Foundation-Model-with-Multi-Domain-Representation-and-Cross-Domain-Fusion) |
-| [An Empirical Study of Remote Sensing Pretraining](https://arxiv.org/pdf/2204.02825) | IEEE Transactions on Geoscience and Remote Sensing 2023 | [Link](https://irip-buaa.github.io/posts/An-Empirical-Study-of-Remote-Sensing-Pretraining) |
+| [An Empirical Study of Remote Sensing Pretraining](https://arxiv.org/pdf/2204.02825) | TGRS 2023 | [Link](https://irip-buaa.github.io/posts/An-Empirical-Study-of-Remote-Sensing-Pretraining) |
 | [Change-Aware Sampling and Contrastive Learning for Satellite Images](https://openaccess.thecvf.com/content/CVPR2023/html/Mall_Change-Aware_Sampling_and_Contrastive_Learning_for_Satellite_Images_CVPR_2023_paper.html) | CVPR 2023 | [Link](https://irip-buaa.github.io/posts/Change-Aware-Sampling-and-Contrastive-Learning-for-Satellite-Images) |
 | [CMID A Unified Self-Supervised Learning Framework for Remote Sensing Image Understanding](https://arxiv.org/abs/2304.09670) | TGRS 2023 | [Link](https://irip-buaa.github.io/posts/CMID-A-Unified-Self-Supervised-Learning-Framework-for-Remote-Sensing-Image-Understanding) |
 | [CROMA Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders](https://arxiv.org/pdf/2311.00566) | NeurIPS 2023 | [Link](https://irip-buaa.github.io/posts/CROMA-Remote-Sensing-Representations-with-Contrastive-Radar-Optical-Masked-Autoencoders) |
@@ -243,16 +243,16 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [Rsprompter Learning to prompt for remote sensing instance segmentation based on visual foundation model](https://arxiv.org/pdf/2306.16269) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Rsprompter-Learning-to-prompt-for-remote-sensing-instance-segmentation-based-on-visual-foundation-model) |
 | [SatlasPretrain A Large-Scale Dataset for Remote Sensing Image Understanding](https://arxiv.org/abs/2211.15660) | ICCV 2023 | [Link](https://irip-buaa.github.io/posts/SatlasPretrain-A-Large-Scale-Dataset-for-Remote-Sensing-Image-Understanding) |
 | [Scale-MAE A Scale-Aware Masked Autoencoder for Multiscale Geospatial Representation Learning](https://arxiv.org/abs/2212.14532) | ICCV 2023 | [Link](https://irip-buaa.github.io/posts/Scale-MAE-A-Scale-Aware-Masked-Autoencoder-for-Multiscale-Geospatial-Representation-Learning) |
-| [TOV The original vision model for optical remote sensing image understanding via self-supervised learning](https://arxiv.org/abs/2204.04716) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 2023 | [Link](https://irip-buaa.github.io/posts/TOV-The-original-vision-model-for-optical-remote-sensing-image-understanding-via-self-supervised-learning) |
-| [TOV The Original Vision Model for Optical Remote Sensing Image Understanding via Self-Supervised Learning](https://arxiv.org/abs/2204.04716) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 2023 | [Link](https://irip-buaa.github.io/posts/TOV The Original Vision-Model-for-Optical-Remote-Sensing-Image-Understanding-via-Self-Supervised-Learning) |
+| [TOV The original vision model for optical remote sensing image understanding via self-supervised learning](https://arxiv.org/abs/2204.04716) | JSTARS 2023 | [Link](https://irip-buaa.github.io/posts/TOV-The-original-vision-model-for-optical-remote-sensing-image-understanding-via-self-supervised-learning) |
+| [TOV The Original Vision Model for Optical Remote Sensing Image Understanding via Self-Supervised Learning](https://arxiv.org/abs/2204.04716) | JSTARS 2023 | [Link](https://irip-buaa.github.io/posts/TOV The Original Vision-Model-for-Optical-Remote-Sensing-Image-Understanding-via-Self-Supervised-Learning) |
 | [Towards Geospatial Foundation Models via Continual Pretraining](https://arxiv.org/abs/2302.04476) | ICCV 2023 | [Link](https://irip-buaa.github.io/posts/Towards-Geospatial-Foundation-Models-via-Continual-Pretraining) |
 | [USat A Unified Self-Supervised Encoder for Multi-Sensor Satellite Imagery](https://arxiv.org/abs/2312.02199) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/USat-A-Unified-Self-Supervised-Encoder-for-Multi-Sensor-Satellite-Imagery) |
 | [Generative ConvNet Foundation Model With Sparse Modeling and Low-Frequency Reconstruction for Remote Sensing Image Interpretation](https://ieeexplore.ieee.org/abstract/document/10378718) | TGRS 2024 | [Link](https://irip-buaa.github.io/posts/Generative-ConvNet-Foundation-Model-With-Sparse-Modeling-and-Low-Frequency-Reconstruction-for-Remote-Sensing-Image-Interpretation) |
-| [Generic Knowledge Boosted Pre-training ForRemote Sensing Images](https://arxiv.org/pdf/2401.04614) | IEEE Transactions on Geoscience and Remote Sensing 2024 | [Link](https://irip-buaa.github.io/posts/Generic-Knowledge-Boosted-Pre-training-ForRemote-Sensing-Images) |
+| [Generic Knowledge Boosted Pre-training ForRemote Sensing Images](https://arxiv.org/pdf/2401.04614) | TGRS 2024 | [Link](https://irip-buaa.github.io/posts/Generic-Knowledge-Boosted-Pre-training-ForRemote-Sensing-Images) |
 | [MTP Advancing Remote Sensing FoundationModel via Multi-Task Pretraining](https://arxiv.org/pdf/2403.13430) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/MTP-Advancing-Remote-Sensing-FoundationModel-via-Multi-Task-Pretraining) |
 | [One for All Toward Unified Foundation Models for Earth Vision](https://arxiv.org/abs/2401.07527) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/One-for-All-Toward-Unified-Foundation-Models-for-Earth-Vision) |
 | [Rethinking Transformers Pre-training for Multi-Spectral Satellite Imagery](https://arxiv.org/abs/2403.05419) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/Rethinking-Transformers-Pre-training-for-Multi-Spectral-Satellite-Imagery) |
-| [RingMo A Remote Sensing Foundation Model With Masked Image Modeling](https://ieeexplore.ieee.org/abstract/document/9844015) | IEEE Transactions on Geoscience and Remote Sensing 2024 | [Link](https://irip-buaa.github.io/posts/RingMo-A-Remote-Sensing-Foundation-Model-With-Masked-Image-Modeling) |
+| [RingMo A Remote Sensing Foundation Model With Masked Image Modeling](https://ieeexplore.ieee.org/abstract/document/9844015) | TGRS 2024 | [Link](https://irip-buaa.github.io/posts/RingMo-A-Remote-Sensing-Foundation-Model-With-Masked-Image-Modeling) |
 | [S2MAE A Spatial-Spectral Pretraining Foundation Model for Spectral Remote Sensing Data](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models/blob/main) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/S2MAE-A-Spatial-Spectral-Pretraining-Foundation-Model-for-Spectral-Remote-Sensing-Data) |
 | [Self-Supervised Spatio-Temporal Representation Learning of Satellite Image Time Series](https://ieeexplore.ieee.org/document/10414422) | JSTARS 2024 | [Link](https://irip-buaa.github.io/posts/Self-Supervised-Spatio-Temporal-Representation-Learning-of-Satellite-Image-Time-Series) |
 | [SkySense A Multi-Modal Remote Sensing Foundation Model Towards Universal Interpretation for Earth Observation Imagery](https://arxiv.org/pdf/2312.10115) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/SkySense-A-Multi-Modal-Remote-Sensing-Foundation-Model-Towards-Universal-Interpretation-for-Earth-Observation-Imagery) |
@@ -260,34 +260,12 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [SwiMDiff Scene-wide Matching Contrastive Learning with Diffusion Constraint for Remote Sensing Image](https://arxiv.org/abs/2401.05093) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/SwiMDiff-Scene-wide-Matching-Contrastive-Learning-with-Diffusion-Constraint-for-Remote-Sensing-Image) |
 | [Multi-source remote sensing pretraining based on contrastive self-supervised learning](https://www.mdpi.com/2072-4292/14/18/4632) | Remote Sensing 22 | [Link](https://irip-buaa.github.io/posts/Multi-source-remote-sensing-pretraining-based-on-contrastive-self-supervised-learning) |
 
-## Other
-
-| Paper Name | Published in | Detailed Info |
-|------------|--------------|---------------|
-| [Transforming remote sensing images to textual descriptions](https://www.sciencedirect.com/science/article/pii/S0303243422000678) | INT J APPL EARTH OBS 2022 | [Link](https://irip-buaa.github.io/posts/Transforming-remote-sensing-images-to-textual-descriptions) |
-| [CSP Self-Supervised Contrastive Spatial Pre-Training for Geospatial-Visual Representations](https://arxiv.org/abs/2305.01118) | ICML 2023 | [Link](https://irip-buaa.github.io/posts/CSP-Self-Supervised-Contrastive-Spatial-Pre-Training-for-Geospatial-Visual-Representations) |
-| [GeoCLIP Clip-Inspired Alignment between Locations and Images for Effective Worldwide Geo-localization](https://arxiv.org/abs/2309.16020) | NeurIPS 2023 | [Link](https://irip-buaa.github.io/posts/GeoCLIP-Clip-Inspired-Alignment-between-Locations-and-Images-for-Effective-Worldwide-Geo-localization) |
-| [Good at captioning, bad at counting Benchmarking GPT-4V on Earth observation data](https://arxiv.org/abs/2401.17600) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Good-at-captioning,-bad-at-counting-Benchmarking-GPT-4V-on-Earth-observation-data) |
-| [On the Promises and Challenges of Multimodal Foundation Models for Geographical, Environmental, Agricultural, and Urban Planning Applications](https://arxiv.org/abs/2312.17016) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/On-the-Promises-and-Challenges-of-Multimodal-Foundation-Models-for-Geographical,-Environmental,-Agricultural,-and-Urban-Planning-Applications) |
-| [SatCLIP Global, General-Purpose Location Embeddings with Satellite Imagery](https://arxiv.org/abs/2311.17179) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/SatCLIP-Global,-General-Purpose-Location-Embeddings-with-Satellite-Imagery) |
-| [The Potential of Visual ChatGPT for Remote Sensing](https://www.mdpi.com/2072-4292/15/13/3232) | RS 2023 | [Link](https://irip-buaa.github.io/posts/The-Potential-of-Visual-ChatGPT-for-Remote-Sensing) |
-| [遥感基础模型发展综述与未来设想](N/A) | 遥感学报 2023 | [Link](https://irip-buaa.github.io/posts/遥感基础模型发展综述与未来设想) |
-| [Bridging Remote Sensors with Multisensor Geospatial Foundation Models](https://arxiv.org/abs/2404.01260) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/Bridging-Remote-Sensors-with-Multisensor-Geospatial-Foundation-Models) |
-| [Charting New Territories Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs](https://arxiv.org/abs/2311.14656) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Charting-New-Territories-Exploring-the-Geographic-and-Geospatial-Capabilities-of-Multimodal-LLMs) |
-| [GeoLLM Extracting Geospatial Knowledge from Large Language Models](https://arxiv.org/abs/2310.06213) | ICLR 2024 | [Link](https://irip-buaa.github.io/posts/GeoLLM-Extracting-Geospatial-Knowledge-from-Large-Language-Models) |
-| [LeMeViT Efficient Vision Transformer with Learnable Meta Tokens for Remote Sensing Image Interpretation](N/A) | IJCAI 2024 | [Link](https://irip-buaa.github.io/posts/LeMeViT-Efficient-Vision-Transformer-with-Learnable-Meta-Tokens-for-Remote-Sensing-Image-Interpretation) |
-| [MMEarth Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/MMEarth-Exploring-Multi-Modal-Pretext-Tasks-For-Geospatial-Representation-Learning) |
-| [Neural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities](https://arxiv.org/abs/2403.15356) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Neural-Plasticity-Inspired-Foundation-Model-for-Observing-the-Earth-Crossing-Modalities) |
-| [On the Foundations of Earth and Climate Foundation Models](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/On-the-Foundations-of-Earth-and-Climate-Foundation-Models) |
-| [SARATR-X A Foundation Model for Synthetic Aperture Radar Images Target Recognition](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/SARATR-X-A-Foundation-Model-for-Synthetic-Aperture-Radar-Images-Target-Recognition) |
-| [Changes to Captions An Attentive Network for Remote Sensing Change Captioning](https://arxiv.org/abs/2304.01091) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Changes-to-Captions-An-Attentive-Network-for-Remote-Sensing-Change-Captioning) |
-| [Multi-source interactive stair attention for remote sensing image captioning](https://www.mdpi.com/2072-4292/15/3/579) | RS 2023 | [Link](https://irip-buaa.github.io/posts/Multi-source-interactive-stair-attention-for-remote-sensing-image-captioning) |
 ## VLM
 
 | Paper Name | Published in | Detailed Info |
 |------------|--------------|---------------|
 | [Bootstrapping Interactive Image-Text Alignment for Remote Sensing Image Captioning](https://arxiv.org/abs/2312.01191) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Bootstrapping-Interactive-Image-Text-Alignment-for-Remote-Sensing-Image-Captioning) |
-| [Language-aware domain generalization network for cross-scene hyperspectral image classification](https://arxiv.org/pdf/2209.02700) | IEEE Transactions on Geoscience and Remote Sensing 2023 | [Link](https://irip-buaa.github.io/posts/Language-aware-domain-generalization-network-for-cross-scene-hyperspectral-image-classification) |
+| [Language-aware domain generalization network for cross-scene hyperspectral image classification](https://arxiv.org/pdf/2209.02700) | TGRS 2023 | [Link](https://irip-buaa.github.io/posts/Language-aware-domain-generalization-network-for-cross-scene-hyperspectral-image-classification) |
 | [Parameter-Efficient Transfer Learning for Remote Sensing Image-Text Retrieval](https://arxiv.org/abs/2308.12509) | TGRS 2023 | [Link](https://irip-buaa.github.io/posts/Parameter-Efficient-Transfer-Learning-for-Remote-Sensing-Image-Text-Retrieval) |
 | [RS5M and GeoRSCLIP A Large Scale Vision-Language Dataset and A Large Vision-Language Model for Remote Sensing](https://arxiv.org/abs/2306.11300) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/RS5M-and-GeoRSCLIP-A-Large-Scale-Vision-Language-Dataset-and-A-Large-Vision-Language-Model-for-Remote-Sensing) |
 | [S-CLIP Semi-supervised Vision-Language Learning using Few Specialist Captions](https://arxiv.org/abs/2305.14095) | NeurIPS 2023 | [Link](https://irip-buaa.github.io/posts/S-CLIP-Semi-supervised-Vision-Language-Learning-using-Few-Specialist-Captions) |
@@ -327,3 +305,25 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 | [GeoLLM-Engine A Realistic Environment for Building Geospatial Copilots](https://arxiv.org/abs/2404.15500) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/GeoLLM-Engine-A-Realistic-Environment-for-Building-Geospatial-Copilots) |
 | [Remote Sensing ChatGPT Solving Remote Sensing Tasks with ChatGPT and Visual Models](https://arxiv.org/abs/2401.09083) | IGARSS 2024 | [Link](https://irip-buaa.github.io/posts/Remote-Sensing-ChatGPT-Solving-Remote-Sensing-Tasks-with-ChatGPT-and-Visual-Models) |
 
+## Other
+
+| Paper Name | Published in | Detailed Info |
+|------------|--------------|---------------|
+| [Transforming remote sensing images to textual descriptions](https://www.sciencedirect.com/science/article/pii/S0303243422000678) | INT J APPL EARTH OBS 2022 | [Link](https://irip-buaa.github.io/posts/Transforming-remote-sensing-images-to-textual-descriptions) |
+| [CSP Self-Supervised Contrastive Spatial Pre-Training for Geospatial-Visual Representations](https://arxiv.org/abs/2305.01118) | ICML 2023 | [Link](https://irip-buaa.github.io/posts/CSP-Self-Supervised-Contrastive-Spatial-Pre-Training-for-Geospatial-Visual-Representations) |
+| [GeoCLIP Clip-Inspired Alignment between Locations and Images for Effective Worldwide Geo-localization](https://arxiv.org/abs/2309.16020) | NeurIPS 2023 | [Link](https://irip-buaa.github.io/posts/GeoCLIP-Clip-Inspired-Alignment-between-Locations-and-Images-for-Effective-Worldwide-Geo-localization) |
+| [Good at captioning, bad at counting Benchmarking GPT-4V on Earth observation data](https://arxiv.org/abs/2401.17600) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Good-at-captioning,-bad-at-counting-Benchmarking-GPT-4V-on-Earth-observation-data) |
+| [On the Promises and Challenges of Multimodal Foundation Models for Geographical, Environmental, Agricultural, and Urban Planning Applications](https://arxiv.org/abs/2312.17016) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/On-the-Promises-and-Challenges-of-Multimodal-Foundation-Models-for-Geographical,-Environmental,-Agricultural,-and-Urban-Planning-Applications) |
+| [SatCLIP Global, General-Purpose Location Embeddings with Satellite Imagery](https://arxiv.org/abs/2311.17179) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/SatCLIP-Global,-General-Purpose-Location-Embeddings-with-Satellite-Imagery) |
+| [The Potential of Visual ChatGPT for Remote Sensing](https://www.mdpi.com/2072-4292/15/13/3232) | RS 2023 | [Link](https://irip-buaa.github.io/posts/The-Potential-of-Visual-ChatGPT-for-Remote-Sensing) |
+| [遥感基础模型发展综述与未来设想](N/A) | 遥感学报 2023 | [Link](https://irip-buaa.github.io/posts/遥感基础模型发展综述与未来设想) |
+| [Bridging Remote Sensors with Multisensor Geospatial Foundation Models](https://arxiv.org/abs/2404.01260) | CVPR 2024 | [Link](https://irip-buaa.github.io/posts/Bridging-Remote-Sensors-with-Multisensor-Geospatial-Foundation-Models) |
+| [Charting New Territories Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs](https://arxiv.org/abs/2311.14656) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Charting-New-Territories-Exploring-the-Geographic-and-Geospatial-Capabilities-of-Multimodal-LLMs) |
+| [GeoLLM Extracting Geospatial Knowledge from Large Language Models](https://arxiv.org/abs/2310.06213) | ICLR 2024 | [Link](https://irip-buaa.github.io/posts/GeoLLM-Extracting-Geospatial-Knowledge-from-Large-Language-Models) |
+| [LeMeViT Efficient Vision Transformer with Learnable Meta Tokens for Remote Sensing Image Interpretation](N/A) | IJCAI 2024 | [Link](https://irip-buaa.github.io/posts/LeMeViT-Efficient-Vision-Transformer-with-Learnable-Meta-Tokens-for-Remote-Sensing-Image-Interpretation) |
+| [MMEarth Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/MMEarth-Exploring-Multi-Modal-Pretext-Tasks-For-Geospatial-Representation-Learning) |
+| [Neural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities](https://arxiv.org/abs/2403.15356) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Neural-Plasticity-Inspired-Foundation-Model-for-Observing-the-Earth-Crossing-Modalities) |
+| [On the Foundations of Earth and Climate Foundation Models](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/On-the-Foundations-of-Earth-and-Climate-Foundation-Models) |
+| [SARATR-X A Foundation Model for Synthetic Aperture Radar Images Target Recognition](N/A) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/SARATR-X-A-Foundation-Model-for-Synthetic-Aperture-Radar-Images-Target-Recognition) |
+| [Changes to Captions An Attentive Network for Remote Sensing Change Captioning](https://arxiv.org/abs/2304.01091) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Changes-to-Captions-An-Attentive-Network-for-Remote-Sensing-Change-Captioning) |
+| [Multi-source interactive stair attention for remote sensing image captioning](https://www.mdpi.com/2072-4292/15/3/579) | RS 2023 | [Link](https://irip-buaa.github.io/posts/Multi-source-interactive-stair-attention-for-remote-sensing-image-captioning) |
