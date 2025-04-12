@@ -284,7 +284,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 ## VLM
 
-| - | Paper Name | Published in | Detailed Info |
+| Model Name | Paper Name | Published in | Detailed Info |
 | - |------------|--------------|---------------|
 | - | [Bootstrapping Interactive Image-Text Alignment for Remote Sensing Image Captioning](https://arxiv.org/abs/2312.01191) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Bootstrapping-Interactive-Image-Text-Alignment-for-Remote-Sensing-Image-Captioning) |
 | - | [Language-aware domain generalization network for cross-scene hyperspectral image classification](https://arxiv.org/pdf/2209.02700) | TGRS 2023 | [Link](https://irip-buaa.github.io/posts/Language-aware-domain-generalization-network-for-cross-scene-hyperspectral-image-classification) |
@@ -313,7 +313,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 ## Agent
 
-| - | Paper Name | Published in | Detailed Info |
+| Model Name | Paper Name | Published in | Detailed Info |
 | - |------------|--------------|---------------|
 | Tree-GPT | [Tree-GPT Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding and Interactive Analysis](https://arxiv.org/abs/2310.04698) | Arxiv 2023 | [Link](https://irip-buaa.github.io/posts/Tree-GPT-Modular-Large-Language-Model-Expert-System-for-Forest-Remote-Sensing-Image-Understanding-and-Interactive-Analysis) |
 | Change-Agent | [Change-Agent Towards Interactive Comprehensive Remote Sensing Change Interpretation and Analysis](https://arxiv.org/abs/2403.19646) | Arxiv 2024 | [Link](https://irip-buaa.github.io/posts/Change-Agent-Towards-Interactive-Comprehensive-Remote-Sensing-Change-Interpretation-and-Analysis) |
@@ -323,7 +323,7 @@ You can see details of all papers and datasets here: [homepage](https://irip-bua
 
 ## Other
 
-| - | Paper Name | Published in | Detailed Info |
+| Model Name | Paper Name | Published in | Detailed Info |
 | - |------------|--------------|---------------|
 | - | [Transforming remote sensing images to textual descriptions](https://www.sciencedirect.com/science/article/pii/S0303243422000678) | INT J APPL EARTH OBS 2022 | [Link](https://irip-buaa.github.io/posts/Transforming-remote-sensing-images-to-textual-descriptions) |
 | - | [CSP Self-Supervised Contrastive Spatial Pre-Training for Geospatial-Visual Representations](https://arxiv.org/abs/2305.01118) | ICML 2023 | [Link](https://irip-buaa.github.io/posts/CSP-Self-Supervised-Contrastive-Spatial-Pre-Training-for-Geospatial-Visual-Representations) |
